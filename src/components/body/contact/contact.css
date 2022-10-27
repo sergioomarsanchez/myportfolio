@@ -1,0 +1,28 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 10rem;
+    margin-right: 2rem;
+}
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.contact-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+    
+}
+@media only screen and (max-width: 512px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        width: 100%;
+        margin-left: 1rem;
+    }
+  }

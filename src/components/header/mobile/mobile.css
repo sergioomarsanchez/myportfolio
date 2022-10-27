@@ -1,0 +1,43 @@
+.mobile {
+    background-color: rgba(54, 51, 51, 0.968);
+    height: fit-content;
+    width: 60vw;
+    position: absolute;
+    right: 0px;
+    top: -6px;
+    padding: 18px 12px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+}
+
+.close-icon {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 24px;
+}
+
+.mobile-options {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 24px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.mobile-option {
+    font-size: 24px;
+    margin-bottom: 2rem;
+    display: flex;
+    color: aqua;
+    margin-left: 5rem;
+
+}
+
+.mobile-option:active {
+    transform: translate(2px, 2px);
+    color: blue;
+  }

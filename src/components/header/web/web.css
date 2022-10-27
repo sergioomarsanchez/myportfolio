@@ -1,0 +1,37 @@
+.web{
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+.web-option{
+    font-size: 20px;
+    margin-right: 16px;
+    font-weight: 700;
+
+}
+
+.web-option a{
+    text-decoration: none;
+    color: aqua;
+    display: flex;
+    align-items: center;
+    transition: 0.6s ease;
+    
+}
+
+.web-option a:hover{
+    transform: scale(1.1);
+    color: blue;
+}
+.web-option a:active {
+    transform: translate(2px, 2px);
+  }
+
+.option-icon{
+    display: flex;
+    align-items: center;
+    margin-right: 4px;
+}
+.web-option:last-child {
+    margin-right: 0px;
+}
