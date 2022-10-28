@@ -1,11 +1,11 @@
 #canvas1 {
     display: flex;
     position: relative;
-    width: 250px;
     box-shadow: 20px, 20px, 20px, 20px azure;
     animation-name: intro;
     animation-duration: 4s;
     filter: drop-shadow(0 0 7px rgba(253, 254, 255, 0.813));
+    width: fit-content;
 }
 @keyframes intro {
     0%   {right:1500px}
@@ -17,6 +17,7 @@ transform: scale(1.1);
 .controls {
     display: flex;
     flex-flow: column;
+    width: fit-content;
 }
 .controls div{
     margin-bottom: 1rem;

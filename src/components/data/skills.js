@@ -1,3 +1,5 @@
+import Dog from '../dog'
+import scrum from '../../assets/icons/scrum.png'
 export const SkillsData = [
   {
     type: "Front-End",
@@ -15,25 +17,59 @@ export const SkillsData = [
         icon: <i class="devicon-javascript-plain colored"></i>
       },
       {
-        name: "TailwindCSS",
-        icon: <i class="devicon-tailwindcss-plain colored"></i>
+        name: "CSS3",
+        icon: <i class="devicon-css3-plain colored"></i>
       },
-    ],
-  },
-  {
-    type: "Other Skills",
-    list: [
+      {
+        name: "Sass",
+        icon: <i class="devicon-sass-plain colored"></i>
+      },
+      {
+        name: "Redux",
+        icon: <i class="devicon-redux-plain colored"></i>
+      },
       {
         name: "Firebase",
         icon: <i class="devicon-firebase-plain colored"></i>
       },
+    ],
+  },
+  {
+    type: "Back-end",
+    list: [
       {
-        name: "Bootstrap",
-        icon: <i class="devicon-bootstrap-plain colored"></i>
+        name: "Mongodb",
+        icon: <i class="devicon-mongodb-plain colored"></i>
       },
       {
-        name: "Azure",
-        icon: <i class="devicon-azure-plain colored"></i>
+        name: "PostgreSQL",
+        icon: <i class="devicon-postgresql-plain colored"></i>
+      },
+      {
+        name: "Nodejs",
+        icon: <i class="devicon-nodejs-plain colored"></i>
+      },
+     
+    ],
+  },
+  {
+    type: "Other",
+    list: [
+      {
+        name: "Sprite Sheet Animations",
+        icon: <i id='animation' class="devicon-animations-plain colored">{<Dog/>}</i>
+      },
+      {
+        name: "Github",
+        icon: <i class="devicon-github-plain colored"></i>
+      },
+      {
+        name: "Git",
+        icon: <i class="devicon-git-plain colored"></i>
+      },
+      {
+        name: "Scrum",
+        icon: <img src={scrum} class="scrum" alt='scrum'/>
       },
     ],
   },

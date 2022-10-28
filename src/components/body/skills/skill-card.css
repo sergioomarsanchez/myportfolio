@@ -8,6 +8,8 @@
     justify-content: center;
     margin: 6px;
     border-radius: 8px;
+    margin-bottom: 5rem;
+    margin-top: 1rem;
 }
 
 .skill-icon {
@@ -18,11 +20,20 @@
     font-size: 18px;
 }
 
+.scrum {
+  width: 55px;
+}
+#animation{
+  margin: 0;
+}
+
+
 @media only screen and (max-width: 1024px) {
     .skill-card {
       width: max-content;
       height: 100px;
     }
+    
     .skill-icon {
       font-size: 60px;
     }
