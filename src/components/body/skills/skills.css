@@ -1,8 +1,8 @@
 .skills {
     display: flex;
     flex-direction: column;
-    margin-left: 7rem;
-    margin-right: 7rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
     margin-bottom: 4rem;
 }
 .skills-section {

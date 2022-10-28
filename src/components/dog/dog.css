@@ -6,14 +6,25 @@
     animation-duration: 4s;
     filter: drop-shadow(0 0 7px rgba(253, 254, 255, 0.813));
     width: fit-content;
+    cursor :pointer;
 }
+#canvas1:hover {
+    transform: scale(1.1);
+}
+#canvas1:active {
+    animation-name: outro;
+    animation-duration: 4s;
+}
+
 @keyframes intro {
     0%   {right:1500px}
     100% {right:0px}
   }
-#canvas1:hover {
-transform: scale(1.1);
-}
+  @keyframes outro {
+    0%   {right:1500px}
+    100% {right:0px}
+  }
+
 .controls {
     display: flex;
     flex-flow: column;
