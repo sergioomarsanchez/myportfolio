@@ -1,0 +1,12 @@
+#canvas1 {
+    display: flex;
+    width: 250px;
+
+}
+.controls {
+    display: flex;
+
+}
+.controls, select, option {
+    font-size: 15px;
+}

@@ -15,7 +15,7 @@ function Header() {
       pathname === '/'?<div><img src={logo} alt='logo'className="logo"/></div>:
       <Link to={'/'} style={{ textDecoration: 'none' }}>
         <div className="logo">
-        <i class="fi-rr-home option-icon"></i>Home
+        <img src={logo} alt='logo'className="logo"/>
         </div>
     </Link>
     }

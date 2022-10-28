@@ -18,7 +18,7 @@ export const ProjectData=[
         title:"The Food App",
         about: "This is an individual project for my Bootcamp at Soy Henry. Is an App to check Recipes, search, order by name and heath rating and filter by recipe type, and you can also create your own recipes. Please, click on the project image to check a short demo video",
         tags:["ReactJS", "Javascript", "PostgreSQL", "Html/Css", "Redux", "Javascript", "express", "external API"],
-        github:"https://github.com/ThantZinPhyo-OP/Portfolio-Website",
+        github:"https://github.com/sergioomarsanchez/PI-Foods",
         image:thefoodapp,
         videoLink:"https://youtu.be/uqTnidI7LRc"
     },
