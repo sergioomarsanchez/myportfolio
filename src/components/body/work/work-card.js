@@ -12,6 +12,9 @@ function WorkCard ({ item }) {
         <div className="work-desc">
           <p>{item.work}</p>
         </div>
+        <div className="work-location">
+          <p>{item.location}</p>
+        </div>
       </div>
     </div>
   );

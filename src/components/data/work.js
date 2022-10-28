@@ -1,34 +1,50 @@
+import homifyLogo from '../../assets/icons/logo-homify-2.png'
+import ywLogo from '../../assets/icons/yourwatches.logo.png'
+import systelLogo from '../../assets/icons/systel.logo.png'
 export const WorkData = [
     {
-        company: "Webdéveloppeur, freelance" ,
-        designation: "Webdéveloppeur",
-        dateJoining: "2019",
-        dateEnd: "2022",
-        companyLogo:"https://cdn-icons-png.flaticon.com/512/2537/2537338.png",
-        work:"Sur demandes, Webdéveloppeur et conseil IT en freelance, notamment en Suisse",
+        company: "Full-Stack Teaching Assistant at Soy Henry" ,
+        designation: "Full-Stack Teaching Assistant",
+        dateJoining: "06-2022",
+        dateEnd: "10-2022",
+        companyLogo:"https://s3.amazonaws.com/tracxn-data-image/logo/company/X3jhC-Yp_400x400_a2f3eadb-d8f7-4fb5-af86-2cb6967202ef.jpg",
+        work:"Coordinate a group of students to achieve integration into the study group. Guide students in the first steps of the course. Assist to solve exercises and promote group collaboration (Pair Programming). Propose ideas to improve the Bootcamp processes.",
+        location: "Córdoba-Argentina"
     },
     {
-        company: "Certificat de Webdéveloppeur - Becode" ,
-        designation: "W",
-        dateJoining: "21.05.2022",
-        dateEnd: "06.12.2019",
-        companyLogo:"https://cdn-icons-png.flaticon.com/512/2537/2537415.png",
-        work:"Certificat Obtenu auprès de becode.org au Pôle image de Liège, avec un stage chew Mwesto Labs - Liège"
+        company: "Full Stack Developer Bootcamp at Henrry" ,
+        designation: "Student",
+        dateJoining: "06.2022",
+        dateEnd: "10.2022",
+        companyLogo:"https://s3.amazonaws.com/tracxn-data-image/logo/company/X3jhC-Yp_400x400_a2f3eadb-d8f7-4fb5-af86-2cb6967202ef.jpg",
+        work:"Skills: Nodejs, Sequelize, Postgres, Express, Javascript, HTML ,CSS, Less, React, Redux, Git, Github, Jest and Supertest",
+        location: "Córdoba-Argentina"
     },
     {
-        company: "AESI Sciences Humaines - HeCh" ,
-        designation: "W",
-        dateJoining: "15.09.2020",
-        dateEnd: "15.08.2022",
-        companyLogo:"https://cdn-icons-png.flaticon.com/512/2537/2537415.png",
-        work:"B2 Enseignant en Sciences Humaines, arrêté pour raisons médicales et reprise de l'activité d'informaticien"
+        company: "Sales Executive at Homify" ,
+        designation: "Sales Executive",
+        dateJoining: "10.2021",
+        dateEnd: "02.2022",
+        companyLogo:homifyLogo,
+        work:"- Development of the network of professionals in the Spanish speaking market and adding professionals to the platform via telephone, email, and social media, scouting and creating new leads, Promoting the free professional account as well as the premium account and help professionals to set up their profile.",
+        location: "Berlin-Germany"
     },
     {
-        company: "Intérim" ,
-        designation: "W",
-        dateJoining: "2016",
-        dateEnd: "Present",
-        companyLogo:"https://cdn-icons-png.flaticon.com/512/2537/2537415.png",
-        work:"Horéca, Ouvrier de production, Caissier, Technicien Polyvalent en constructions modulaires, Magasinier, Gardien de tournage, Runner Cinéma, Livreur de Matelas,..."
+        company: "Sales/Purchasing agent at Yourwatches.com" ,
+        designation: "Sales/Purchasing",
+        dateJoining: "09-2020",
+        dateEnd: "06-2021",
+        companyLogo:ywLogo,
+        work:"Development of new suppliers and merchants, revision of quotation, negotiation with suppliers (Europe, Americas), experience on Chronos 24 platform for Customer Support and Sales. Shipments tracking and follow up and training of new profiles for the Sales and Purchase teams.",
+        location: "Berlin-Germany"
+    },
+    {
+        company: "International Purchasing agent at Systel.SA" ,
+        designation: "Purchasing",
+        dateJoining: "07-2017",
+        dateEnd: "02-2020",
+        companyLogo:systelLogo,
+        work:"- Revision of quotation, negotiation with suppliers (United States, Italy, China, Brazil), stock control by MRP (Materials Requirement Planning), shipments tracking and follow up and development of new suppliers",
+        location: "Córdoba-Argentina"
     }
 ]
