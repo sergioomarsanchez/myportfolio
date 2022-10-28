@@ -64,10 +64,17 @@ function Dog() {
         }
     ]
     useEffect(() => {
+        setTimeout(() => {
+            setPlayerState('idle')
+        }, 4000);
+        setTimeout(() => {
+            setPlayerState('sit')
+        }, 15000);
+    }, [])
+    
+    useEffect(() => {
      
         const ctx = canvas.current?.getContext('2d');
-  
-        
         const CANVAS_WIDTH = canvas.current.width = 200;
         const CANVAS_HEIGHT = canvas.current.height = 200;
         
@@ -109,7 +116,7 @@ function Dog() {
     return (
         <> <canvas ref={canvas} id="canvas1"></canvas>
         <div className="controls">
-            <label htmlFor="animations">Choose animation</label>
+            <div>His name is Tom, tell him what to do</div>
             <select name="animations" id="animations" onChange={(e)=>handleOnChange(e)} value={playerState}>
                {
                    animationStates.length?animationStates.map(p=>{
