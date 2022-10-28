@@ -1,7 +1,8 @@
 .work {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    margin-left: 7rem;
+    margin-right: 7rem;
 }
 .work-list {
     display: flex;

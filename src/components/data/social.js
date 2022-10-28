@@ -17,6 +17,11 @@ export const SocialData=[
     {
         platform:"LinkedIn",
         icon: require("../../assets/icons/linkedin.png"),
-        link:"www.linkedin.com/in/sergio-omar-sanchez-6ba362104",
+        link:"https://www.linkedin.com/in/sergio-omar-sanchez-6ba362104",
+    },
+    {
+        platform:"Mailto",
+        icon: require("../../assets/icons/mailicon.png"),
+        link:"mailto:sanchez.omar.sergio@gmail.com",
     },
 ];
