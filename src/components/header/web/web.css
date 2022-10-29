@@ -21,7 +21,7 @@
 
 .web-option a:hover{
     transform: scale(1.1);
-    color: blue;
+    color: #02aab0;
 }
 .web-option a:active {
     transform: translate(2px, 2px);

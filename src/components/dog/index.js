@@ -10,8 +10,24 @@ function Dog() {
     const canvas = useRef(null)
   
     function handleOnChange(e){
-        console.log(e.target)
-        setPlayerState(e.target.value)
+        if (e.target.value==='jump'){
+            setPlayerState(e.target.value)
+            setTimeout(() => {
+                setPlayerState('fall')
+            }, 300);
+            setTimeout(() => {
+                setPlayerState('idle')
+            }, 500);
+        }else if(e.target.value==='jumpLeft'){
+            setPlayerState(e.target.value)
+            setTimeout(() => {
+                setPlayerState('fallLeft')
+            }, 300);
+            setTimeout(() => {
+                setPlayerState('idleLeft')
+            }, 500);
+        }
+        else setPlayerState(e.target.value)
     }
     const animationStates = [
         {
@@ -92,7 +108,7 @@ function Dog() {
         const spriteWidth = 200;
         const spriteHeight = 182;
         let gameFrame = 0;
-        const staggerFrames = 5;
+        const staggerFrames = 8;
         const spriteAnimations = []
         animationStates.forEach((state, index)=>{
            let frames = {
@@ -105,14 +121,12 @@ function Dog() {
             }
             spriteAnimations[state.name] = frames;
         });
-        console.log(spriteAnimations)
         
         function animate(){
             ctx.clearRect(0,0, CANVAS_WIDTH, CANVAS_HEIGHT);
             let position = Math.floor(gameFrame/staggerFrames) % spriteAnimations[playerState].loc.length;
             let frameX = spriteWidth * position;
             let frameY = spriteAnimations[playerState].loc[position].y
-            console.log('frameY', frameY)
             ctx.drawImage(playerImage, frameX, frameY, spriteWidth, spriteHeight,  0, 0, spriteWidth, spriteHeight)
             
             gameFrame++;
@@ -130,7 +144,8 @@ function Dog() {
             <select name="animations" id="animations" onChange={(e)=>handleOnChange(e)} value={playerState}>
                {
                    animationStates.length?animationStates.map(p=>{
-                    return <option value={p.name}>{p.name.charAt(0).toUpperCase()+ p.name.slice(1)}</option>
+                       if(p.name.includes('fall')){}
+                       else return <option value={p.name}>{p.name.charAt(0).toUpperCase()+ p.name.slice(1)}</option>
                    }):null
                }
             </select>
