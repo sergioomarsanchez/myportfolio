@@ -1,11 +1,10 @@
 html {
     scroll-behavior: smooth;
-    background-color: black;
-    color:aqua
+    background-color: #141E30;
+    color:#d9ebff
 }
 .home{
     display: flex;
-    flex-direction: column;
     width: 85%;
     margin: auto;
 }

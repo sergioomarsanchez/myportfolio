@@ -1,5 +1,8 @@
 .about {
     padding-bottom: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .about-top{
     display: flex;
@@ -10,23 +13,29 @@
     display: flex;
     flex-flow: column-reverse;
     justify-content: center;
+    margin-left: 1rem;
+    width: 20%;
 }
 
 .about-info {
-    font-size: 50px;
+    font-size: 32px;
+    width: 30%;
+    
 }
 .info-name {
-    color: blue;
-    font-size: 32px;
+    color: #00cdac;
+    font-size: 50px;
 }
 .about-text {
     width: 30%;
+    margin-right: 1rem;
 }
+
 
 @media only screen and (max-width: 720px) {
     .about-top{
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
     }
     .about-text {
@@ -37,8 +46,12 @@
     }
     .about-info {
         font-size: 20px;
+        width: 80%;
     }
     .info-name {
         font-size: 26px;
+    }
+    .about-photo{
+        width: 80%;
     }
 }

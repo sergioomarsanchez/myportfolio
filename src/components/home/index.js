@@ -5,11 +5,10 @@ import Body from "../body/index";
 
 
 function Home() {
-  return ( <div className="home">
-    <div>
-        <Body />
-    </div>
-  </div>
+  return ( 
+          <div className="home">
+            <Body />
+          </div>
   );
 }
 

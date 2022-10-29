@@ -12,7 +12,7 @@
 
 .web-option a{
     text-decoration: none;
-    color: aqua;
+    color: #00cdac;
     display: flex;
     align-items: center;
     transition: 0.6s ease;
