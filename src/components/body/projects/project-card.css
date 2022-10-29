@@ -67,9 +67,12 @@
 }
 
 @media only screen and (max-width: 720px) {
-    .project-photo {
-        width: 80%;
+    .project-ytlink {
+        width: 90%;
         margin-top: 2rem;
+    }
+    .project-photo {
+        width: 100%;
     }
     .project-card {
         flex-direction: column;
