@@ -145,7 +145,7 @@ function Dog() {
                {
                    animationStates.length?animationStates.map(p=>{
                        if(p.name.includes('fall')){}
-                       else return <option value={p.name}>{p.name.charAt(0).toUpperCase()+ p.name.slice(1)}</option>
+                       else return <option key={p.name} value={p.name}>{p.name.charAt(0).toUpperCase()+ p.name.slice(1)}</option>
                    }):null
                }
             </select>

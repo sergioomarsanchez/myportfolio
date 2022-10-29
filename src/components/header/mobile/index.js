@@ -10,14 +10,14 @@ function Mobile({ isOpen, setIsOpen}) {
   return (
   <div className="mobile">
     <div className="close-icon" onClick={() => setIsOpen(!isOpen)}>
-      <i class="fi-rr-cross-circle"></i>
+      <i className="fi-rr-cross-circle"></i>
     </div>
     {
       pathname === '/projects'?null:
     <Link to={'/projects'} style={{ textDecoration: 'none' }}>
     <div className="mobile-option" onClick={() => setIsOpen(!isOpen)}>
 
-          <i class="fi-rr-edit-alt option-icon"></i>Projects
+          <i className="fi-rr-edit-alt option-icon"></i>Projects
 
     </div>
     </Link>
@@ -27,7 +27,7 @@ function Mobile({ isOpen, setIsOpen}) {
     <Link to={'/skills'} style={{ textDecoration: 'none' }}>
       <div className="mobile-option" onClick={() => setIsOpen(!isOpen)}>
 
-          <i class="fi-rr-laptop option-icon"></i>Skills
+          <i className="fi-rr-laptop option-icon"></i>Skills
 
       </div>  
     </Link>
@@ -37,7 +37,7 @@ function Mobile({ isOpen, setIsOpen}) {
       <Link to={'/work'} style={{ textDecoration: 'none' }}>
     <div className="mobile-option" onClick={() => setIsOpen(!isOpen)}>
 
-        <i class="fi-rr-briefcase option-icon"></i>Work
+        <i className="fi-rr-briefcase option-icon"></i>Work
 
     </div>
     </Link>
@@ -47,7 +47,7 @@ function Mobile({ isOpen, setIsOpen}) {
       <Link to={'/'} style={{ textDecoration: 'none' }}>
     <div className="mobile-option" onClick={() => setIsOpen(!isOpen)}>
  
-        <i class="fi-rr-home option-icon"></i>Home
+        <i className="fi-rr-home option-icon"></i>Home
 
     </div>
     </Link>
