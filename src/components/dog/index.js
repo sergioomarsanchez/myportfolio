@@ -123,7 +123,8 @@ function Dog() {
     , [playerState])
     
     return (
-        <div onClick={()=>{handleOnClick()}}> <canvas ref={canvas}  id="canvas1"></canvas>
+        <>
+        <div onClick={()=>{handleOnClick()}}> <canvas  ref={canvas}  id="canvas1"></canvas></div>
         <div className="controls">
             <div>His name is Tom, tell him what to do</div>
             <select name="animations" id="animations" onChange={(e)=>handleOnChange(e)} value={playerState}>
@@ -133,7 +134,8 @@ function Dog() {
                    }):null
                }
             </select>
-        </div></div>
+        </div>
+        </>
   )
 }
 
