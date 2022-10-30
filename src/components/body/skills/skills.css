@@ -45,6 +45,10 @@
         margin-left: 1rem;
         margin-right: 1rem;
     }
+    .skills-section:last-child .skills-section-title {
+       
+      margin-bottom: 1rem;
+    }
     .skills-section {
         display: flex;
         justify-content: space-between;

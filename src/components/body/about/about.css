@@ -3,33 +3,44 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 3rem;
 }
 .about-top{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+}
+.about-info {
+    font-size: 32px;
+    width: 150%;
+    
+}
+.div-for-mobile {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.about-text {
+    width: 50%;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 .about-photo {
     display: flex;
     flex-flow: column-reverse;
     justify-content: center;
-    margin-left: 1rem;
-    width: 20%;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    width: 50%;
 }
 
-.about-info {
-    font-size: 32px;
-    width: 30%;
-    
-}
 .info-name {
     color: #00cdac;
     font-size: 50px;
 }
-.about-text {
-    width: 30%;
-    margin-right: 1rem;
-}
+
 
 
 @media only screen and (max-width: 720px) {
