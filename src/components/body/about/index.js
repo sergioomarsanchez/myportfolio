@@ -11,12 +11,14 @@ function About() {
          <div className="info-name">Sergio Omar Sánchez</div>
          <div >  Full Stack Developer</div>
         </div>
+        <div className="div-for-mobile">
         <div className="about-text">
           <h3>About me...</h3>
           <p>I did some of my first steps in IT with an Uncompleted System Analyst in IES Siglo XXI, but now I can say it came full circle with Henry's Bootcamp, hence, my logo next to my initials. I also have a bachelor's degree in Management and Purchasing/Sales background, I am a great team player and leader with an excellent customer-oriented mindset. </p>
         </div>
         <div className="about-photo">
         <Dog/>
+        </div>
         </div>
       </div>
     </div>

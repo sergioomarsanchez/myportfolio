@@ -33,6 +33,16 @@
 }
 
 @media only screen and (max-width: 720px) {
+    .header{
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+        position: relative;
+        align-items: center;
+        margin-left: 1rem;
+
+    }
     .mobile-menu{
         display: flex;
     }

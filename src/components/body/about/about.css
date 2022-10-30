@@ -38,8 +38,15 @@
         justify-content: space-between;
         align-items: center;
     }
+    .div-for-mobile {
+        display: flex;
+        flex-flow: column-reverse;
+        width: 90%;
+        margin-top: 3rem;
+    }
     .about-text {
         width: 80%;
+        margin-left: 1rem;
     }
     .picture {
         height: 280px;
