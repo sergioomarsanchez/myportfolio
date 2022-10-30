@@ -1,9 +1,9 @@
 .skills {
     display: flex;
     flex-direction: column;
-    margin-left: 20rem;
-    margin-right: 20rem;
-    margin-bottom: 4rem;
+    margin-left: 9rem;
+    margin-right: 9rem;
+
 }
 .skills-section {
     display: flex;
@@ -24,7 +24,13 @@
     margin-top: 3rem
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 800px) {
+    .skills  {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
     .skills-list {
         max-width: 100%;
         justify-content: center;
