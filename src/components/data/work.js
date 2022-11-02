@@ -36,7 +36,7 @@ export const WorkData = [
         dateEnd: "06-2021",
         companyLogo:ywLogo,
         work:"Development of new suppliers and merchants, revision of quotation, negotiation with suppliers (Europe, Americas), experience on Chronos 24 platform for Customer Support and Sales. Shipments tracking and follow up and training of new profiles for the Sales and Purchase teams.",
-        location: "Berlin-Germany"
+        location: "Copenhagen-Denmark"
     },
     {
         company: "International Purchasing agent at Systel.SA" ,

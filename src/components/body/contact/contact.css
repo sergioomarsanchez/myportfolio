@@ -23,16 +23,19 @@
     .contact {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         flex: 1;
-        width: 90%;
-        margin-left: 2.5rem;
+        width: 95%;
+        margin-left: 0.5rem;
     }
     .contact-container {
         display: flex;
         flex: 1;
         justify-content: center;
         text-align: center;
-        margin-right: 2rem;
+        margin-left: 0.5rem;
+        margin-right: 0.1rem;
         
     }
   }

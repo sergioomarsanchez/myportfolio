@@ -42,12 +42,14 @@
 
 
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 820px) {
     .about-top{
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
     }
+
+    
     .div-for-mobile {
         display: flex;
         flex-flow: column-reverse;
@@ -64,9 +66,11 @@
     .about-info {
         font-size: 20px;
         width: 80%;
+        align-self: center
     }
     .info-name {
         font-size: 26px;
+        align-self: center;
     }
     .about-photo{
         width: 80%;

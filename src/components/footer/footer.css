@@ -1,9 +1,7 @@
 .footer {
-    width: 100%;
-    padding: 12px;
     display: flex;
+    align-self: center;
     justify-content: center;
     align-items: center;
-    margin-top: 24px;
-    align-self: center;
+    padding: 2rem;
 }
