@@ -9,7 +9,7 @@ function About() {
         <div className="about-info">
         <div>  Hi, I am</div>
          <div className="info-name">Sergio Omar Sánchez</div>
-         <div >  Full Stack Developer</div>
+         <div className="fullDiv">Full Stack Developer...</div>
         </div>
         <div className="div-for-mobile">
         <div className="about-text">
