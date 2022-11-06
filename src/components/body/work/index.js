@@ -18,7 +18,7 @@ function Work() {
         })}
       </div>
       <div className="cv-download">
-        <a href={cv} download ><button className="button-85" >For more info, download my cv here</button>
+        <a href={cv} download ><button className={isDark?"button-85":"button-85Light"} >For more info, download my cv here</button>
         </a>
       </div>
     </div>
