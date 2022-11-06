@@ -12,6 +12,9 @@
 .work-logo {
     height: 80px;
 }
+.company-name {
+    font-weight: 800;
+}
 
 .work-info {
     display: flex;
@@ -20,7 +23,11 @@
 }
 
 .work-dates {
-    color: rgb(255, 255, 255);
+    color: rgb(174, 122, 230);
+}
+
+.work-datesLight {
+    color: rgb(134, 5, 5);
 }
 
 .work-desc {
@@ -49,7 +56,6 @@
         margin: 0px;
         width: 100%;
         flex-flow: column;
-        border: 1px wheat solid;
         border-radius: 25px;
         margin-top: 1rem;
         margin-bottom: 1rem;
