@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./project-card.css";
+import { ThemeContext } from '../../../contexts/theme'
 
 function ProjectCard({ project }) {
 
+    const [isDark] = useContext(ThemeContext)
+  
   return (
     <div key={project.title} className="project-card">
       <div className="project-info">
@@ -10,14 +13,14 @@ function ProjectCard({ project }) {
         <div className="project-links">
           {project.demo && (
             <a className="project-link" href={project.demo}>
-              <div className="link-button">
+              <div className={isDark?"link-button":"link-buttonLight"}>
                 <i className="fi-rr-globe"> Demo</i>
               </div>
             </a>
             )}
             {project.github&& (
               <a className="project-link" href={project.github}>
-                <div className="link-button">
+                <div className={isDark?"link-button":"link-buttonLight"}>
                 <i className="devicon-github-original"> Github</i>
               </div>
             </a>
@@ -26,13 +29,13 @@ function ProjectCard({ project }) {
         <p>{project.about}</p>
         <div className="project-tags">
           {project.tags.map((tag, index)=> {
-            return <label key={tag+index} className="tag">{tag}</label>;
+            return <label key={tag+index} className={isDark?"tag":"tagLight"}>{tag}</label>;
           })}
         </div>
       </div>
        
       {
-        project.image && (<a className="project-ytlink"  href={project.videoLink}> <img className="project-photo" src={project.image}  alt={project.image} /> </a>)
+        project.image && (<a className="project-ytlink"  href={project.videoLink}> <img className={isDark?"project-photo":"project-photoLight"} src={project.image}  alt={project.image} /> </a>)
       }
   
     </div>

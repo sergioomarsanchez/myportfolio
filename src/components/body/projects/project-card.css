@@ -15,7 +15,7 @@
 .project-ytlink {
     width: 40%;
 }
-.project-photo {
+.project-photo, .project-photoLight {
     max-width: 400px;
     cursor: pointer;
     transition: 0.5s ease;
@@ -23,6 +23,10 @@
 .project-photo:hover {
     transform: scale(1.01);
     filter: drop-shadow(0 0 7px rgba(253, 254, 255, 0.813));
+}
+.project-photoLight:hover {
+  transform: scale(1.01);
+  filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.813));
 }
 .project-info{
     margin-right: 24px;
@@ -53,6 +57,20 @@
     margin-right: 6px;
     margin-bottom: 4px;
     filter: contrast(1.2);
+}
+.tagLight {
+  padding:  4px 8px;
+  background-image: linear-gradient(
+      to right top,
+      #fa2f2f,
+      #ff5255,
+      #ff7553,
+      #fe4860,
+      #ff8244
+    );
+  border-radius: 4px;
+  margin-right: 6px;
+  margin-bottom: 4px;
 }
 
 .project-links a {
@@ -133,6 +151,69 @@
     z-index: 1;
     position: relative;
   }
+
+
+
+
+  .link-buttonLight {
+    appearance: none;
+    background-color: transparent;
+    color: #002f65;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1em;
+    margin: 0.2rem;
+    opacity: 1;
+    outline: 0;
+    padding: 0.4rem 0.8rem;
+    position: relative;
+    text-align: center;
+    transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+  }
+  
+  .link-buttonLight:before {
+    animation: opacityFallbackOut .5s step-end forwards;
+    backface-visibility: hidden;
+    background-image: linear-gradient(
+      to right top,
+      #f94747,
+      #f67867,
+      #f76666,
+      #fbc35b,
+      #f1396d
+    );
+    clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateZ(0);
+    transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+    width: 100%;
+    border-radius: 5px;
+    border: 1px #003a7c solid;
+  }
+  
+  .link-buttonLight:hover:before {
+    animation: opacityFallbackIn 0s step-start forwards;
+    clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+  }
+  
+  .link-buttonLight:after {
+    background-color: #004697;
+  }
+  
+  .link-buttonLight i {
+    z-index: 1;
+    position: relative;
+  }
+
 
 @media only screen and (max-width: 920px) {
     .project-ytlink {
