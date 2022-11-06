@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Routes, Route } from "react-router-dom";
 import Contact from "./components/body/contact";
 import Projects from "./components/body/projects";
@@ -7,12 +7,16 @@ import Work from "./components/body/work";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import Home from "./components/home/index";
+import { ThemeContext } from "./contexts/theme";
+import './App.css'
 
 function App() {
 
+  const [isDark] = useContext(ThemeContext)
+
   return (
 
-    <div className="App">
+    <div className={isDark?"App":"appLight"}>
       <Header/>
       <Routes>
       <Route path='/'  element={<Home/>}/>

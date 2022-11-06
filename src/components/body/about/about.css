@@ -13,18 +13,23 @@
 .about-info {
     font-size: 32px;
     width: 150%;
+    align-self: flex-start;
+    margin-top: 3rem;
     
 }
 .div-for-mobile {
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
 
 }
 .about-text {
-    width: 50%;
-    margin-right: 3rem;
+margin-bottom: 3rem;
+margin-left: 3rem;
+}
+.about-text p {
+    max-height:600px;
 }
 .about-photo {
     display: flex;
@@ -39,6 +44,14 @@
     color: #67999b;
     font-size: 50px;
     background: linear-gradient(to right, #67999b 0, #6b5b9f 10%, #67999b 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 6s infinite linear;
+}
+.info-nameLight {
+    color: #71679b;
+    font-size: 50px;
+    background: linear-gradient(to right, #71679b 0, #c64848 10%, #71679b 20%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: shine 6s infinite linear;
@@ -64,6 +77,15 @@
     letter-spacing: 4px;
     animation: typewriter 4s steps(30) normal, blinkTextCursor 0.5s infinite;
 }
+.fullDivLight {
+    border-right: 2px solid rgba(6, 6, 6, 0.662);
+    width: fit-content;
+    white-space: nowrap;
+    overflow: hidden;
+    letter-spacing: 4px;
+    animation: typewriter 4s steps(30) normal, blinkTextCursorLight 0.5s infinite;
+}
+
 @keyframes typewriter {
     from {
         width: 0%;
@@ -79,8 +101,16 @@
         border-right-color:transparent;
     }
 }
+@keyframes blinkTextCursorLight {
+    from {
+      border-right-color:rgba(23, 23, 23, 0.662);
+    } to {
+        border-right-color:transparent;
+    }
+}
 
 @media only screen and (max-width: 920px) {
+
     .about-top{
         flex-direction: column;
         justify-content: space-between;
@@ -93,6 +123,7 @@
         flex-flow: column-reverse;
         width: 90%;
         margin-top: 3rem;
+        margin-bottom: 1rem;
     }
     .about-text {
         width: 80%;
@@ -106,10 +137,11 @@
         width: 80%;
         align-self: center
     }
-    .info-name {
+    .info-name, .info-nameLight {
         font-size: 26px;
         align-self: center;
     }
+    
     .about-photo{
         width: 80%;
     }
@@ -120,6 +152,14 @@
         overflow: hidden;
         letter-spacing: 4px;
         animation: typewriter 4s steps(30) normal, blinkTextCursor 0.5s infinite;
+    }
+    .fullDivLight {
+        border-right: 2px solid rgba(6, 6, 6, 0.662);
+        width: fit-content;
+        white-space: nowrap;
+        overflow: hidden;
+        letter-spacing: 4px;
+        animation: typewriter 4s steps(30) normal, blinkTextCursorLight 0.5s infinite;
     }
     @keyframes typewriter {
         from {
@@ -136,9 +176,23 @@
             border-right-color:transparent;
         }
     }
+    @keyframes blinkTextCursorLight {
+        from {
+          border-right-color:rgba(23, 23, 23, 0.662);
+        } to {
+            border-right-color:transparent;
+        }
+    }
     .info-name {
         color: #67999b;
         background: linear-gradient(to right, #67999b 0, #6b5b9f 10%, #67999b 20%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shine 6s infinite linear;
+    }
+    .info-nameLight {
+        color: #71679b;
+        background: linear-gradient(to right, #71679b 0, #c64848 10%, #71679b 20%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         animation: shine 6s infinite linear;

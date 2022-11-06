@@ -1,11 +1,11 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState, useEffect, useContext } from "react";
 import "./dog.css";
 import dog from '../../assets/dog_left_right_white.png'
+import { ThemeContext } from "../../contexts/theme";
 
 function Dog() {
     
-    
-    
+    const [isDark] = useContext(ThemeContext)
     const [playerState, setPlayerState] = useState('run')
     const canvas = useRef(null)
   
@@ -138,7 +138,7 @@ function Dog() {
     
     return (
         <>
-        <div onClick={()=>{handleOnClick()}}> <canvas  ref={canvas}  id="canvas1"></canvas></div>
+        <div onClick={()=>{handleOnClick()}}> <canvas  ref={canvas}  id={isDark?"canvas1":"canvas1Light"}></canvas></div>
         <div className="controls">
             <div>His name is Tom, tell him what to do</div>
             <select name="animations" id="animations" onChange={(e)=>handleOnChange(e)} value={playerState}>

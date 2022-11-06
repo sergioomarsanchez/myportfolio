@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../../../contexts/theme";
 import "./separator.css";
 function Separator() {
-  return <div className="separator"></div>;
+  const [isDark] = useContext(ThemeContext)
+  return <div className={isDark?"separator":"separatorLight"}></div>;
 }
 
 export default Separator;

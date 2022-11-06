@@ -1,15 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./work.css";
 import Separator from "../../common/separator";
 import {WorkData} from "../../data/work";
 import WorkCard from "./work-card";
 import cv from "../../data/Sergio Sanchez CV FSD.pdf"
+import { ThemeContext } from "../../../contexts/theme";
 function Work() {
   const data = WorkData;
+  const [isDark] = useContext(ThemeContext)
   return (
     <div className="work">
       <Separator />
-      <label className="section-title">Experiences</label>
+      <label className={isDark?"section-title":"section-titleLight"}>Experiences</label>
       <div className="work-list">
         {data.map((item) => {
           return <WorkCard item={item} />;

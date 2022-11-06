@@ -3,44 +3,116 @@
     height: fit-content;
     width: 60vw;
     position: absolute;
-    right: 0px;
-    top: -6px;
-    padding: 18px 12px;
+    right: -1rem;
+    top: 2px;
+    padding: 12px;
     display: flex;
     flex-direction: column;
     border-radius: 30px;
+    border: 1px solid #ebebebee;
+    align-items: center;
+    justify-content: center;
+}
+.mobileLight {
+    background-color: #ebebeb;
+    height: fit-content;
+    width: 60vw;
+    position: absolute;
+    right: -1rem;
+    top: 2px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    border: 1px solid #141e30e6;
+    align-items: center;
+    justify-content: center;
 }
 
 .close-icon {
-    display: flex;
-    justify-content: flex-end;
+    align-self: flex-end;
     font-size: 24px;
     color: #6b5b9f;
-
-
-}
-
-.mobile-options {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding-top: 24px;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-
 }
 
 .mobile-option {
-    font-size: 24px;
-    margin-bottom: 2rem;
     display: flex;
+    font-size: 24px;
     color: #6b5b9f;
-    margin-left: 5rem;
-
+    margin-bottom: 1rem;
+    align-items: center;
+    justify-content: center;
 }
 
+.mobile-option i{
+    text-decoration: none;
+    color: #6b5b9f;
+    display: flex;
+    align-items: center;
+    transition: 0.6s ease;
+    margin-right: 1rem;
+}
+
+.mobile-option i:hover{
+    transform: scale(1.1);
+    color: #67999b;
+}
+
+.option-icon{
+    display: flex;
+    align-items: center;
+    margin-right: 4px;
+}
 .mobile-option:active {
     transform: translate(2px, 2px);
     color: #02aab0;
   }
+
+.mobile-option:last-child {
+    margin-right: 0px;
+}
+.mobile:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.close-iconLight {
+    align-self: flex-end;
+    font-size: 24px;
+    color: #9f5b5b;
+}
+
+.mobile-optionLight {
+    display: flex;
+    font-size: 24px;
+    color: #9f5b5b;
+    margin-bottom: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-optionLight i{
+    text-decoration: none;
+    color: #9f5b5b;
+    display: flex;
+    align-items: center;
+    transition: 0.6s ease;
+    margin-right: 1rem;
+}
+
+.mobile-optionLight i:hover{
+    transform: scale(1.1);
+    color: #71679b;
+}
+
+.mobile-optionLight:active {
+    transform: translate(2px, 2px);
+    color: #6702b0;
+  }
+
+.mobile-optionLight:last-child {
+    margin-right: 0px;
+}

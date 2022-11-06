@@ -1,35 +1,37 @@
-import React from "react";
+import React, { useContext } from "react";
 import './web.css';
-import { useLocation } from 'react-router-dom'
+import { useLocation, Link } from 'react-router-dom'
+import { ThemeContext } from "../../../contexts/theme";
+
 
 function Web() {
   const { pathname } = useLocation()
+  const [isDark] = useContext(ThemeContext)
   return <div className="web">
     {
       pathname === '/projects'?null:
-      <div className="web-option">
-      <a href="projects" >
-        <i className="fi-rr-edit-alt option-icon"></i>Projects
-      </a>
-     </div>
+      <Link to={'/projects'} style={{ textDecoration: 'none' }}>
+      <div className={isDark?"web-option":"web-optionLight"}>
+        <i className="fi-rr-edit-alt option-icon">Projects</i>
+      </div>
+      </Link>
     }
     {
       pathname === '/skills'?null:
-      <div className="web-option">
-      <a href="skills">
-      <i className="fi-rr-laptop option-icon"></i>Skills
-      </a>
+      <Link to={'/skills'} style={{ textDecoration: 'none' }}>
+      <div className={isDark?"web-option":"web-optionLight"}>
+      <i className="fi-rr-laptop option-icon">Skills</i>
       </div>
+      </Link>
     }
     {
       pathname === '/work'?null:
-      <div className="web-option">
-      <a href="work">
-      <i className="fi-rr-briefcase option-icon"></i>Work
-      </a>
+      <Link to={'/work'} style={{ textDecoration: 'none' }}>
+      <div className={isDark?"web-option":"web-optionLight"}>
+      <i className="fi-rr-briefcase option-icon">Work</i>
       </div>
+      </Link>
     }
-
   </div>;
 }
 

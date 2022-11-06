@@ -1,6 +1,6 @@
 .header{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex: 1;
     padding: 12px;
     position: relative;
@@ -9,6 +9,24 @@
     margin-right: 2rem;
     background-color: #141E30;
 }
+.headerLight{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    padding: 12px;
+    position: relative;
+    align-items: center;
+    margin-left: 4rem;
+    margin-right: 2rem;
+    background-color: #ebebeb
+}
+.menuLight{
+    background-color: #ebebeb;
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
 .menu{
     background-color: #141E30;
     display: flex;
@@ -19,6 +37,10 @@
 .menu-icon{
     font-size: 24px;
     color: #6b5b9f;
+}
+.menu-iconLight{
+    font-size: 24px;
+    color: #9f5b5b;
 }
 
 .mobile-menu{
@@ -31,6 +53,7 @@
 .logo{
     height: 70px;
 }
+
 
 @media only screen and (max-width: 720px) {
     .header{

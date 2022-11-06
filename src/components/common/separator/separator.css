@@ -18,5 +18,28 @@
    width: 60%;
    border-radius: 3px;
    margin: 16px 0px;
-   filter:opacity(0.5)
+   filter:opacity(0.5);
+}
+
+.separatorLight {
+  background-image: linear-gradient(
+     to right top,
+     #e17965,
+     #e97d52,
+     #e6ac78,
+     #eb654a,
+     #ea7145,
+     #fbd168,
+     #ffd54d,
+     #f2ff00,
+     #a0fd00,
+     #c6d46b,
+     #c18f5d,
+     #7da665
+   );
+   height: 6px;
+   width: 60%;
+   border-radius: 3px;
+   margin: 16px 0px;
+   filter:opacity(0.5);
 }

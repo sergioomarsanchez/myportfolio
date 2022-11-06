@@ -15,6 +15,23 @@
     animation-name: outro;
     animation-duration: 4s;
 }
+#canvas1Light {
+    display: flex;
+    position: relative;
+    box-shadow: 20px, 20px, 20px, 20px rgb(0, 0, 0);
+    animation-name: intro;
+    animation-duration: 4s;
+    filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.813));
+    width: fit-content;
+    cursor :pointer;
+}
+#canvas1Light:hover {
+    transform: scale(1.1);
+}
+#canvas1Light:active {
+    animation-name: outro;
+    animation-duration: 4s;
+}
 
 @keyframes intro {
     0%   {right:1500px}

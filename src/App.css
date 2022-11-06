@@ -1,4 +1,12 @@
 .app {
-    width: 85%;
+    scroll-behavior: smooth;
+    background-color: #141E30;
+    color:#d9ebff;
+    padding-bottom: 7rem;
+}
 
+.appLight {
+    background-color: #ebebeb;
+    color: #141E30;
+    padding-bottom: 7rem;
 }

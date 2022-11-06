@@ -1,21 +1,25 @@
-import React from "react";
+import React, { useContext } from "react";
 import './mobile.css';
 import { useLocation, Link } from 'react-router-dom'
+import ToggleButton from "../../common/toggleButton/toggleButton";
+import { ThemeContext } from "../../../contexts/theme";
+
 
 function Mobile({ isOpen, setIsOpen}) {
 
   const { pathname } = useLocation()
-  
+
+  const [isDark] = useContext(ThemeContext)
 
   return (
-  <div className="mobile">
-    <div className="close-icon" onClick={() => setIsOpen(!isOpen)}>
+  <div className={isDark?"mobile":"mobileLight"}>
+    <div className={isDark?"close-icon":"close-iconLight"} onClick={() => setIsOpen(!isOpen)}>
       <i className="fi-rr-cross-circle"></i>
     </div>
     {
       pathname === '/projects'?null:
     <Link to={'/projects'} style={{ textDecoration: 'none' }}>
-    <div className="mobile-option" onClick={() => setIsOpen(!isOpen)}>
+    <div className={isDark?"mobile-option":"mobile-optionLight"} onClick={() => setIsOpen(!isOpen)}>
 
           <i className="fi-rr-edit-alt option-icon"></i>Projects
 
@@ -25,7 +29,7 @@ function Mobile({ isOpen, setIsOpen}) {
     {
       pathname === '/skills'?null:
     <Link to={'/skills'} style={{ textDecoration: 'none' }}>
-      <div className="mobile-option" onClick={() => setIsOpen(!isOpen)}>
+      <div className={isDark?"mobile-option":"mobile-optionLight"} onClick={() => setIsOpen(!isOpen)}>
 
           <i className="fi-rr-laptop option-icon"></i>Skills
 
@@ -35,7 +39,7 @@ function Mobile({ isOpen, setIsOpen}) {
     {
       pathname === '/work'?null:
       <Link to={'/work'} style={{ textDecoration: 'none' }}>
-    <div className="mobile-option" onClick={() => setIsOpen(!isOpen)}>
+    <div className={isDark?"mobile-option":"mobile-optionLight"} onClick={() => setIsOpen(!isOpen)}>
 
         <i className="fi-rr-briefcase option-icon"></i>Work
 
@@ -45,7 +49,7 @@ function Mobile({ isOpen, setIsOpen}) {
         {
       pathname === '/'?null:
       <Link to={'/'} style={{ textDecoration: 'none' }}>
-    <div className="mobile-option" onClick={() => setIsOpen(!isOpen)}>
+    <div className={isDark?"mobile-option":"mobile-optionLight"} onClick={() => setIsOpen(!isOpen)}>
  
         <i className="fi-rr-home option-icon"></i>Home
 

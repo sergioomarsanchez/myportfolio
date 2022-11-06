@@ -1,15 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./about.css";
 import Dog from "../../dog";
+import { ThemeContext } from "../../../contexts/theme";
 
 function About() {
+  const [isDark] = useContext(ThemeContext)
+
   return (
     <div className="about">
       <div className="about-top">
         <div className="about-info">
         <div>  Hi, I am</div>
-         <div className="info-name">Sergio Omar Sánchez</div>
-         <div className="fullDiv">Full Stack Developer...</div>
+         <div className={isDark?"info-name":"info-nameLight"}>Sergio Omar Sánchez</div>
+         <div className={isDark?"fullDiv":"fullDivLight"}>Full Stack Developer...</div>
         </div>
         <div className="div-for-mobile">
         <div className="about-text">
