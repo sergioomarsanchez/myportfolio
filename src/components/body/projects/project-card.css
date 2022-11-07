@@ -220,7 +220,7 @@
         width: 90%;
         margin-top: 2rem;
     }
-    .project-photo {
+    .project-photo, .project-photoLight {
         width: 100%;
     }
     .project-card {

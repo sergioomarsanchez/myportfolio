@@ -15,7 +15,7 @@
     z-index: 2;
 }
 .mobileLight {
-    background-color: #ebebeb;
+    background-color: #ebebebe9;
     height: fit-content;
     width: 60vw;
     position: absolute;
@@ -28,6 +28,7 @@
     border: 1px solid #141e30e6;
     align-items: center;
     justify-content: center;
+    z-index: 2;
 }
 
 .close-icon {
