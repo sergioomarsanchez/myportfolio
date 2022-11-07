@@ -10,6 +10,7 @@
 	transition: 0.3s;
 	margin-bottom: 1.4rem;
 	margin-left: 1rem;
+	z-index: 1;
 }
 .label:after {
 	content: "";
@@ -22,50 +23,62 @@
 	border-radius: 18px;
 	box-shadow: 0px 0.5px 1px rgba(0,0,0,0.2);
 	transition: 0.3s;
+	z-index: 1;
 }
 input {
 	width: 0;
 	height: 0;
 	visibility: hidden;
+	z-index: 1;
 }
 input:checked + .label {
 	background: #141E30;
+	z-index: 1;
 }
 input:checked + .label:after {
 	left:49px;
 	transform: translateX(-100%);
 	background: linear-gradient(180deg,#777,#3a3a3a);
+	z-index: 1;
 }
 .label:active:after{
 	width: 26px;
+	z-index: 1;
 }
 
 input:checked + label + .background {
 	background:#141E30;
+	z-index: 1;
 }
 .label svg {
 	position: absolute;
 	width: 12px;
 	top:4px;
 	z-index: 100;
+	z-index: 1;
 }
 .label svg.sun {
 	left:4px;
 	fill:#fff;
 	transition: 0.3s;
+	z-index: 1;
 }
 .label svg.moon {
 	left:34px;
 	fill:#7e7e7e;
 	transition: 0.3s;
+	z-index: 1;
 }
 input:checked + .label svg.sun {
 	fill:#7e7e7e;
+	z-index: 1;
 }
 input:checked + .label svg.moon {
 	fill:#fff;
+	z-index: 1;
 }
 
 .toggle {
 	align-self: center;
+	z-index: 1;
 }
