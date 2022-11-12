@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import './mobile.css';
 import { useLocation, Link } from 'react-router-dom'
-import ToggleButton from "../../common/toggleButton/toggleButton";
 import { ThemeContext } from "../../../contexts/theme";
 
 
@@ -12,7 +11,7 @@ function Mobile({ isOpen, setIsOpen}) {
   const [isDark] = useContext(ThemeContext)
 
   return (
-  <div className={isDark?"mobile":"mobileLight"}>
+  <div className={isDark?"mobile":"mobileLight"} onClickAway={() => setIsOpen(!isOpen)}>
     <div className={isDark?"close-icon":"close-iconLight"} onClick={() => setIsOpen(!isOpen)}>
       <i className="fi-rr-cross-circle"></i>
     </div>

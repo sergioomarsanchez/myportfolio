@@ -1,0 +1,52 @@
+
+.container, .containerLight {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position:fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.popup, .popupLight {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top:15vh;
+    background-color: #141E30;
+    border-radius: 10px;
+    width: 65vw;
+    height: 80vh;
+    filter: drop-shadow(0 0 100vw black);
+    box-shadow: 0 0 10px 3px white;
+    color: #d9ebff
+}
+
+@media screen and (max-width: 570px){
+    .popup, .popupLight {
+    width: 94vw;
+    top: 10vh;}
+}
+
+
+.close, .closeLight {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0.4rem 0.6rem;
+    border: none; 
+}
+
+@media screen and (max-width: 570px){
+    .close, .closeLight {
+    font-size: 1.5rem;
+    }
+}

@@ -5,6 +5,8 @@ import {WorkData} from "../../data/work";
 import WorkCard from "./work-card";
 import cv from "../../data/Sergio Sanchez CV FSD.pdf"
 import { ThemeContext } from "../../../contexts/theme";
+
+
 function Work() {
   const data = WorkData;
   const [isDark] = useContext(ThemeContext)

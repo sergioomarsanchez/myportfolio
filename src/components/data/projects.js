@@ -20,6 +20,7 @@ export const ProjectData=[
         tags:["ReactJS", "Javascript", "PostgreSQL", "Html/Css", "Redux", "Javascript", "express", "external API"],
         github:"https://github.com/sergioomarsanchez/PI-Foods",
         image:thefoodapp,
+        demo:"https://pi-thefoodap-sergioosanchez.netlify.app/",
         videoLink:"https://youtu.be/uqTnidI7LRc"
     },
 ];

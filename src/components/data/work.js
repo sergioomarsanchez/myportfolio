@@ -12,7 +12,7 @@ export const WorkData = [
         location: "Córdoba-Argentina"
     },
     {
-        company: "Full Stack Developer Bootcamp at Henrry" ,
+        company: "Full Stack Developer Bootcamp at Henry" ,
         designation: "Student",
         dateJoining: "06.2022",
         dateEnd: "10.2022",
