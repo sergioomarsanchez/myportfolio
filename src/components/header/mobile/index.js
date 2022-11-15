@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import './mobile.css';
 import { useLocation, Link } from 'react-router-dom'
 import { ThemeContext } from "../../../contexts/theme";
@@ -10,8 +10,22 @@ function Mobile({ isOpen, setIsOpen}) {
 
   const [isDark] = useContext(ThemeContext)
 
+
+  useEffect(() => {
+
+    function closeMenu(e){
+
+      setIsOpen(false)
+    }
+    const app = document.getElementById('app')
+
+      app.addEventListener('click', closeMenu)
+  
+  }, [])
+  
+
   return (
-  <div className={isDark?"mobile":"mobileLight"} onClickAway={() => setIsOpen(!isOpen)}>
+  <div className={isDark?"mobile":"mobileLight"}>
     <div className={isDark?"close-icon":"close-iconLight"} onClick={() => setIsOpen(!isOpen)}>
       <i className="fi-rr-cross-circle"></i>
     </div>

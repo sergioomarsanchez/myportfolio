@@ -16,7 +16,7 @@ function App() {
 
   return (
 
-    <div className={isDark?"App":"appLight"}>
+    <div id='app' className={isDark?"App":"appLight"}>
       <Header/>
       <Routes>
       <Route path='/'  element={<Home/>}/>
