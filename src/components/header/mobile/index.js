@@ -10,18 +10,18 @@ function Mobile({ isOpen, setIsOpen}) {
 
   const [isDark] = useContext(ThemeContext)
 
+  const app = document.getElementById('app')
 
+  function closeMenu(e){
+    if(e.path[0].tagName !== 'I'){
+    setIsOpen(false)
+  }}
   useEffect(() => {
 
-    function closeMenu(e){
-
-      setIsOpen(false)
-    }
-    const app = document.getElementById('app')
-
-      app.addEventListener('click', closeMenu)
-  
+      if(isOpen)app.addEventListener('click', closeMenu)
+      return ()=> app.removeEventListener('click', closeMenu)
   }, [])
+
   
 
   return (
