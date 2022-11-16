@@ -18,7 +18,7 @@ function Mobile({ isOpen, setIsOpen}) {
   }}
   useEffect(() => {
 
-      if(isOpen)app.addEventListener('click', closeMenu)
+      app.addEventListener('click', closeMenu)
       return ()=> app.removeEventListener('click', closeMenu)
   }, [])
 
