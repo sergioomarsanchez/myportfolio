@@ -18,6 +18,7 @@ function Work() {
       <div className="title-img">
       <label className={isDark?"section-title":"section-titleLight"}>Experiences</label>
       <div className="work-imgContainer">
+      <span>Z</span>
         <img className={isDark? 'workImgCat': 'workImgCatLight'} src={imgCat} alt=''/>  
         <img className={isDark? 'workImgMan': 'workImgManLight'} src={img} alt=''/>
       </div>
