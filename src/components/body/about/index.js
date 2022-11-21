@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import "./about.css";
 import Dog from "../../dog";
+import img from '../../../assets/img/Olá - Relaxing.png'
 import { ThemeContext } from "../../../contexts/theme";
 
 function About() {
@@ -13,6 +14,9 @@ function About() {
         <div>  Hi, I am</div>
          <div className={isDark?"info-name":"info-nameLight"}>Sergio Omar Sánchez</div>
          <div className={isDark?"fullDiv":"fullDivLight"}>Full Stack Developer...</div>
+        <div className="about-imgDiv">
+          <img className={isDark?"about-img":"about-imgLight"} src={img} alt=''/>
+        </div>
         </div>
         <div className="div-for-mobile">
         <div className="about-text">
