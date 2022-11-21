@@ -5,6 +5,8 @@ import {WorkData} from "../../data/work";
 import WorkCard from "./work-card";
 import cv from "../../data/Sergio Sanchez CV FSD.pdf"
 import { ThemeContext } from "../../../contexts/theme";
+import img from '../../../assets/img/Amigos - Working from Home.png'
+import imgCat from '../../../assets/img/The Little Things - Cat.png'
 
 
 function Work() {
@@ -13,7 +15,13 @@ function Work() {
   return (
     <div className="work">
       <Separator />
+      <div className="title-img">
       <label className={isDark?"section-title":"section-titleLight"}>Experiences</label>
+      <div className="work-imgContainer">
+        <img className={isDark? 'workImgCat': 'workImgCatLight'} src={imgCat} alt=''/>  
+        <img className={isDark? 'workImgMan': 'workImgManLight'} src={img} alt=''/>
+      </div>
+      </div>
       <div className="work-list">
         {data.map((item) => {
           return <WorkCard item={item} />;

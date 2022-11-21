@@ -4,6 +4,7 @@ import "./skills.css";
 import {SkillsData} from "../../data/skills";
 import SkillCard from "./skill-card";
 import { ThemeContext } from "../../../contexts/theme";
+import img from '../../../assets/img/Humaaans - 1 Character.png'
 function Skills() {
   const data = SkillsData;
   const [isDark] = useContext(ThemeContext)
@@ -11,6 +12,7 @@ function Skills() {
     <div className="skills">
       <Separator />
     <label className={isDark?"section-title":"section-titleLight"}>Skills</label>
+    <img className="img" src={img} alt=''/>
     <div className="skills-container">
       {data.map((item) => {
         return (
