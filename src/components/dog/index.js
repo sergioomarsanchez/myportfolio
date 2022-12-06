@@ -96,13 +96,12 @@ function Dog() {
             setPlayerState('sit')
         }, 15000);
     }
-    
+
     useEffect(() => {
      
         const ctx = canvas.current?.getContext('2d');
         const CANVAS_WIDTH = canvas.current.width = 200;
         const CANVAS_HEIGHT = canvas.current.height = 200;
-        
         const playerImage = new Image()
         playerImage.src = dog
         const spriteWidth = 200;
