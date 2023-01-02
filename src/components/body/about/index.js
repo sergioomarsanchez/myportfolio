@@ -22,7 +22,7 @@ function About() {
         <div className="about-text">
           <h3>About me...</h3>
           <p>I started off my career in IT many years ago studying Systems Analysis in the IES Siglo XXI college.
-             In the same institution I got a bachelor's degree in Busines Management and now I've completed my IT education with the Full Stack Web Developer course ay Henry.
+             In the same institution I got a bachelor's degree in Busines Management and now I've completed my IT education with the Full Stack Web Developer course at Henry.
              I've worked in Purchasing/Sales where I developed skills as team player and a customer focused mindset.</p>
         </div>
         <div className="about-photo">
