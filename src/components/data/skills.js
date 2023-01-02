@@ -71,6 +71,10 @@ export const SkillsData = [
         name: "Scrum",
         icon: <img src={scrum} className="scrum" alt='scrum'/>
       },
+      {
+        name: "Nextjs",
+        icon: <i className="devicon-nextjs-plain colored"></i>
+      }
     ],
   },
 ];

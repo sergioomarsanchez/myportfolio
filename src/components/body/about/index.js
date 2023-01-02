@@ -21,7 +21,9 @@ function About() {
         <div className="div-for-mobile">
         <div className="about-text">
           <h3>About me...</h3>
-          <p>I did some of my first steps in IT with an Uncompleted System Analyst in IES Siglo XXI, but now I can say it came full circle with Henry's Bootcamp, hence, my logo next to my initials. I also have a bachelor's degree in Management and Purchasing/Sales background, I am a great team player and leader with an excellent customer-oriented mindset. </p>
+          <p>I started off my career in IT many years ago studying Systems Analysis in the IES Siglo XXI college.
+             In the same institution I got a bachelor's degree in Busines Management and now I've completed my IT education with the Full Stack Web Developer course ay Henry.
+             I've worked in Purchasing/Sales where I developed skills as team player and a customer focused mindset.</p>
         </div>
         <div className="about-photo">
         <Dog/>

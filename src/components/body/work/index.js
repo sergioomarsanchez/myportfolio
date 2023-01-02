@@ -3,7 +3,7 @@ import "./work.css";
 import Separator from "../../common/separator";
 import {WorkData} from "../../data/work";
 import WorkCard from "./work-card";
-import cv from "../../data/Sergio Sanchez CV FSD.pdf"
+import cv from "../../data/Sergio Sanchez CV A.pdf"
 import { ThemeContext } from "../../../contexts/theme";
 import img from '../../../assets/img/Amigos - Working from Home.png'
 import imgCat from '../../../assets/img/The Little Things - Cat.png'
