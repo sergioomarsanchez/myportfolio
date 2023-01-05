@@ -27,7 +27,7 @@ export const ProjectData=[
     {
         id:3,
         title:"Pizza Delivery App",
-        about: "Hello Network, I would like to share my latest project. It is a Pizza delivery app. As a client you can select several pizzas, add them to the cart, and proceed to confirm the payment with PayPal or on delivery, once confirm you can check the order detail to follow the progress of it. As an admin, you can add and delete products, and update order status. Authentication is made with the cookies system.",
+        about: "This is a Pizza delivery app. As a client you can select several pizzas, add them to the cart, and proceed to confirm the payment with PayPal or on delivery, once confirm you can check the order detail to follow the progress of it. As an admin, you can add and delete products, and update order status. Authentication is made with the cookies system.",
         tags:["Nextjs", "ReactJS", "Javascript", "MongoDB", "Html/Css", "Redux", "Javascript", "Mongoose", "Cloudinary"],
         github:"https://github.com/sergioomarsanchez/PI-Foods",
         image:pizzaapp,
