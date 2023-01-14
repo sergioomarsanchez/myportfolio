@@ -18,21 +18,25 @@
     border: 1px solid #141e30e6;
 }
 
-.close-icon {
+.close-icon, .close-iconLight {
     position: absolute;
     font-size: 20px;
     color: #6b5b9f;
     top: 5px;
     right: 5px;
 }
+.close-iconLight {
+    color: #9f5b5b;
+}
 
-.mobile-option {
+.mobile-option, .mobile-optionLight {
     display: flex;
     font-size: 24px;
     color: #6b5b9f;
-    margin-bottom: 1rem;
-    align-items: center;
-    justify-content: center;
+}
+
+.mobile-optionLight{
+    color: #9f5b5b;
 }
 
 .mobile-option i{
@@ -64,26 +68,10 @@
 }
 .mobile:last-child {
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 
 
-.close-iconLight {
-    align-self: flex-end;
-    font-size: 24px;
-    color: #9f5b5b;
-}
-
-.mobile-optionLight {
-    display: flex;
-    font-size: 24px;
-    color: #9f5b5b;
-    margin-bottom: 1rem;
-    align-items: center;
-    justify-content: center;
-}
 
 .mobile-optionLight i{
     text-decoration: none;
@@ -104,6 +92,3 @@
     color: #6702b0;
   }
 
-.mobile-optionLight:last-child {
-    margin-right: 0px;
-}

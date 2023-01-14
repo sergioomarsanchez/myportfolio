@@ -11,20 +11,17 @@
 .headerLight{
     background-color: #ebebeb
 }
-.menuLight{
-    background-color: #ebebeb;
-    display: flex;
-    flex: 1;
-    justify-content: flex-end;
-}
 
-.menu{
+.menu, .menuLight{
     background-color: #141E30;
     display: flex;
     flex: 1;
     justify-content: flex-end;
 }
 
+.menuLight{
+    background-color: #ebebeb;
+}
 .menu-icon, .menu-iconLight{
     font-size: 24px;
     position: absolute;
