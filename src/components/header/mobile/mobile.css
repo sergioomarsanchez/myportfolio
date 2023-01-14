@@ -1,7 +1,7 @@
 .mobile, .mobileLight {
     background-color: #141e30f0;
     height: fit-content;
-    width: 30vw;
+    width: 40vw;
     position: absolute;
     right: -1rem;
     top: 2px;
@@ -62,15 +62,6 @@
     transform: translate(2px, 2px);
     color: #02aab0;
   }
-
-.mobile-option:last-child {
-    margin-right: 0px;
-}
-.mobile:last-child {
-    display: flex;
-}
-
-
 
 
 .mobile-optionLight i{

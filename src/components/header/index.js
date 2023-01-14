@@ -15,7 +15,6 @@ function Header() {
   const { pathname } = useLocation()
   const [isDark] = useContext(ThemeContext)
 
-
   return (
     <div className={isDark?"header":"headerLight"}>
               {
@@ -41,8 +40,8 @@ function Header() {
           {isOpen && <Mobile isOpen={isOpen} setIsOpen={setIsOpen} />}
         </div>
       </div>
-      <div className='toggle'>
-        <ToggleButton className='toggle'/>
+      <div className='toggleContainer'>
+        <ToggleButton/>
       </div>
     </div>
   );

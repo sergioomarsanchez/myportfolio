@@ -10,17 +10,18 @@ function Mobile({ isOpen, setIsOpen}) {
 
   const [isDark] = useContext(ThemeContext)
 
-  const app = document.getElementById('app')
+  // const app = document.getElementById('app')
 
-  function closeMenu(e){
-    if(e.path[0].tagName !== 'I'){
-    setIsOpen(false)
-  }}
-  useEffect(() => {
+  // function closeMenu(e){
+  //   console.log(e)
+  //   if(e.path[0].className !== 'header'){
+  //   setIsOpen(false)
+  // }}
+  // useEffect(() => {
 
-      app.addEventListener('click', closeMenu)
-      return ()=> app.removeEventListener('click', closeMenu)
-  }, [])
+  //     app.addEventListener('click', closeMenu)
+  //     return ()=> app.removeEventListener('click', closeMenu)
+  // }, [])
 
   
 
@@ -32,10 +33,8 @@ function Mobile({ isOpen, setIsOpen}) {
     {
       pathname === '/projects'?null:
     <Link to={'/projects'} style={{ textDecoration: 'none' }}>
-    <div className={isDark?"mobile-option":"mobile-optionLight"} onClick={() => setIsOpen(!isOpen)}>
-
-          <i className="fi-rr-edit-alt option-icon"></i>Projects
-
+    <div className={isDark?"mobile-option":"mobile-optionLight"}>
+      <i className="fi-rr-edit-alt option-icon"></i>Projects
     </div>
     </Link>
     }
