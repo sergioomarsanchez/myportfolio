@@ -33,7 +33,7 @@ function Mobile({ isOpen, setIsOpen}) {
     {
       pathname === '/projects'?null:
     <Link to={'/projects'} style={{ textDecoration: 'none' }}>
-    <div className={isDark?"mobile-option":"mobile-optionLight"}>
+    <div className={isDark?"mobile-option":"mobile-optionLight"} onClick={() => setIsOpen(!isOpen)}>
       <i className="fi-rr-edit-alt option-icon"></i>Projects
     </div>
     </Link>
