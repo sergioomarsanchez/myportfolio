@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import "./project-card.css";
 import { ThemeContext } from '../../../contexts/theme'
 
+
 function ProjectCard({ project }) {
 
     const [isDark] = useContext(ThemeContext)
