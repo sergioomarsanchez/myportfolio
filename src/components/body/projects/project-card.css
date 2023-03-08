@@ -11,10 +11,6 @@
 .projects-container {
     display: flex;
 }
-
-.project-ytlink {
-    width: 40%;
-}
 .project-photo, .project-photoLight {
     max-width: 400px;
     cursor: pointer;
