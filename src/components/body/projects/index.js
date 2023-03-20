@@ -11,6 +11,11 @@ function Projects() {
   const [isDark] = useContext(ThemeContext)
   return (
     <div className="projects">
+      <div className={isDark?"tilt":"tiltLight"}>
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className={isDark? "shape-fill":"shape-fillLight"}></path>
+    </svg>
+</div>
       <Separator />
       <div className="title-img">
       <label className={isDark?"section-title":"section-titleLight"}>Projects</label>

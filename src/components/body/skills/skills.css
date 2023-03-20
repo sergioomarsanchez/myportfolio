@@ -3,6 +3,30 @@
     flex-direction: column;
     margin-left: 9rem;
     margin-right: 9rem;
+    position: relative;
+}
+.circle, .circleLight {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 108%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.circle svg, .circleLight svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.circle .shape-fill {
+    fill: #6b5b9f13;
+}
+.circleLight .shape-fillLight {
+    fill: #6d2c2c11;
 }
 
 .skills-section {
@@ -36,6 +60,12 @@
         align-items: center;
         margin-left: 1rem;
         margin-right: 1rem;
+    }
+    .circle, .circleLight {
+        width: 100%;
+    }
+    .circle svg, .circleLight svg {
+        transform: none;
     }
     .skills-list {
         max-width: 100%;

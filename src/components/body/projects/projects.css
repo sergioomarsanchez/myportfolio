@@ -3,7 +3,33 @@
     flex-direction: column;
     margin-left: 7rem;
     margin-right: 7rem;
+    position: relative;
 }
+
+.tilt, .tiltLight {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 106%;
+    overflow: hidden;
+    line-height: 0;
+  }
+  
+  .tilt svg, .tiltLight svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+  }
+  
+  .tilt .shape-fill {
+    fill: #6b5b9f46;
+  }
+  .tiltLight .shape-fillLight {
+    fill: #6d2c2c46;
+  }
+  
+
 .title-img{
     display: flex;
     flex-direction: row;
@@ -57,6 +83,12 @@
         justify-content: center;
         margin-left: 2rem;
         margin-right: 2rem;
+    }
+    .tilt, .tiltLight {
+        width: 100%;
+    }
+    .tilt svg, .tiltLight svg {
+        transform: none;
     }
     .title-img{
         display: flex;

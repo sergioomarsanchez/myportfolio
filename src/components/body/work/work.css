@@ -3,7 +3,31 @@
     flex-direction: column;
     margin-left: 7rem;
     margin-right: 7rem;
+    position: relative;
 }
+.circles, .circlesLight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 106%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.circles svg, .circlesLight svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.circles .shape-fill {
+  fill: #6b5b9f46;
+}
+.circlesLight .shape-fillLight {
+  fill: #6d2c2c46;
+}
+
 .cv-download {
     align-self: center;
     margin-top: 2rem;
@@ -237,6 +261,12 @@
       margin: 0;
       margin-left: 1rem;
       margin-right: 1rem;
+  }
+  .circles, .circlesLight {
+    width: 100%;
+  }
+  .circles svg, .circlesLight svg {
+    transform: none;
   }
   .work-list {
       flex-direction: column;

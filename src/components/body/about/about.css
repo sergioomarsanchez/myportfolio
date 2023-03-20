@@ -4,11 +4,37 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 3rem;
+    position: relative;
 }
+
+.triangle, .triangleLight {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 109%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.triangle svg, .triangleLight svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.triangle .shape-fill {
+    fill: #6b5b9f13;
+}
+.triangleLight .shape-fillLight {
+    fill: #6d2c2c11;
+}
+
 .about-top{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 .about-info {
     font-size: 32px;
@@ -130,7 +156,9 @@ margin-left: 3rem;
         justify-content: space-between;
         align-items: center;
     }
-
+    .triangle, .triangleLight {
+        width: 100%;
+    }
     
     .div-for-mobile {
         display: flex;
