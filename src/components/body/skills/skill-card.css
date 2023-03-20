@@ -11,6 +11,7 @@
     margin-bottom: 5rem;
     margin-top: 1rem;
     z-index: 2;
+    position: relative;
 }
 
 .skill-icon {
@@ -27,7 +28,37 @@
 #animation{
   margin: 0;
 }
+.curve, .curveLight {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
 
+.curve svg, .curveLight svg {
+  position: relative;
+  display: block;
+  width: calc(234% + 1.3px);
+  height: 60px;
+}
+
+.curve  .shape-fill {
+  fill: #6b5b9f23;
+}
+
+.curveLight  .shape-fillLight {
+  fill: #6d2c2c23;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .curve svg {
+      width: calc(234% + 1.3px);
+      height: 80px;
+  }
+}
 
 @media only screen and (max-width: 1024px) {
     .skill-card {

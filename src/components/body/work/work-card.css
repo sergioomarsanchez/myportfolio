@@ -8,6 +8,7 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row-reverse;
+    position: relative;
 }
 .work-logo {
     height: 80px;
@@ -43,7 +44,29 @@
     max-width: 80%;
 }
 
-
+.invertedCircle, .invertedCircleLight {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 103%;
+    overflow: hidden;
+    line-height: 0;
+  }
+  
+  .invertedCircle svg, .invertedCircleLight svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+  }
+  
+  .invertedCircle .shape-fill {
+    fill: #6b5b9f46;
+  }
+  .invertedCircleLight .shape-fillLight {
+    fill: #6d2c2c28;
+  }
+  
 
 @media only screen and (max-width: 820px) {
     .work-card{
@@ -52,6 +75,12 @@
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
+    .invertedCircle, .invertedCircleLight {
+        width: 100%;
+      }
+      .invertedCircle svg, .invertedCircleLight svg {
+        transform: none;
+      }
 }
 
 @media only screen and (max-width: 400px) {

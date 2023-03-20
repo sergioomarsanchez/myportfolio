@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import "./about.css";
 import Dog from "../../dog";
 import img from '../../../assets/img/Olá - Relaxing.png'
@@ -6,6 +6,9 @@ import { ThemeContext } from "../../../contexts/theme";
 
 function About() {
   const [isDark] = useContext(ThemeContext)
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
 
   return (
     <div className="about">

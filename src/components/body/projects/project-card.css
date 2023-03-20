@@ -6,15 +6,19 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
     margin-right: 2rem;
+    position: relative;
+    z-index: 1;
 }
 
 .projects-container {
     display: flex;
+    z-index: 1;
 }
 .project-photo, .project-photoLight {
     max-width: 400px;
     cursor: pointer;
     transition: 0.5s ease;
+    z-index: 1;
 }
 .project-photo:hover {
     transform: scale(1.01);
@@ -24,8 +28,12 @@
   transform: scale(1.01);
   filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.813));
 }
+.project-ytlink{
+  z-index: 1;
+}
 .project-info{
     margin-right: 24px;
+    z-index: 1;
 }
 
 .project-title{
@@ -37,6 +45,7 @@
     display: flex;
     max-width: 60%;
     flex-wrap: wrap;
+    z-index: 1;
 }
 
 .tag {
@@ -53,6 +62,7 @@
     margin-right: 6px;
     margin-bottom: 4px;
     filter: contrast(1.2);
+    z-index: 1;
 }
 .tagLight {
   padding:  4px 8px;
@@ -67,6 +77,7 @@
   border-radius: 4px;
   margin-right: 6px;
   margin-bottom: 4px;
+  z-index: 1;
 }
 
 .project-links a {
@@ -77,6 +88,32 @@
 .project-links{
     margin-top: 6px;
     display: flex;
+}
+
+.tiltBottom, .tiltBottomLight {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index: 0;
+}
+
+.tiltBottom svg, .tiltBottomLight svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 50px;
+  z-index: 0;
+}
+
+.tiltBottom .shape-fill {
+  fill: #6b5b9f46;
+}
+.tiltBottomLight .shape-fillLight {
+  fill: #6d2c2c46;
 }
 
 
@@ -229,4 +266,12 @@
     .project-tags {
         max-width: 90%;
     }
+
+    .tiltBottom, .tiltBottomLight {
+      width: 100%;
+    }
+    .tiltBottom svg, .tiltBottomLight svg {
+        transform: none;
+    }
+
 }

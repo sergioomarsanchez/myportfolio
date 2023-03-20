@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import Separator from "../../common/separator/index";
 import "./skills.css";
 import {SkillsData} from "../../data/skills";
@@ -7,6 +7,9 @@ import { ThemeContext } from "../../../contexts/theme";
 function Skills() {
   const data = SkillsData;
   const [isDark] = useContext(ThemeContext)
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
   return (
     <div className="skills">
       <div className={isDark?"circle":"circleLight"}>

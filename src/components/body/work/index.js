@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import "./work.css";
 import Separator from "../../common/separator";
 import {WorkData} from "../../data/work";
@@ -12,6 +12,9 @@ import imgCat from '../../../assets/img/The Little Things - Cat.png'
 function Work() {
   const data = WorkData;
   const [isDark] = useContext(ThemeContext)
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
   return (
     <div className="work">
       <div className={isDark?"circles":"circlesLight"}>

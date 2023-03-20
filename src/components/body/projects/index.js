@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { ThemeContext } from "../../../contexts/theme";
 import Separator from "../../common/separator";
 import { ProjectData } from "../../data/projects";
@@ -9,6 +9,9 @@ import imgScreen from '../../../assets/img/Amigos - Screen.png'
 function Projects() {
   const data = ProjectData;
   const [isDark] = useContext(ThemeContext)
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
   return (
     <div className="projects">
       <div className={isDark?"tilt":"tiltLight"}>
