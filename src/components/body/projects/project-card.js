@@ -20,7 +20,7 @@ function ProjectCard({ project }) {
             </a>
             )}
             {project.github&& (
-              <a className="project-link" href={project.github}>
+              <a className="project-link" href={project.github} target='_blank' rel="noreferrer">
                 <div className={isDark?"link-button":"link-buttonLight"}>
                 <i className="devicon-github-original"> Github</i>
               </div>
@@ -36,7 +36,7 @@ function ProjectCard({ project }) {
       </div>
        
       {
-        project.image && (<a className="project-ytlink"  href={project.videoLink}> <img className={isDark?"project-photo":"project-photoLight"} src={project.image}  alt={project.image} /> </a>)
+        project.image && (<a className="project-ytlink"  href={project.videoLink} target='_blank' rel="noreferrer"> <img className={isDark?"project-photo":"project-photoLight"} src={project.image}  alt={project.image} /> </a>)
       }
       <div className={isDark?"tiltBottom":"tiltBottomLight"}>
           <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
