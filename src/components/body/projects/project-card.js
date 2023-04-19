@@ -13,7 +13,7 @@ function ProjectCard({ project }) {
         <label className="project-title">{project.title}</label>
         <div className="project-links">
           {project.demo && (
-            <a className="project-link" href={project.demo}>
+            <a className="project-link" href={project.demo} target='_blank' rel="noreferrer">
               <div className={isDark?"link-button":"link-buttonLight"}>
                 <i className="fi-rr-globe"> Demo</i>
               </div>
