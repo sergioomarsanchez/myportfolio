@@ -9,7 +9,7 @@ function WorkCard ({ item }) {
 
 
   return (
-    <div key={item.company} className="work-card">
+    <div  className="work-card">
       <img src={item.companyLogo}className="work-logo" alt={item.company}/>
       <div className="work-info">
         <label className="company-name">{item.company}</label>

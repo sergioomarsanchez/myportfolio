@@ -13,7 +13,15 @@ function Work() {
   const data = WorkData;
   const [isDark] = useContext(ThemeContext)
   useEffect(() => {
-    window.scrollTo(0, 0);
+   // window.scrollTo(0, 0);
+    const script = document.createElement("script");
+    script.src = "https://assets.calendly.com/assets/external/widget.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
   }, [])
   return (
     <div className="work">
@@ -40,6 +48,9 @@ function Work() {
       </div>
       <div className="cv-download">
         <a href={cv} download ><button className={isDark?"button-85":"button-85Light"} >For more info, download my cv here</button>
+        </a>
+        <span> Or </span>
+        <a href="https://calendly.com/sanchez-omar-sergio/experiment1et" target='_blank' rel="noreferrer" ><button className={isDark?"calendly":"calendlyLight"} >Schedule a meeting</button>
         </a>
       </div>
     </div>
