@@ -13,7 +13,7 @@ function Work() {
   const data = WorkData;
   const [isDark] = useContext(ThemeContext)
   useEffect(() => {
-   // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
     const script = document.createElement("script");
     script.src = "https://assets.calendly.com/assets/external/widget.js";
     script.async = true;
