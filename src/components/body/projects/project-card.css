@@ -41,7 +41,9 @@
     font-size: 20px;
     font-weight: 600;
 }
-
+.project-link{
+  cursor: pointer;
+}
 .project-tags{
     display: flex;
     max-width: 60%;
