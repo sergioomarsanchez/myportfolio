@@ -1,8 +1,9 @@
 .skills {
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    margin-left: 9rem;
-    margin-right: 9rem;
+    align-self: center;
+    width: 75%;
     position: relative;
 }
 .circle, .circleLight {
@@ -58,8 +59,7 @@
     .skills  {
         flex-direction: column;
         align-items: center;
-        margin-left: 1rem;
-        margin-right: 1rem;
+        width: 95%;
     }
     .circle, .circleLight {
         width: 100%;
@@ -81,14 +81,7 @@
 }
 
 @media only screen and (max-width: 512px) {
-    .skills  {
-        flex-direction: column;
-        align-items: center;
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
     .skills-section:last-child .skills-section-title {
-       
       margin-bottom: 1rem;
     }
     .skills-section {
