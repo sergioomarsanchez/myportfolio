@@ -1,8 +1,9 @@
 .projects {
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    margin-left: 7rem;
-    margin-right: 7rem;
+    align-self: center;
+    width: 75%;
     position: relative;
 }
 
@@ -79,10 +80,8 @@
 }
 @media only screen and (max-width: 720px) {
     .projects {
-        max-width: 90%;
+        width: 95%;
         justify-content: center;
-        margin-left: 2rem;
-        margin-right: 2rem;
     }
     .tilt, .tiltLight {
         width: 100%;
