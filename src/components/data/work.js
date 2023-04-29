@@ -1,7 +1,17 @@
 import homifyLogo from '../../assets/icons/logo-homify-2.png'
 import ywLogo from '../../assets/icons/yourwatches.logo.png'
 import systelLogo from '../../assets/icons/systel.logo.png'
+import logo from '../../assets/logo/logo_small_icon_only.png'
 export const WorkData = [
+    {
+        company: "Full Stack Developer Freelancer at SOS Sergio Omar Sánchez" ,
+        designation: "Full Stack Developer",
+        dateJoining: "11-2022",
+        dateEnd: "Date",
+        companyLogo:logo,
+        work:"Specializing in designing and implementing complex web applications for my clients. Adept at working independently as a freelancer or as part of a team in a remote environment. Lead full-stack developer with expertise in Next.js, MongoDB, JWT, API, Node.js, and React.js Specializing in designing and implementing complex web applications for my clients Passionate about staying up-to-date with the latest trends and technologies in web development.",
+        location: "Córdoba-Argentina"
+    },
     {
         company: "Full-Stack Teaching Assistant at Soy Henry" ,
         designation: "Full-Stack Teaching Assistant",
