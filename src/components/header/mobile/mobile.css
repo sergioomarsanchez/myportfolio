@@ -17,7 +17,9 @@
     background-color: #ebebebe9;
     border: 1px solid #141e30e6;
 }
-
+.routeNames{
+    margin-left: 1rem;
+}
 .close-icon, .close-iconLight {
     position: absolute;
     font-size: 20px;
@@ -49,7 +51,6 @@
 }
 
 .mobile-option i:hover{
-    transform: scale(1.1);
     color: #67999b;
 }
 
@@ -74,8 +75,7 @@
 }
 
 .mobile-optionLight i:hover{
-    transform: scale(1.1);
-    color: #71679b;
+    color: #5f1212;
 }
 
 .mobile-optionLight:active {
