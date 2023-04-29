@@ -8,27 +8,21 @@ function Web() {
   const { pathname } = useLocation()
   const [isDark] = useContext(ThemeContext)
   return <div className="web">
-      <Link to={'/projects'} style={{ textDecoration: 'none', color: pathname === '/projects'?"red": null }}>
-      <div className={isDark?"web-option":"web-optionLight"}>
-        <i className="fi-rr-edit-alt option-icon">Projects</i>
+      <Link to={'/projects'} style={{ textDecoration: 'none'}}>
+      <div className={isDark?"web-option":"web-optionLight"} >
+        <i className="fi-rr-edit-alt option-icon" style={pathname === '/projects'?{transform: "scale(1.1)", color: "#82bfc2" }:null }>Projects</i>
       </div>
       </Link>
-    {
-      pathname === '/skills'?null:
       <Link to={'/skills'} style={{ textDecoration: 'none' }}>
       <div className={isDark?"web-option":"web-optionLight"}>
-      <i className="fi-rr-laptop option-icon">Skills</i>
+      <i className="fi-rr-laptop option-icon" style={pathname === '/skills'?{transform: "scale(1.1)", color: "#82bfc2" }:null }>Skills</i>
       </div>
       </Link>
-    }
-    {
-      pathname === '/work'?null:
       <Link to={'/work'} style={{ textDecoration: 'none' }}>
       <div className={isDark?"web-option":"web-optionLight"}>
-      <i className="fi-rr-briefcase option-icon">Work</i>
+      <i className="fi-rr-briefcase option-icon" style={pathname === '/work'?{transform: "scale(1.1)", color: "#82bfc2" }:null }>Work</i>
       </div>
       </Link>
-    }
   </div>;
 }
 

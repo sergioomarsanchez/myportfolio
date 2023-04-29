@@ -23,7 +23,6 @@
 }
 
 .web-option i:hover{
-    transform: scale(1.1);
     color: #67999b;
 }
 .web-option i:active {
