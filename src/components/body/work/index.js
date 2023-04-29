@@ -35,11 +35,13 @@ function Work() {
       <Separator />
       <div className="title-img">
       <label className={isDark?"section-title":"section-titleLight"}>Experiences</label>
-      <div className="work-imgContainer">
-      <span>Z</span>
-        <img className={isDark? 'workImgCat': 'workImgCatLight'} src={imgCat} alt=''/>  
-        <img className={isDark? 'workImgMan': 'workImgManLight'} src={img} alt=''/>
       </div>
+      <div className="work-imgContainer">
+        <div className="catContainer">
+        <img className={isDark? 'workImgCat': 'workImgCatLight'} src={imgCat} alt=''/>  
+        <span>Z</span>
+        </div>
+        <img className={isDark? 'workImgMan': 'workImgManLight'} src={img} alt=''/>
       </div>
       <div className="work-list">
         {data.map((item) => {
