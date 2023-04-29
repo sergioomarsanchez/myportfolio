@@ -3,5 +3,9 @@
     padding-bottom: 36px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+}
+#about{
+    display: flex;
+    justify-content: center;
 }

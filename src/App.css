@@ -10,3 +10,9 @@
     color: #141E30;
     padding-bottom: 7rem;
 }
+
+#app{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

@@ -1,5 +1,6 @@
 .about {
     padding-bottom: 48px;
+    max-width: 75%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -150,7 +151,10 @@ margin-left: 3rem;
 }
 
 @media only screen and (max-width: 920px) {
-
+    .about {
+        max-width: 100%;
+        padding-bottom: 0;
+    }
     .about-top{
         flex-direction: column;
         justify-content: space-between;

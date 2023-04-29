@@ -8,14 +8,11 @@ function Web() {
   const { pathname } = useLocation()
   const [isDark] = useContext(ThemeContext)
   return <div className="web">
-    {
-      pathname === '/projects'?null:
-      <Link to={'/projects'} style={{ textDecoration: 'none' }}>
+      <Link to={'/projects'} style={{ textDecoration: 'none', color: pathname === '/projects'?"red": null }}>
       <div className={isDark?"web-option":"web-optionLight"}>
         <i className="fi-rr-edit-alt option-icon">Projects</i>
       </div>
       </Link>
-    }
     {
       pathname === '/skills'?null:
       <Link to={'/skills'} style={{ textDecoration: 'none' }}>

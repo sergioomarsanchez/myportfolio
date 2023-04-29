@@ -1,9 +1,9 @@
 .contact {
     display: flex;
+    align-self: center;
+    justify-content: center;
     flex-direction: column;
-    flex: 1;
-    margin-left: 10rem;
-    margin-right: 2rem;
+    width: 75%;
 }
 .section-title {
     font-size: 32px;
@@ -19,11 +19,8 @@
 
 .contact-container {
     display: flex;
-    flex: 1;
     justify-content: center;
     text-align: center;
-    margin-right: 7rem;
-    
 }
 
 .noselect, .noselectLight {
