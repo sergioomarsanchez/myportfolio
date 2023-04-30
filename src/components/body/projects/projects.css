@@ -1,102 +1,107 @@
 .projects {
-    display: flex;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-self: center;
+  width: 75%;
+  position: relative;
+}
+
+.tilt,
+.tiltLight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 106%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.tilt svg,
+.tiltLight svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.tilt .shape-fill {
+  fill: #6b5b9f23;
+}
+.tiltLight .shape-fillLight {
+  fill: #6d2c2c23;
+}
+
+.title-img {
+  display: flex;
+  flex-direction: row;
+}
+
+.projects-imgContainer {
+  position: initial;
+  display: flex;
+  justify-content: center;
+  margin-left: 15rem;
+}
+
+.projects-imgContainer:hover > .projectImgScreen,
+.projects-imgContainer:hover > .projectImgScreenLight {
+  transform: rotate(-1deg) scale(0.9) translateX(-30px);
+}
+
+.projectImgScreen,
+.projectImgScreenLight {
+  position: absolute;
+  width: 25rem;
+  transition: 0.3s ease;
+}
+
+.projectImgWindows,
+.projectImgWindowsLight {
+  width: 10rem;
+  top: 2rem;
+  object-fit: contain;
+  position: relative;
+  transition: 0.3s ease;
+}
+.projectImgWindows:hover,
+.projectImgWindowsLight:hover {
+  transform: rotate(10deg) scale(1.1) translateY(-30px) translateX(20px);
+}
+
+.projectImgScreenLight,
+.projectImgWindowsLight {
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.813));
+}
+.projectImgScreen,
+.projectImgWindows {
+  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.813));
+}
+
+.projects-containers {
+  margin-top: 9rem;
+}
+@media only screen and (max-width: 820px) {
+  .projects {
+    width: 95%;
     justify-content: center;
+  }
+  .tilt,
+  .tiltLight {
+    width: 100%;
+  }
+  .tilt svg,
+  .tiltLight svg {
+    transform: none;
+  }
+  .title-img {
+    display: flex;
     flex-direction: column;
-    align-self: center;
-    width: 75%;
-    position: relative;
-}
-
-.tilt, .tiltLight {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 106%;
-    overflow: hidden;
-    line-height: 0;
   }
-  
-  .tilt svg, .tiltLight svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 150px;
-  }
-  
-  .tilt .shape-fill {
-    fill: #6b5b9f23;
-  }
-  .tiltLight .shape-fillLight {
-    fill: #6d2c2c23;
-  }
-  
-
-.title-img{
-    display: flex;
-    flex-direction: row;
-}
-
-.projects-imgContainer{
-    position:initial;
+  .projects-imgContainer {
+    position: initial;
     display: flex;
     justify-content: center;
-    margin-left: 15rem;
-}
-
-.projects-imgContainer:hover > .projectImgScreen, .projects-imgContainer:hover > .projectImgScreenLight{
-    transform: rotate(-1deg)scale(0.9)translateX(-30px);
-}
-
-
-.projectImgScreen,  .projectImgScreenLight{
-    position: absolute;
-    width: 25rem;
-    transition: 0.3s ease;
-}
-
-
-.projectImgWindows, .projectImgWindowsLight{
-    width: 10rem;
-    top:2rem;
-    object-fit:contain;
-    position: relative;
-    transition: 0.3s ease;
-}
-.projectImgWindows:hover, .projectImgWindowsLight:hover{
-    transform: rotate(10deg)scale(1.1)translateY(-30px)translateX(20px);
+    margin-left: 1rem;
   }
-
-
-.projectImgScreenLight, .projectImgWindowsLight{
-    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.813));
-}
-.projectImgScreen, .projectImgWindows{
-    filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.813));
-}
-
-
-.projects-containers{
-    margin-top: 9rem;
-}
-@media only screen and (max-width: 720px) {
-    .projects {
-        width: 95%;
-        justify-content: center;
-    }
-    .tilt, .tiltLight {
-        width: 100%;
-    }
-    .tilt svg, .tiltLight svg {
-        transform: none;
-    }
-    .title-img{
-        display: flex;
-        flex-direction: column;
-    }
-    .projects-imgContainer{
-        position:initial;
-        display: flex;
-        justify-content: center;
-        margin-left: 1rem;
-    }
 }

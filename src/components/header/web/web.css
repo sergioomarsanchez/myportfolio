@@ -1,77 +1,76 @@
-.web{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.web {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.web-option{
-    display: flex;
-    font-size: 20px;
-    margin-right: 16px;
-    font-weight: 700;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.web-option i{
-    text-decoration: none;
-    color: #6b5b9f;
-    display: flex;
-    align-items: center;
-    transition: 0.6s ease;
-    margin-right: 1rem;
+.web-option {
+  display: flex;
+  font-size: 20px;
+  margin-right: 16px;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
 }
 
-.web-option i:hover{
-    color: #67999b;
+.web-option i {
+  text-decoration: none;
+  color: #6b5b9f;
+  display: flex;
+  align-items: center;
+  transition: 0.6s ease;
+  margin-right: 1rem;
+}
+
+.web-option i:hover {
+  color: #67999b;
 }
 .web-option i:active {
-    transform: translate(2px, 2px);
-  }
+  transform: translate(2px, 2px);
+}
 
-.option-icon{
-    display: flex;
-    align-items: center;
-    margin-right: 4px;
+.option-icon {
+  display: flex;
+  align-items: center;
+  margin-right: 4px;
 }
 .web-option:last-child {
-    margin-right: 0px;
+  margin-right: 0px;
 }
 .web:last-child {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 
 .web-optionLight:last-child {
-    margin-right: 0px;
+  margin-right: 0px;
 }
 
-.web-optionLight{
-    display: flex;
-    font-size: 20px;
-    margin-right: 16px;
-    font-weight: 700;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-
+.web-optionLight {
+  display: flex;
+  font-size: 20px;
+  margin-right: 16px;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  margin-left: 1rem;
 }
 
-.web-optionLight i{
-    text-decoration: none;
-    color: #9f5b5b;
-    display: flex;
-    align-items: center;
-    transition: 0.6s ease;
-    margin-right: 1rem;
+.web-optionLight i {
+  text-decoration: none;
+  color: #9f5b5b;
+  display: flex;
+  align-items: center;
+  transition: 0.6s ease;
+  margin-right: 1rem;
 }
 
-.web-optionLight i:hover{
-    color: #5f1212;
+.web-optionLight i:hover {
+  color: #5f1212;
 }
 
 .web-optionLight i:active {
-    transform: translate(2px, 2px);
-  }
+  transform: translate(2px, 2px);
+}
