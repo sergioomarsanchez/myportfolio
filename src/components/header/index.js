@@ -1,12 +1,12 @@
 import React, { useContext, useState } from "react";
-import "./header.css";
+import { ThemeContext } from "../../contexts/theme";
+import { useLocation, Link } from "react-router-dom";
+import ToggleButton from "../common/toggleButton/toggleButton";
 import Mobile from "./mobile";
 import Web from "./web/index";
-import { useLocation, Link } from "react-router-dom";
 import logo from "../../assets/logo/logo_white_large.png";
 import logoLight from "../../assets/logo/logo_small.png";
-import { ThemeContext } from "../../contexts/theme";
-import ToggleButton from "../common/toggleButton/toggleButton";
+import "./header.css";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);

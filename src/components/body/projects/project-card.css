@@ -1,58 +1,59 @@
-.project-card{
-    flex: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 2rem;
-    margin-bottom: 4rem;
-    margin-right: 2rem;
-    position: relative;
-    z-index: 1;
-
+.project-card {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  margin-right: 2rem;
+  position: relative;
+  z-index: 1;
 }
 
 .projects-container {
-    display: flex;
-    z-index: 1;
+  display: flex;
+  z-index: 1;
 }
-.project-photo, .project-photoLight {
-    max-width: 400px;
-    cursor: pointer;
-    transition: 0.5s ease;
-    z-index: 1;
+.project-photo,
+.project-photoLight {
+  max-width: 400px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  z-index: 1;
 }
 .project-photo:hover {
-    transform: scale(1.01);
-    filter: drop-shadow(0 0 7px rgba(253, 254, 255, 0.813));
+  transform: scale(1.01);
+  filter: drop-shadow(0 0 7px rgba(253, 254, 255, 0.813));
 }
 .project-photoLight:hover {
   transform: scale(1.01);
   filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.813));
 }
-.project-ytlink{
+.project-ytlink {
   z-index: 1;
 }
-.project-info{
-    margin-right: 24px;
-    z-index: 1;
+.project-info {
+  margin-right: 24px;
+  z-index: 1;
 }
 
-.project-title{
-    font-size: 20px;
-    font-weight: 600;
+.project-title {
+  font-size: 20px;
+  font-weight: 600;
 }
-.project-link{
+.project-link {
   cursor: pointer;
 }
-.project-tags{
-    display: flex;
-    max-width: 60%;
-    flex-wrap: wrap;
-    z-index: 1;
+.project-tags {
+  display: flex;
+  max-width: 60%;
+  flex-wrap: wrap;
+  z-index: 1;
 }
 
-.tag, .tagLight {
-  padding:  2px 8px;
+.tag,
+.tagLight {
+  padding: 2px 8px;
   letter-spacing: 2px;
   font-size: small;
   font-style: oblique;
@@ -60,16 +61,17 @@
 }
 
 .project-links a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
-.project-links{
-    margin-top: 6px;
-    display: flex;
+.project-links {
+  margin-top: 6px;
+  display: flex;
 }
 
-.tiltBottom, .tiltBottomLight {
+.tiltBottom,
+.tiltBottomLight {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -80,7 +82,8 @@
   z-index: 0;
 }
 
-.tiltBottom svg, .tiltBottomLight svg {
+.tiltBottom svg,
+.tiltBottomLight svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
@@ -95,8 +98,6 @@
   fill: #6d2c2c23;
 }
 
-
-
 @media (min-width: 768px) {
   .button-64 {
     font-size: 24px;
@@ -104,158 +105,161 @@
   }
 }
 
-
 .link-button {
-    appearance: none;
-    background-color: transparent;
-    color: #d9ebff;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1em;
-    margin: 0.2rem;
-    opacity: 1;
-    outline: 0;
-    padding: 0.4rem 0.8rem;
-    position: relative;
-    text-align: center;
-    transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
-    touch-action: manipulation;
-    vertical-align: baseline;
-    white-space: nowrap;
-    border: 1px #d9ebff solid;
-    border-radius: 5px;
-  }
-  
-  .link-button:before {
-    animation: opacityFallbackOut .5s step-end forwards;
-    backface-visibility: hidden;
-    background-image: linear-gradient(
-      to right top,
-      #0c2081,
-      #1e1785,
-      #482389,
-      #4f1d90,
-      #55197d
-    );
-    clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
-    content: "";
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    transform: translateZ(0);
-    transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
-    width: 100%;
-    border-radius: 5px;
-  }
-  
-  .link-button:hover:before {
-    animation: opacityFallbackIn 0s step-start forwards;
-    clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
-  }
-  
-  .link-button:after {
-    background-color: #d9ebff;
-  }
-  
-  .link-button i {
-    z-index: 1;
-    position: relative;
-  }
+  appearance: none;
+  background-color: transparent;
+  color: #d9ebff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1em;
+  margin: 0.2rem;
+  opacity: 1;
+  outline: 0;
+  padding: 0.4rem 0.8rem;
+  position: relative;
+  text-align: center;
+  transition: opacity 300ms cubic-bezier(0.694, 0, 0.335, 1),
+    background-color 100ms cubic-bezier(0.694, 0, 0.335, 1),
+    color 100ms cubic-bezier(0.694, 0, 0.335, 1);
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+  border: 1px #d9ebff solid;
+  border-radius: 5px;
+}
 
+.link-button:before {
+  animation: opacityFallbackOut 0.5s step-end forwards;
+  backface-visibility: hidden;
+  background-image: linear-gradient(
+    to right top,
+    #0c2081,
+    #1e1785,
+    #482389,
+    #4f1d90,
+    #55197d
+  );
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
+    -webkit-clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: 100%;
+  border-radius: 5px;
+}
 
+.link-button:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
 
+.link-button:after {
+  background-color: #d9ebff;
+}
 
-  .link-buttonLight {
-    appearance: none;
-    background-color: transparent;
-    color: #002f65;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1em;
-    margin: 0.2rem;
-    opacity: 1;
-    outline: 0;
-    padding: 0.4rem 0.8rem;
-    position: relative;
-    text-align: center;
-    transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
-    touch-action: manipulation;
-    vertical-align: baseline;
-    white-space: nowrap;
-    border-radius: 5px;
-    border: 1px #003a7c solid;
-  }
-  
-  .link-buttonLight:before {
-    animation: opacityFallbackOut .5s step-end forwards;
-    backface-visibility: hidden;
-    background-image: linear-gradient(
-      to right top,
-      #f94747,
-      #f67867,
-      #f76666,
-      #fbc35b,
-      #f1396d
-    );
-    clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
-    content: "";
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    transform: translateZ(0);
-    transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
-    width: 100%;
-    border-radius: 5px;
-  }
-  
-  .link-buttonLight:hover:before {
-    animation: opacityFallbackIn 0s step-start forwards;
-    clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
-  }
-  
-  .link-buttonLight:after {
-    background-color: #004697;
-  }
-  
-  .link-buttonLight i {
-    z-index: 1;
-    position: relative;
-  }
+.link-button i {
+  z-index: 1;
+  position: relative;
+}
 
+.link-buttonLight {
+  appearance: none;
+  background-color: transparent;
+  color: #002f65;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1em;
+  margin: 0.2rem;
+  opacity: 1;
+  outline: 0;
+  padding: 0.4rem 0.8rem;
+  position: relative;
+  text-align: center;
+  transition: opacity 300ms cubic-bezier(0.694, 0, 0.335, 1),
+    background-color 100ms cubic-bezier(0.694, 0, 0.335, 1),
+    color 100ms cubic-bezier(0.694, 0, 0.335, 1);
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+  border-radius: 5px;
+  border: 1px #003a7c solid;
+}
+
+.link-buttonLight:before {
+  animation: opacityFallbackOut 0.5s step-end forwards;
+  backface-visibility: hidden;
+  background-image: linear-gradient(
+    to right top,
+    #f94747,
+    #f67867,
+    #f76666,
+    #fbc35b,
+    #f1396d
+  );
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
+    -webkit-clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: 100%;
+  border-radius: 5px;
+}
+
+.link-buttonLight:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.link-buttonLight:after {
+  background-color: #004697;
+}
+
+.link-buttonLight i {
+  z-index: 1;
+  position: relative;
+}
 
 @media only screen and (max-width: 920px) {
-    .project-ytlink {
-        width: 90%;
-        margin-top: 2rem;
-    }
-    .project-photo, .project-photoLight {
-        width: 100%;
-    }
-    .project-card {
-        flex-direction: column;
-        margin-right: 0;
-        padding: 0.5rem;
-        justify-content: center;
-    }
-    .project-info {
-        margin-left: 0px;
-        margin-top: 12px;
-    }
-    .project-tags {
-        max-width: 90%;
-    }
+  .project-ytlink {
+    width: 90%;
+    margin-top: 2rem;
+  }
+  .project-photo,
+  .project-photoLight {
+    width: 100%;
+  }
+  .project-card {
+    flex-direction: column;
+    margin-right: 0;
+    padding: 0.5rem;
+    justify-content: center;
+  }
+  .project-info {
+    margin-left: 0px;
+    margin-top: 12px;
+  }
+  .project-tags {
+    max-width: 90%;
+  }
 
-    .tiltBottom, .tiltBottomLight {
-      width: 100%;
-    }
-    .tiltBottom svg, .tiltBottomLight svg {
-        transform: none;
-    }
-
+  .tiltBottom,
+  .tiltBottomLight {
+    width: 100%;
+  }
+  .tiltBottom svg,
+  .tiltBottomLight svg {
+    transform: none;
+  }
 }

@@ -38,10 +38,10 @@
 }
 
 .projects-imgContainer {
-  position: initial;
   display: flex;
   justify-content: center;
-  margin-left: 15rem;
+  align-self: center;
+  width: 80%;
 }
 
 .projects-imgContainer:hover > .projectImgScreen,

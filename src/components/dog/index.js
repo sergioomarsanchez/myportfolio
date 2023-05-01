@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect, useContext } from "react";
-import "./dog.css";
-import dog from '../../assets/dog_left_right_white.png'
 import { ThemeContext } from "../../contexts/theme";
+import dog from '../../assets/dog_left_right_white.png'
+import "./dog.css";
 
 function Dog() {
     
