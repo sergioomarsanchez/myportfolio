@@ -84,9 +84,28 @@
   .referenceCardContainer {
     width: calc(100vw - 2rem);
     height: calc(100vh - 4rem);
+    margin: 1rem;
     font-size: smaller;
     background: none;
   }
+  .refText {
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-height: 400px) {
+  .referenceCardContainer {
+    width: calc(100vw - 4rem);
+    height: calc(100vh - 2rem);
+    margin: 1rem;
+    font-size: smaller;
+    background: none;
+  }
+  .referenceCardWrapper,
+.referenceCardWrapperLight {
+  max-width: 25rem;
+  padding: 1rem;
+}
   .refText {
     line-height: 20px;
   }
