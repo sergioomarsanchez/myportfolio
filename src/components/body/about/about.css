@@ -150,6 +150,20 @@ margin-left: 3rem;
     }
 }
 
+.reference {
+    display: flex;
+    align-self: flex-end;
+    margin: 2rem;
+    z-index: 10;
+}
+
+
+@media only screen and (max-width: 1420px) {
+.reference {
+    position: absolute;
+    left: 0;
+}
+}
 @media only screen and (max-width: 920px) {
     .about {
         max-width: 100%;
@@ -254,6 +268,12 @@ margin-left: 3rem;
         100% {
             background-position: 250px;
         }
+    }
+    .reference {
+        display: flex;
+        align-self: center;
+        margin: 2rem;
+        position: static;
     }
 
 }

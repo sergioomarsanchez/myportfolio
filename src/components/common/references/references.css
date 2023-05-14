@@ -1,0 +1,204 @@
+.referencesButton,
+.referencesButtonLight {
+  text-align: center;
+  width: 80px;
+  padding: 5px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  color: black;
+  background: rgb(103, 153, 155);
+  background: radial-gradient(
+    circle,
+    rgba(103, 153, 155, 1) 0%,
+    rgba(107, 91, 159, 1) 100%
+  );
+  box-shadow: inset 0 0 10px 0 white,
+                 0 0 10px 0 white;
+    position:relative;
+}
+.referencesButtonLight {
+  color: white;
+  background: rgb(159, 139, 91) 0%;
+  background: radial-gradient(
+    circle,
+    rgb(159, 139, 91) 0%,
+    rgba(95, 18, 18, 1) 100%
+  );
+  box-shadow: inset 0 0 10px 0 black,
+                 0 0 10px 0 black;
+}
+
+.referencesButton:hover {
+    animation: 500ms mymove ease-in-out;
+    box-shadow: inset 0 0 10px 0 black,
+    0 0 10px 0 black
+}
+
+@keyframes mymove {
+    from{
+        box-shadow: inset 0 0 10px 0 white,
+        0 0 10px 0 white;
+    }to {    box-shadow: inset 0 0 10px 0 black,
+        0 0 10px 0 black;}
+  }
+
+.referencesButtonLight:hover {
+    animation: 500ms mymove2 ease-in-out;
+
+    box-shadow: inset 0 0 10px 0 white,
+    0 0 10px 0 white;
+}
+@keyframes mymove2 {
+    from{
+        box-shadow: inset 0 0 10px 0 black,
+        0 0 10px 0 black;
+    }to { 
+        box-shadow: inset 0 0 10px 0 white,
+        0 0 10px 0 white; }
+  }
+
+.profilePic {
+    --size: 30px;
+    position: absolute;
+    height: var(--size);
+    width: var(--size);
+    padding: 0;
+    border-radius: 50%;
+    border: none;
+    top: calc(var(--size)/2 + 10px);
+    left: calc(var(--size)/2 + 10px);
+    cursor: pointer;
+    box-shadow: inset 0 0 5px 0 white,
+    0 0 10px 0 rgb(128, 128, 128);
+    z-index: -1;
+}
+
+.profileImage {
+    height: var(--size);
+    width: var(--size);
+    padding: 0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.circle{
+--offset: 70px;
+z-index: 2;
+}
+
+.circle:nth-of-type(1){
+    transform: translate( calc(cos(348deg) * var(--offset)), calc(sin(348deg) * var(--offset)));
+    animation: intro1 500ms ease;
+}
+
+@keyframes intro1 {
+    0%   {transform: translate( calc(cos(348deg) * 0px), calc(sin(348deg) * 0px));}
+    100% {transform: translate( calc(cos(348deg) * var(--offset)), calc(sin(348deg) * var(--offset)));}
+  }
+.circle:nth-of-type(2){
+    transform: translate( calc(cos(54deg) * var(--offset)), calc(sin(54deg) * var(--offset)));
+    animation: intro2 500ms ease;
+}
+
+@keyframes intro2 {
+    0%   {transform: translate( calc(cos(54deg) * 0px), calc(sin(54deg) * 0px));}
+    100% {transform: translate( calc(cos(54deg) * var(--offset)), calc(sin(54deg) * var(--offset)));}
+  }
+.circle:nth-of-type(3){
+    transform: translate( calc(cos(126deg) * var(--offset)), calc(sin(126deg) * var(--offset)));
+    animation: intro3 500ms ease;
+}
+
+@keyframes intro3 {
+    0%   {transform: translate( calc(cos(126deg) * 0px), calc(sin(126deg) * 0px));}
+    100% {transform: translate( calc(cos(126deg) * var(--offset)), calc(sin(126deg) * var(--offset)));}
+  }
+.circle:nth-of-type(4){
+    transform: translate( calc(cos(198deg) * var(--offset)), calc(sin(198deg) * var(--offset)));
+    animation: intro4 500ms ease;
+}
+
+@keyframes intro4 {
+    0%   {transform: translate( calc(cos(198deg) * 0px), calc(sin(198deg) * 0px));}
+    100% {transform: translate( calc(cos(198deg) * var(--offset)), calc(sin(198deg) * var(--offset)));}
+  }
+.circle:nth-of-type(5){
+    transform: translate( calc(cos(270deg) * var(--offset)), calc(sin(270deg) * var(--offset)));
+    animation: intro5 500ms ease;
+}
+
+@keyframes intro5 {
+    0%   {transform: translate( calc(cos(270deg) * 0px), calc(sin(270deg) * 0px));}
+    100% {transform: translate( calc(cos(270deg) * var(--offset)), calc(sin(270deg) * var(--offset)));}
+  }
+
+  .closing {
+    --size: 30px;
+    position: absolute;
+    height: var(--size);
+    width: var(--size);
+    padding: 0;
+    border-radius: 50%;
+    top: calc(var(--size)/2 + 10px);
+    left: calc(var(--size)/2 + 10px);
+    border: none;
+    cursor: pointer;
+    box-shadow: inset 0 0 5px 0 white,
+    0 0 10px 0 rgb(128, 128, 128);
+  }
+
+  .closing {
+    --offset: 70px;
+    z-index: -10;
+    }
+    
+    .closing:nth-of-type(1){
+        transform: translate( calc(cos(348deg) * var(--offset)), calc(sin(348deg) * var(--offset)));
+        animation: outro1 500ms ease;
+    }
+    
+    @keyframes outro1 {
+        0%     {transform: translate( calc(cos(348deg) * var(--offset)), calc(sin(348deg) * var(--offset)));}
+        100%   {transform: translate( calc(cos(348deg) * 0px), calc(sin(348deg) * 0px));}
+      }
+    .closing:nth-of-type(2){
+        transform: translate( calc(cos(54deg) * var(--offset)), calc(sin(54deg) * var(--offset)));
+        animation: outro2 500ms ease;
+    }
+    
+    @keyframes outro2 {
+        0% {transform: translate( calc(cos(54deg) * var(--offset)), calc(sin(54deg) * var(--offset)));}
+        100%   {transform: translate( calc(cos(54deg) * 0px), calc(sin(54deg) * 0px));}
+      }
+    .closing:nth-of-type(3){
+        transform: translate( calc(cos(126deg) * var(--offset)), calc(sin(126deg) * var(--offset)));
+        animation: outro3 500ms ease;
+    }
+    
+    @keyframes outro3 {
+        0% {transform: translate( calc(cos(126deg) * var(--offset)), calc(sin(126deg) * var(--offset)));}
+        100%   {transform: translate( calc(cos(126deg) * 0px), calc(sin(126deg) * 0px));}
+      }
+    .closing:nth-of-type(4){
+        transform: translate( calc(cos(198deg) * var(--offset)), calc(sin(198deg) * var(--offset)));
+        animation: outro4 500ms ease;
+    }
+    
+    @keyframes outro4 {
+        0% {transform: translate( calc(cos(198deg) * var(--offset)), calc(sin(198deg) * var(--offset)));}
+        100%   {transform: translate( calc(cos(198deg) * 0px), calc(sin(198deg) * 0px));}
+      }
+    .closing:nth-of-type(5){
+        transform: translate( calc(cos(270deg) * var(--offset)), calc(sin(270deg) * var(--offset)));
+        animation: outro5 500ms ease;
+    }
+    
+    @keyframes outro5 {
+        0% {transform: translate( calc(cos(270deg) * var(--offset)), calc(sin(270deg) * var(--offset)));}
+        100%   {transform: translate( calc(cos(270deg) * 0px), calc(sin(270deg) * 0px));}
+      }
+      .refCard {
+          cursor: none;
+      }
