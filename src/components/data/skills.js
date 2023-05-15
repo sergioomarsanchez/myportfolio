@@ -29,8 +29,12 @@ export const SkillsData = [
         icon: <i className="devicon-redux-plain colored"></i>
       },
       {
-        name: "Firebase",
-        icon: <i className="devicon-firebase-plain colored"></i>
+        name: "Tailwind",
+        icon: <i className="devicon-tailwindcss-plain colored"></i>
+      },
+      {
+        name: "Typescript",
+        icon: <i className="devicon-typescript-plain colored"></i>
       },
     ],
   },
