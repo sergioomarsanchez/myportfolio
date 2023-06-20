@@ -33,7 +33,7 @@ function About() {
             Sergio Omar Sánchez
           </div>
           <div className={isDark ? "fullDiv" : "fullDivLight"}>
-            Full Stack Developer...
+            Front-End Developer...
           </div>
           <div className="about-imgDiv">
             <img
@@ -47,21 +47,19 @@ function About() {
           <div className="about-text">
             <h3>About me...</h3>
             <p>
-              I have a background in both IT and business management, having
-              studied Systems Analysis and earned a bachelor's degree from IES
-              Siglo XXI college. Recently, I completed a Full Stack Web
-              Developer course at Henry to further expand my technical skills.
-              With experience in Purchasing/Sales, I have honed my abilities as
-              a team player and developed a customer-focused mindset.
+              A front-end developer who takes pride in delivering exceptional
+              user experiences by meticulously crafting code that aligns with
+              the intended design, creating visually stunning and highly
+              interactive websites.
             </p>
           </div>
           <div className="about-photo">
             <Dog />
           </div>
         </div>
-          <div className="reference">
-            <References/>
-          </div>
+        <div className="reference">
+          <References />
+        </div>
       </div>
     </div>
   );
