@@ -1,15 +1,25 @@
 import homifyLogo from '../../assets/icons/logo-homify-2.png'
 import ywLogo from '../../assets/icons/yourwatches.logo.png'
 import systelLogo from '../../assets/icons/systel.logo.png'
+import tend from '../../assets/icons/trabajo-en-digital.png'
 import logo from '../../assets/logo/logo_small_icon_only.png'
 export const WorkData = [
+    {
+        company: "Front-End Developer at Trabano en Digital" ,
+        designation: "Front-End Developer",
+        dateJoining: "05-2023",
+        dateEnd: "Date",
+        companyLogo:tend,
+        work:"- Developed the front-end of a job board page, using technologies such as Next.js, Tailwind, and jQuery to achieve an attractive and functional user interface. Made significant contributions to the project's code by implementing innovative solutions and improving development efficiency.",
+        location: "México-Remote"
+    },
     {
         company: "Full Stack Developer Freelancer at SOS Sergio Omar Sánchez" ,
         designation: "Full Stack Developer",
         dateJoining: "11-2022",
-        dateEnd: "Date",
+        dateEnd: "04-2023",
         companyLogo:logo,
-        work:"Specializing in designing and implementing complex web applications for my clients. Adept at working independently as a freelancer or as part of a team in a remote environment. Lead full-stack developer with expertise in Next.js, MongoDB, JWT, API, Node.js, and React.js Specializing in designing and implementing complex web applications for my clients Passionate about staying up-to-date with the latest trends and technologies in web development.",
+        work:"- Specializing in designing and implementing complex web applications for my clients. Adept at working independently as a freelancer or as part of a team in a remote environment. Lead full-stack developer with expertise in Next.js, MongoDB, JWT, API, Node.js, and React.js Specializing in designing and implementing complex web applications for my clients Passionate about staying up-to-date with the latest trends and technologies in web development.",
         location: "Córdoba-Argentina"
     },
     {
@@ -27,7 +37,7 @@ export const WorkData = [
         dateJoining: "06.2022",
         dateEnd: "10.2022",
         companyLogo:"https://s3.amazonaws.com/tracxn-data-image/logo/company/X3jhC-Yp_400x400_a2f3eadb-d8f7-4fb5-af86-2cb6967202ef.jpg",
-        work:"Skills: Nodejs, Sequelize, Postgres, Express, Javascript, HTML ,CSS, Less, React, Redux, Git, Github, Jest and Supertest",
+        work:"- Skills: Nodejs, Sequelize, Postgres, Express, Javascript, HTML ,CSS, Less, React, Redux, Git, Github, Jest and Supertest",
         location: "Córdoba-Argentina"
     },
     {
