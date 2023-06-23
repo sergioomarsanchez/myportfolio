@@ -5,7 +5,7 @@ import tend from '../../assets/icons/trabajo-en-digital.png'
 import logo from '../../assets/logo/logo_small_icon_only.png'
 export const WorkData = [
     {
-        company: "Front-End Developer at Trabano en Digital" ,
+        company: "Front-End Developer at Trabajo en Digital" ,
         designation: "Front-End Developer",
         dateJoining: "05-2023",
         dateEnd: "Date",
