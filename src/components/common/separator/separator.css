@@ -1,29 +1,39 @@
 .separator {
-  background: rgb(103, 153, 155);
+  display: flex;
+  width: 50vw;
+  height: 2px;
   background: radial-gradient(
     circle,
-    rgba(103, 153, 155, 1) 0%,
+    rgba(103, 153, 155, 1) 57%,
     rgba(107, 91, 159, 1) 100%
   );
-  height: 6px;
-  width: 60%;
-  border-radius: 3px;
-  margin: 16px 0px;
-  filter: opacity(0.5);
-  box-shadow: 0 0 2px 1px white;
+  margin-top: 1rem;
+  align-self: center;
 }
 
 .separatorLight {
-  background: rgb(159, 91, 91);
+  display: flex;
+  width: 50vw;
+  height: 2px;
   background: radial-gradient(
     circle,
-    rgba(159, 91, 91, 1) 0%,
+    rgba(159, 91, 91, 1) 57%,
     rgba(95, 18, 18, 1) 100%
   );
-  height: 6px;
-  width: 60%;
-  border-radius: 3px;
-  margin: 16px 0px;
-  filter: opacity(0.5);
-  box-shadow: 0 0 2px 1px black;
+  margin-top: 1rem;
+  align-self: center;
+}
+
+.line {
+  display: flex;
+  width: 50vw;
+  height: 2px;
+  background: radial-gradient(
+    circle,
+    rgba(159, 91, 91, 1) 57%,
+    rgba(95, 18, 18, 1) 100%
+  );
+  margin-left: 1rem;
+  margin-top: 3rem;
+  align-self: center;
 }
