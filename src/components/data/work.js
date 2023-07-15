@@ -46,7 +46,7 @@ export const WorkData = [
         dateJoining: "10.2021",
         dateEnd: "02.2022",
         companyLogo:homifyLogo,
-        work:"- Development of the network of professionals in the Spanish speaking market and adding professionals to the platform via telephone, email, and social media, scouting and creating new leads, Promoting the free professional account as well as the premium account and help professionals to set up their profile.",
+        work:"-Helped our clients to improve their webpage SEO by giving them advice.-Based on the investigation of their webpage and marketing of their company I contacted potential clients to the platform.",
         location: "Berlin-Germany"
     },
     {
