@@ -5,17 +5,6 @@
     flex-direction: column;
     width: 75%;
 }
-.section-title {
-    font-size: 32px;
-    font-weight: 700;
-    color: #67999b;
-}
-
-.section-titleLight {
-    font-size: 32px;
-    font-weight: 700;
-    color: #9b6767;
-}
 
 .contact-container {
     display: flex;

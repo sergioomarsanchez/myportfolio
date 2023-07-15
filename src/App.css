@@ -14,3 +14,15 @@
     justify-content: center;
     flex-direction: column;
 }
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #67999b;
+}
+
+.section-titleLight {
+    font-size: 32px;
+    font-weight: 700;
+    color: #9b6767;
+}
