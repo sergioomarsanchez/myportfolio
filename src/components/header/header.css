@@ -70,6 +70,9 @@
     position: absolute;
     top: 5px;
     right: 5px;
+    background-color: red;
+    width: fit-content;
+    height: fit-content;
   }
   .web-menu {
     display: none;
