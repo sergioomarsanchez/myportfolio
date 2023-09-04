@@ -18,7 +18,9 @@ function ProjectCard({ project }) {
               rel="noreferrer"
             >
               <div className={isDark ? "link-button" : "link-buttonLight"}>
-                <i className="fi-rr-globe"> Demo</i>
+                <i className="fi-rr-globe"> 
+                {project.title === "Trabajo en Digital" ? " Web" :" Demo"}
+                </i>
               </div>
             </a>
           )}
@@ -50,7 +52,7 @@ function ProjectCard({ project }) {
       {project.image && (
         <a
           className="project-ytlink"
-          href={project.videoLink}
+          href={project.videoLink ? project.videoLink : project.demo}
           target="_blank"
           rel="noreferrer"
         >

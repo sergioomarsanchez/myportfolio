@@ -2,9 +2,18 @@ import moviefy from '../../assets/Moviefy.png'
 import thefoodapp from '../../assets/thefoodapp.png'
 import pizzaapp from '../../assets/pizzaApp.png'
 import myfin from '../../assets/myFin.png'
+import tend from '../../assets/tend.png'
 
 
 export const ProjectData=[
+    {
+        id:5,
+        title:"Trabajo en Digital",
+        about: "Trabajo en Digital is a leading online job search platform in Mexico. It uses an algorithm to match professionals, companies, and job openings to measure their compatibility.",
+        tags:["Nextjs", "TailwindCSS", "Javascript", "Html/Css", "React Query", "Zod", "React Hooks Form", "Fuse.js", "Headless UI", "Shadqn/UI"],
+        image:tend,
+        demo:"https://www.trabajoendigital.com/",
+    },
     {
         id:4,
         title:"My Fin",
