@@ -1,8 +1,14 @@
 .referencesButton,
 .referencesButtonLight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  font-size: small;
   width: 80px;
+  height: 80px;
   padding: 5px;
+  padding-bottom: 10px;
   aspect-ratio: 1;
   border-radius: 50%;
   border: none;
@@ -34,6 +40,11 @@
     animation: 500ms mymove ease-in-out;
     box-shadow: inset 0 0 10px 0 black,
     0 0 10px 0 black
+}
+
+.refCard {
+  cursor: none;
+  z-index: 100;
 }
 
 @keyframes mymove {
@@ -198,7 +209,4 @@ z-index: 2;
     @keyframes outro5 {
         0% {transform: translate( calc(cos(270deg) * var(--offset)), calc(sin(270deg) * var(--offset)));}
         100%   {transform: translate( calc(cos(270deg) * 0px), calc(sin(270deg) * 0px));}
-      }
-      .refCard {
-          cursor: none;
       }
