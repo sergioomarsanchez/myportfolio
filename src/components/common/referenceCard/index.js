@@ -26,7 +26,7 @@ function ReferenceCard({ reference, setCardsState, prev }) {
         </header>
         <footer className="foot">
           <img
-            src={reference.image}
+             src={`/references/${reference.image}.png`}
             loading="lazy"
             alt={"profile of " + reference.name}
             className="profileImg"

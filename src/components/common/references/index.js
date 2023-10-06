@@ -4,6 +4,7 @@ import { ThemeContext } from "../../../contexts/theme";
 import "./references.css";
 import ReferenceCard from "../referenceCard";
 
+
 function References() {
   const [isDark] = useContext(ThemeContext);
   const [open, setOpen] = useState(false);
@@ -63,7 +64,7 @@ function References() {
               }}
             >
               <img
-                src={r.image}
+                src={`/references/${r.image}.png`}
                 loading="lazy"
                 alt={`profile of ${r.name}`}
                 className="profileImage"
