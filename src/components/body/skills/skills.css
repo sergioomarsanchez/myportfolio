@@ -6,7 +6,7 @@
   width: 75%;
   position: relative;
 }
-.circle,
+.circleSkill,
 .circleLight {
   position: absolute;
   top: 0;
@@ -15,7 +15,7 @@
   overflow: hidden;
   line-height: 0;
 }
-.circle svg,
+.circleSkill svg,
 .circleLight svg {
   position: relative;
   display: block;
@@ -23,7 +23,7 @@
   height: 150px;
   transform: rotateY(180deg);
 }
-.circle .shape-fill {
+.circleSkill .shape-fill {
   fill: #6b5b9f0a;
 }
 .circleLight .shape-fillLight {
@@ -56,11 +56,11 @@
   .skills {
     width: 95%;
   }
-  .circle,
+  .circleSkill,
   .circleLight {
     width: 80%;
   }
-  .circle svg,
+  .circleSkill svg,
   .circleLight svg {
     transform: none;
   }
