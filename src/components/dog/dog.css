@@ -48,6 +48,7 @@
     flex-flow: column;
     width: fit-content;
     z-index: 2;
+    margin: 0;
 }
 .controls div{
     margin-bottom: 1rem;
@@ -56,7 +57,9 @@
     font-size: 15px;
     margin-bottom: 1rem;
 }
-
+#animations{
+    margin: 0;
+}
 @media only screen and (max-width: 720px) {
     @keyframes intro {
         0%   {right:500px}

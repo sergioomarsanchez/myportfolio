@@ -24,7 +24,7 @@
   transform: rotateY(180deg);
 }
 .circle .shape-fill {
-  fill: #6b5b9f13;
+  fill: #6b5b9f0a;
 }
 .circleLight .shape-fillLight {
   fill: #6d2c2c11;
@@ -58,7 +58,7 @@
   }
   .circle,
   .circleLight {
-    width: 100%;
+    width: 80%;
   }
   .circle svg,
   .circleLight svg {
@@ -83,6 +83,6 @@
   .skills-section {
     display: flex;
     justify-content: space-between;
-    margin-top: 1rem;
+    margin-top: 0rem;
   }
 }

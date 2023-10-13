@@ -78,7 +78,11 @@ export const SkillsData = [
       {
         name: "Nextjs",
         icon: <i className="devicon-nextjs-plain colored"></i>
-      }
+      },
+      {
+        name: "Trello",
+        icon: <i className="devicon-trello-plain colored"></i>
+      },
     ],
   },
 ];
