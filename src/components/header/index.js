@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { ThemeContext } from "../../contexts/theme";
 import { useLocation, Link } from "react-router-dom";
 import ToggleButton from "../common/toggleButton/toggleButton";
@@ -9,7 +9,6 @@ import logoLight from "../../assets/logo/logo_small.png";
 import "./header.css";
 
 function Header() {
-  const [isOpen, setIsOpen] = useState(false);
   const { pathname } = useLocation();
   const [isDark] = useContext(ThemeContext);
 
@@ -39,14 +38,7 @@ function Header() {
           <Web />
         </div>
         <div className="mobile-menu">
-          <div onClick={() => setIsOpen(!isOpen)}>
-            <i
-              className={
-                isDark ? "fi-rr-apps menu-icon" : "fi-rr-apps menu-iconLight"
-              }
-            ></i>
-          </div>
-          {isOpen && <Mobile isOpen={isOpen} setIsOpen={setIsOpen} />}
+          <Mobile />
         </div>
       </div>
       <div className="toggleContainer">

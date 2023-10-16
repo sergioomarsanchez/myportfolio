@@ -8,15 +8,36 @@ function Web() {
   const [isDark] = useContext(ThemeContext);
   return (
     <div className="web">
+      <Link to={"/"} style={{ textDecoration: "none" }}>
+        <div className={isDark ? "web-option" : "web-optionLight"}>
+          <i
+            className="option-icon"
+            style={
+              pathname === "/"
+                ? {
+                    border: "solid",
+                    borderWidth: "2px",
+                    borderRadius: "15px",
+                    borderColor: isDark ? "#89d1d4" : "#790404",
+                  }
+                : null
+            }
+          >
+            About me
+          </i>
+        </div>
+      </Link>
       <Link to={"/projects"} style={{ textDecoration: "none" }}>
         <div className={isDark ? "web-option" : "web-optionLight"}>
           <i
-            className="fi-rr-edit-alt option-icon"
+            className="option-icon"
             style={
               pathname === "/projects"
                 ? {
-                    transform: "scale(1.1)",
-                    color: isDark ? "#82bfc2" : "#3f0a0a",
+                    border: "solid",
+                    borderWidth: "2px",
+                    borderRadius: "15px",
+                    borderColor: isDark ? "#89d1d4" : "#790404",
                   }
                 : null
             }
@@ -28,12 +49,14 @@ function Web() {
       <Link to={"/skills"} style={{ textDecoration: "none" }}>
         <div className={isDark ? "web-option" : "web-optionLight"}>
           <i
-            className="fi-rr-laptop option-icon"
+            className="option-icon"
             style={
               pathname === "/skills"
                 ? {
-                    transform: "scale(1.1)",
-                    color: isDark ? "#82bfc2" : "#3f0a0a",
+                    border: "solid",
+                    borderWidth: "2px",
+                    borderRadius: "15px",
+                    borderColor: isDark ? "#89d1d4" : "#790404",
                   }
                 : null
             }
@@ -45,12 +68,14 @@ function Web() {
       <Link to={"/work"} style={{ textDecoration: "none" }}>
         <div className={isDark ? "web-option" : "web-optionLight"}>
           <i
-            className="fi-rr-briefcase option-icon"
+            className="option-icon"
             style={
               pathname === "/work"
                 ? {
-                    transform: "scale(1.1)",
-                    color: isDark ? "#82bfc2" : "#3f0a0a",
+                    border: "solid",
+                    borderWidth: "2px",
+                    borderRadius: "15px",
+                    borderColor: isDark ? "#89d1d4" : "#790404",
                   }
                 : null
             }
