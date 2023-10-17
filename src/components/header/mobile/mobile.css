@@ -11,7 +11,7 @@
 }
 .mobile,
 .mobileLight {
-  background-color: #141e30f0;
+  background-color: #090f1bf0;
   width: 98%;
   padding: 10px;
   padding-bottom: 15px;
@@ -30,7 +30,7 @@
 }
 .mobileLight {
   background-color: #ebebebe9;
-  border: 1px solid #141e30e6;
+  border: 1px solid #090f1be6;
 }
 .routeNames {
   font-size: 12px;

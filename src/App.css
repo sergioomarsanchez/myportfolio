@@ -1,12 +1,12 @@
 .app {
     scroll-behavior: smooth;
-    background-color: #141E30;
+    background-color: #090f1b;
     color:#d9ebff;
 }
 
 .appLight {
     background-color: #ebebeb;
-    color: #141E30;
+    color: #090f1b;
 }
 
 #app{

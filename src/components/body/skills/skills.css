@@ -58,11 +58,12 @@
   }
   .circleSkill,
   .circleLight {
-    width: 80%;
+    width: 100%;
   }
   .circleSkill svg,
   .circleLight svg {
     transform: none;
+    height: 100px;
   }
   .skills-list {
     max-width: 100%;

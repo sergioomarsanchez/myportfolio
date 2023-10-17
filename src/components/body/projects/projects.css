@@ -81,6 +81,7 @@
   .tilt svg,
   .tiltLight svg {
     transform: none;
+    height: 100px;
   }
   .title-img {
     display: flex;
