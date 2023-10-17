@@ -13,9 +13,11 @@
 .mobileLight {
   background-color: #141e30f0;
   width: 98%;
-  padding: 5px;
+  padding: 10px;
+  padding-bottom: 15px;
   display: flex;
-  border-radius: 10px;
+  border-top-left-radius: 200px 25px;
+  border-top-right-radius: 200px 25px;
   border: 1px solid #ebebebee;
   justify-content: space-around;
   align-items: center;

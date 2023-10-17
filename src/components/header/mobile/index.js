@@ -17,6 +17,7 @@ function Mobile() {
               pathname === "/"
                 ? {
                     color: isDark ? "#82bfc2" : "#3f0a0a",
+                    filter: isDark ? "drop-shadow(0 0 7px #82bfc2" : "drop-shadow(0 0 7px #3f0a0a)",
                   }
                 : null
             }
@@ -33,6 +34,7 @@ function Mobile() {
               pathname === "/projects"
                 ? {
                     color: isDark ? "#82bfc2" : "#3f0a0a",
+                    filter: isDark ? "drop-shadow(0 0 7px #82bfc2" : "drop-shadow(0 0 7px #3f0a0a)",
                   }
                 : null
             }
@@ -49,6 +51,7 @@ function Mobile() {
               pathname === "/skills"
                 ? {
                     color: isDark ? "#82bfc2" : "#3f0a0a",
+                    filter: isDark ? "drop-shadow(0 0 7px #82bfc2" : "drop-shadow(0 0 7px #3f0a0a)",
                   }
                 : null
             }
@@ -65,6 +68,7 @@ function Mobile() {
               pathname === "/work"
                 ? {
                     color: isDark ? "#82bfc2" : "#3f0a0a",
+                    filter: isDark ? "drop-shadow(0 0 7px #82bfc2" : "drop-shadow(0 0 7px #3f0a0a)",
                   }
                 : null
             }
