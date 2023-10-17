@@ -50,6 +50,7 @@
   -webkit-text-fill-color: transparent;
   animation: 6s linear infinite shine;
   white-space: nowrap;
+  margin-bottom: 0;
 }
 .div-for-mobile {
   display: flex;
@@ -95,6 +96,8 @@
   white-space: nowrap;
   overflow: hidden;
   letter-spacing: 4px;
+  margin-top: 2px;
+  font-size: 30px;
 }
 .about-imgLight {
   filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.813));
@@ -203,6 +206,7 @@
     white-space: nowrap;
     overflow: hidden;
     letter-spacing: 4px;
+      font-size: 15px;
   }
   .fullDiv {
     border-right: 2px solid rgba(245, 245, 245, 0.662);
