@@ -78,8 +78,8 @@
     padding: 0;
     border-radius: 50%;
     border: none;
-    top: calc(var(--size)/2 + 10px);
-    left: calc(var(--size)/2 + 10px);
+    top: calc(var(--size)/2 + 15px);
+    left: calc(var(--size)/2 + 15px);
     cursor: pointer;
     box-shadow: inset 0 0 5px 0 white,
     0 0 10px 0 rgb(128, 128, 128);
@@ -94,12 +94,12 @@
     cursor: pointer;
 }
 
-.circle{
---offset: 70px;
+.circleRef{
+--offset: 75px;
 z-index: 2;
 }
 
-.circle:nth-of-type(1){
+.circleRef:nth-of-type(1){
     transform: translate( calc(cos(348deg) * var(--offset)), calc(sin(348deg) * var(--offset)));
     animation: intro1 500ms ease;
 }
@@ -108,7 +108,7 @@ z-index: 2;
     0%   {transform: translate( calc(cos(348deg) * 0px), calc(sin(348deg) * 0px));}
     100% {transform: translate( calc(cos(348deg) * var(--offset)), calc(sin(348deg) * var(--offset)));}
   }
-.circle:nth-of-type(2){
+.circleRef:nth-of-type(2){
     transform: translate( calc(cos(54deg) * var(--offset)), calc(sin(54deg) * var(--offset)));
     animation: intro2 500ms ease;
 }
@@ -117,7 +117,7 @@ z-index: 2;
     0%   {transform: translate( calc(cos(54deg) * 0px), calc(sin(54deg) * 0px));}
     100% {transform: translate( calc(cos(54deg) * var(--offset)), calc(sin(54deg) * var(--offset)));}
   }
-.circle:nth-of-type(3){
+.circleRef:nth-of-type(3){
     transform: translate( calc(cos(126deg) * var(--offset)), calc(sin(126deg) * var(--offset)));
     animation: intro3 500ms ease;
 }
@@ -126,7 +126,7 @@ z-index: 2;
     0%   {transform: translate( calc(cos(126deg) * 0px), calc(sin(126deg) * 0px));}
     100% {transform: translate( calc(cos(126deg) * var(--offset)), calc(sin(126deg) * var(--offset)));}
   }
-.circle:nth-of-type(4){
+.circleRef:nth-of-type(4){
     transform: translate( calc(cos(198deg) * var(--offset)), calc(sin(198deg) * var(--offset)));
     animation: intro4 500ms ease;
 }
@@ -135,7 +135,7 @@ z-index: 2;
     0%   {transform: translate( calc(cos(198deg) * 0px), calc(sin(198deg) * 0px));}
     100% {transform: translate( calc(cos(198deg) * var(--offset)), calc(sin(198deg) * var(--offset)));}
   }
-.circle:nth-of-type(5){
+.circleRef:nth-of-type(5){
     transform: translate( calc(cos(270deg) * var(--offset)), calc(sin(270deg) * var(--offset)));
     animation: intro5 500ms ease;
 }
@@ -152,8 +152,8 @@ z-index: 2;
     width: var(--size);
     padding: 0;
     border-radius: 50%;
-    top: calc(var(--size)/2 + 10px);
-    left: calc(var(--size)/2 + 10px);
+    top: calc(var(--size)/2 + 15px);
+    left: calc(var(--size)/2 + 15px);
     border: none;
     cursor: pointer;
     box-shadow: inset 0 0 5px 0 white,

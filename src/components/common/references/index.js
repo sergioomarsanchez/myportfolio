@@ -56,7 +56,7 @@ function References() {
                 open
                   ? closing
                     ? "closing"
-                    : "profilePic circle"
+                    : "profilePic circleRef"
                   : "profilePic"
               }
               onClick={() => {
