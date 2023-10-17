@@ -49,6 +49,7 @@
   font-size: 50px;
   -webkit-text-fill-color: transparent;
   animation: 6s linear infinite shine;
+  white-space: nowrap;
 }
 .div-for-mobile {
   display: flex;

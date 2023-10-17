@@ -28,13 +28,13 @@ function About() {
       </div>
       <div className="about-top">
         <div className="about-info">
-          <div> Hi, I am</div>
-          <div className={isDark ? "info-name" : "info-nameLight"}>
+          <span> Hi, I am</span>
+          <h1 className={isDark ? "info-name" : "info-nameLight"}>
             Sergio Omar Sánchez
-          </div>
-          <div className={isDark ? "fullDiv" : "fullDivLight"}>
+          </h1>
+          <h2 className={isDark ? "fullDiv" : "fullDivLight"}>
             Front-End Developer...
-          </div>
+          </h2>
           <div className="about-imgDiv">
             <img
               className={isDark ? "about-img" : "about-imgLight"}
@@ -45,7 +45,7 @@ function About() {
         </div>
         <div className="div-for-mobile">
           <div className="about-text">
-            <h3>About me...</h3>
+            <h2>About me...</h2>
             <p>
               A front-end developer who takes pride in delivering exceptional
               user experiences by meticulously crafting code that aligns with
