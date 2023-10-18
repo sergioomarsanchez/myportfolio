@@ -60,7 +60,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 6rem;
+  bottom: 5rem;
   right: 2rem;
   font-size: 5px;
   z-index: 10;
@@ -86,7 +86,7 @@
 #buttonLight:before {
   content: "Back to Top";
   position: absolute;
-  transform: translateX(-50%) translateY(25px);
+  transform: translateY(28px);
   font-size: 10px;
   transition: 200ms;
   color: transparent;
@@ -95,12 +95,12 @@
 
 #button:hover {
   box-shadow: 0 1px 5px rgba(255, 255, 255, 0.2);
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 #buttonLight:hover {
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 #button:hover::before {
