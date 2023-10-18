@@ -1,29 +1,17 @@
-.contact,
-.contact-container {
-  justify-content: center;
-  display: flex;
-}
-#button svg,
-#button:hover svg,
-#buttonLight svg,
-#buttonLight:hover svg {
-  animation: 2s linear infinite bounce;
-}
 .contact {
+  display: flex;
   align-self: center;
+  justify-content: center;
   flex-direction: column;
   width: 75%;
 }
-.noselect,
-.noselectLight {
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  transition: 0.2s;
-}
+
 .contact-container {
+  display: flex;
+  justify-content: center;
   text-align: center;
 }
+
 .noselect,
 .noselectLight {
   -webkit-touch-callout: none;
@@ -34,20 +22,38 @@
   user-select: none;
   -webkit-tap-highlight-color: transparent;
 }
+
 .noselect {
-  background-color: #1f3d6d;
-  background-image: linear-gradient(315deg, #1f3d6d 0, #162542 74%);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-color: rgba(31, 61, 109, 1);
+  background-image: linear-gradient(
+    315deg,
+    rgba(31, 61, 109, 1) 0%,
+    rgb(22, 37, 66) 74%
+  );
   border: none;
   border-radius: 50%;
-  box-shadow: 0 0 2px 0 #bcbcbc;
+  transition: 200ms;
+  box-shadow: 0 0 2px 0px #bcbcbc;
 }
 .noselectLight {
-  background-color: #d2bb87;
-  background-image: linear-gradient(315deg, #d2bb87 0, #5f1212 74%);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-color: rgb(210, 187, 135);
+  background-image: linear-gradient(
+    315deg,
+    rgb(210, 187, 135) 0%,
+    rgba(95, 18, 18, 1) 74%
+  );
   border: none;
   border-radius: 50%;
-  box-shadow: 0 0 2px 0 #262626;
+  transition: 200ms;
+  box-shadow: 0 0 2px 0px #262626;
 }
+
 #button,
 #buttonLight {
   position: fixed;
@@ -60,76 +66,94 @@
   z-index: 10;
   color: transparent;
 }
+
 #button svg,
 #buttonLight svg {
   fill: white;
   width: 30px;
   height: 30px;
   position: absolute;
-  padding-left: 0.5rem;
-  padding-bottom: 0.6rem;
+  left: 20px;
+  top: 17px;
   display: flex;
+  animation: bounce 2s infinite linear;
 }
 #buttonLight svg {
   fill: black;
 }
+
 #button:before,
 #buttonLight:before {
   content: "Back to Top";
   position: absolute;
   transform: translateX(-50%) translateY(25px);
   font-size: 10px;
-  transition: 0.2s;
+  transition: 200ms;
   color: transparent;
-  font-weight: 700;
+  font-weight: bold;
 }
+
 #button:hover {
   box-shadow: 0 1px 5px rgba(255, 255, 255, 0.2);
   transform: scale(1.2);
 }
+
 #buttonLight:hover {
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
   transform: scale(1.2);
 }
+
 #button:hover::before {
   color: #fff;
 }
+
 #buttonLight:hover::before {
-  color: #000;
+  color: rgb(0, 0, 0);
 }
+
+#button:hover svg,
+#buttonLight:hover svg {
+  animation: bounce 2s infinite linear;
+}
+
 @keyframes bounce {
-  0%,
-  100%,
-  50% {
+  0% {
     transform: translateX(-50%) translateY(-50%);
   }
   25% {
     transform: translateX(-50%) translateY(-65%);
   }
+  50% {
+    transform: translateX(-50%) translateY(-50%);
+  }
   75% {
     transform: translateX(-50%) translateY(-35%);
   }
-}
-#button:focus {
-  outline: 0;
-}
-@media only screen and (max-width: 512px) {
-  .contact,
-  .contact-container {
-    display: flex;
-    margin-left: 0.5rem;
+  100% {
+    transform: translateX(-50%) translateY(-50%);
   }
+}
+
+#button:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 512px) {
   .contact {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex: 1;
     width: 95%;
+    margin-left: 0.5rem;
   }
   .contact-container {
+    display: flex;
     flex: 1;
     justify-content: center;
     text-align: center;
+    margin-left: 0.5rem;
     margin-right: 0.1rem;
   }
 }
