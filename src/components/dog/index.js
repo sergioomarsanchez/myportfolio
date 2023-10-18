@@ -168,6 +168,7 @@ function Dog() {
       </div>
       <div className="controls">
         <div>His name is Tom, tell him what to do</div>
+        <label htmlFor="animations">Actions</label>
         <select
           name="animations"
           id="animations"

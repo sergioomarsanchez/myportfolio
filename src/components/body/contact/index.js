@@ -37,6 +37,7 @@ function Contact() {
         onClick={scrollToTop}
         style={{ opacity: isVisible }}
         className={isDark ? "noselect" : "noselectLight"}
+        name="Back to top button"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
