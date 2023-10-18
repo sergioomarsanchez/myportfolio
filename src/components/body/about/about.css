@@ -1,3 +1,7 @@
+.about-photo,
+.about-text {
+  margin-left: 3rem;
+}
 .about,
 .about-text {
   margin-bottom: 3rem;
@@ -58,9 +62,6 @@
   justify-content: center;
   align-items: center;
 }
-.about-text {
-  margin-left: 3rem;
-}
 .about-text p {
   max-height: 600px;
 }
@@ -68,7 +69,6 @@
   display: flex;
   flex-flow: column-reverse;
   justify-content: center;
-  margin-left: 3rem;
   margin-right: 3rem;
   width: 50%;
 }
@@ -206,7 +206,7 @@
     white-space: nowrap;
     overflow: hidden;
     letter-spacing: 4px;
-      font-size: 15px;
+    font-size: 15px;
   }
   .fullDiv {
     border-right: 2px solid rgba(245, 245, 245, 0.662);
