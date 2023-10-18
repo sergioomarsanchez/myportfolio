@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import "./mobile.css";
 import { useLocation, Link } from "react-router-dom";
 import { ThemeContext } from "../../../contexts/theme";
+import { home, work, projects, skills } from "../../../assets/icons/home.js";
 
 function Mobile() {
   const { pathname } = useLocation();
@@ -17,11 +18,14 @@ function Mobile() {
               pathname === "/"
                 ? {
                     color: isDark ? "#82bfc2" : "#3f0a0a",
-                    filter: isDark ? "drop-shadow(0 0 7px #82bfc2" : "drop-shadow(0 0 7px #3f0a0a)",
+                    filter: isDark
+                      ? "drop-shadow(0 0 7px #82bfc2"
+                      : "drop-shadow(0 0 7px #3f0a0a)",
                   }
                 : null
             }
           >
+            {home}
             <span className="routeNames">About me</span>
           </i>
         </div>
@@ -34,11 +38,14 @@ function Mobile() {
               pathname === "/projects"
                 ? {
                     color: isDark ? "#82bfc2" : "#3f0a0a",
-                    filter: isDark ? "drop-shadow(0 0 7px #82bfc2" : "drop-shadow(0 0 7px #3f0a0a)",
+                    filter: isDark
+                      ? "drop-shadow(0 0 7px #82bfc2"
+                      : "drop-shadow(0 0 7px #3f0a0a)",
                   }
                 : null
             }
           >
+            {projects}
             <span className="routeNames">Projects</span>
           </i>
         </div>
@@ -51,11 +58,14 @@ function Mobile() {
               pathname === "/skills"
                 ? {
                     color: isDark ? "#82bfc2" : "#3f0a0a",
-                    filter: isDark ? "drop-shadow(0 0 7px #82bfc2" : "drop-shadow(0 0 7px #3f0a0a)",
+                    filter: isDark
+                      ? "drop-shadow(0 0 7px #82bfc2"
+                      : "drop-shadow(0 0 7px #3f0a0a)",
                   }
                 : null
             }
           >
+            {skills}
             <span className="routeNames">Skills</span>
           </i>
         </div>
@@ -68,11 +78,14 @@ function Mobile() {
               pathname === "/work"
                 ? {
                     color: isDark ? "#82bfc2" : "#3f0a0a",
-                    filter: isDark ? "drop-shadow(0 0 7px #82bfc2" : "drop-shadow(0 0 7px #3f0a0a)",
+                    filter: isDark
+                      ? "drop-shadow(0 0 7px #82bfc2"
+                      : "drop-shadow(0 0 7px #3f0a0a)",
                   }
                 : null
             }
           >
+            {work}
             <span className="routeNames">Work</span>
           </i>
         </div>
