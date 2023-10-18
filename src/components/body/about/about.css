@@ -50,7 +50,7 @@
 }
 .info-name,
 .info-nameLight {
-  font-size: 50px;
+  font-size: 40px;
   -webkit-text-fill-color: transparent;
   animation: 6s linear infinite shine;
   white-space: nowrap;
