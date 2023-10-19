@@ -32,7 +32,7 @@ function ProjectCard({ project }) {
               rel="noreferrer"
             >
               <div className={isDark ? "link-button" : "link-buttonLight"}>
-                <i className="devicon-github-original"> Github</i>
+                <i className="devicon-github-original"> GitHub</i>
               </div>
             </a>
           )}

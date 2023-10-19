@@ -35,7 +35,7 @@
 }
 
 .referencesButton:hover {
-  animation: 500ms mymove ease-in-out;
+  animation: mymove 500ms ease-in-out;
   box-shadow: inset 0 0 10px 0 rgb(49, 49, 49), 0 0 10px 0 rgb(55, 55, 55);
 }
 
