@@ -42,7 +42,7 @@ function ProjectCard({ project }) {
           {project.tags.map((tag, index) => {
             return (
               <label key={tag + index} className={isDark ? "tag" : "tagLight"}>
-                {tag}
+                - {tag}
               </label>
             );
           })}
