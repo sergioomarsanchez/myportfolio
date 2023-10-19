@@ -16,7 +16,7 @@
 }
 .skill-icon {
   font-size: 45px;
-  padding: 0.2rem 1rem;
+  padding: 0.6rem 1rem;
   background-color: #4d3b67;
   border-top-right-radius: 50px 30px;
   border-bottom-left-radius: 50px 20px;
@@ -44,6 +44,7 @@
 }
 .skill-name {
   font-size: 18px;
+  margin-top: 0.5rem;
 }
 .scrum {
   width: 55px;
@@ -60,5 +61,14 @@
   }
   .dogCard {
     margin-bottom: 6rem;
+  }
+  .skill-name{
+    font-size: 14px;
+  }
+  .skill-icon i {
+font-size: 30px;
+  }
+  .skill-icon img {
+    width: 30px;
   }
 }
