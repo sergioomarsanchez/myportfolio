@@ -22,9 +22,10 @@ function ReferenceCard({ reference, setCardsState, prev }) {
           X
         </button>
         <header>
+          <span className="refName">{reference.name}</span>
           <p className="refText">{reference.referenceText}</p>
         </header>
-        <footer className="foot">
+        <section className="foot">
           <img
              src={`/references/${reference.image}.png`}
             loading="lazy"
@@ -32,9 +33,8 @@ function ReferenceCard({ reference, setCardsState, prev }) {
             className="profileImg"
           />
           <section className="coworkerInfo">
-            <span>{reference.name}</span>
             <span>
-              And I worked with Sergio as his {reference.workRelation}
+              Worked with Sergio as his <span className="refRelation">{reference.workRelation}</span>
             </span>
             <span>{reference.title}</span>
             <span>
@@ -43,7 +43,7 @@ function ReferenceCard({ reference, setCardsState, prev }) {
               </a>
             </span>
           </section>
-        </footer>
+        </section>
       </section>
     </div>
   );
