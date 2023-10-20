@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { ThemeContext } from "../../contexts/theme";
 import { useLocation, Link } from "react-router-dom";
 import ToggleButton from "../common/toggleButton/toggleButton";
+import ToggleLang from "../common/toggleLang/toggleLang";
 import Mobile from "./mobile";
 import Web from "./web/index";
 import logo from "../../assets/logo/logo_white_large.png";
@@ -43,6 +44,7 @@ function Header() {
       </div>
       <div className="toggleContainer">
         <ToggleButton />
+        <ToggleLang />
       </div>
     </div>
   );

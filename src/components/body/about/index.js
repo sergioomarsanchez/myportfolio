@@ -2,11 +2,12 @@ import React, { useContext, useEffect } from "react";
 import "./about.css";
 import Dog from "../../dog";
 import img from "../../../assets/img/Olá - Relaxing.png";
-import { ThemeContext } from "../../../contexts/theme";
+import { ThemeContext, LangContext } from "../../../contexts/theme";
 import References from "../../common/references";
 
 function About() {
   const [isDark] = useContext(ThemeContext);
+  const [es] = useContext(LangContext);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -28,12 +29,12 @@ function About() {
       </div>
       <div className="about-top">
         <div className="about-info">
-          <span> Hi, I am</span>
+          <span>{es ? "Hola, soy" : "Hi, I am"}</span>
           <h1 className={isDark ? "info-name" : "info-nameLight"}>
             Sergio Omar Sánchez
           </h1>
           <h2 className={isDark ? "fullDiv" : "fullDivLight"}>
-            Front-End Developer...
+            {es ? "Desarrollador Front-End..." : "Front-End Developer..."}
           </h2>
           <div className="about-imgDiv">
             <img
@@ -45,12 +46,14 @@ function About() {
         </div>
         <div className="div-for-mobile">
           <div className="about-text">
-            <h2>About me...</h2>
+            <h2>
+             { es? "Sobre mí" :
+              "About me..."}
+              </h2>
             <p>
-              A front-end developer who takes pride in delivering exceptional
-              user experiences by meticulously crafting code that aligns with
-              the intended design, creating visually stunning and highly
-              interactive websites.
+              {es
+                ? "Desarrollador Front-end que se enorgullece de ofrecer experiencias de usuario excepcionales mediante la meticulosa creación de código que se ajusta al diseño previsto, creando sitios web visualmente impactantes y altamente interactivos."
+                : "A front-end developer who takes pride in delivering exceptional user experiences by meticulously crafting code that aligns with the intended design, creating visually stunning and highly interactive websites."}
             </p>
           </div>
           <div className="about-photo">

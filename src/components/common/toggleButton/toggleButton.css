@@ -8,9 +8,8 @@
 	box-shadow: inset 0px 0.5px 1.5px rgba(0,0,0,0.4), inset 0px -0.5px 1.5px rgba(255,255,255,0.4);
 	cursor: pointer;
 	transition: 0.3s;
-	margin-bottom: 1.4rem;
-	margin-left: 1rem;
 	z-index: 1;
+margin-left: 5px;
 }
 .label:after {
 	content: "";
