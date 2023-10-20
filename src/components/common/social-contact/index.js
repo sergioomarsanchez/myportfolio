@@ -36,6 +36,7 @@ function SocialContact() {
                 {mail}
               </i>
             )}
+            {item.platform}
           </a>
         );
       })}
