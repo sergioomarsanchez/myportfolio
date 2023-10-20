@@ -1,12 +1,13 @@
 import React, { useContext } from "react";
 import "./mobile.css";
 import { useLocation, Link } from "react-router-dom";
-import { ThemeContext } from "../../../contexts/theme";
+import { ThemeContext, LangContext } from "../../../contexts/theme";
 import { home, work, projects, skills } from "../../../assets/icons/home.js";
 
 function Mobile() {
   const { pathname } = useLocation();
   const [isDark] = useContext(ThemeContext);
+  const [es] = useContext(LangContext);
 
   return (
     <div className={isDark ? "mobile" : "mobileLight"}>
@@ -26,7 +27,7 @@ function Mobile() {
             }
           >
             {home}
-            <span className="routeNames">About me</span>
+            <span className="routeNames">{es ? "Sobre mí" : "About me"}</span>
           </i>
         </div>
       </Link>
@@ -41,12 +42,15 @@ function Mobile() {
                     filter: isDark
                       ? "drop-shadow(0 0 7px #82bfc2"
                       : "drop-shadow(0 0 7px #3f0a0a)",
+                    transform: "translateY(-5px)",
                   }
-                : null
+                : {
+                    transform: "translateY(-5px)",
+                  }
             }
           >
             {projects}
-            <span className="routeNames">Projects</span>
+            <span className="routeNames">{es ? "Proyectos" : "Projects"}</span>
           </i>
         </div>
       </Link>
@@ -61,12 +65,15 @@ function Mobile() {
                     filter: isDark
                       ? "drop-shadow(0 0 7px #82bfc2"
                       : "drop-shadow(0 0 7px #3f0a0a)",
+                    transform: "translateY(-5px)",
                   }
-                : null
+                : {
+                    transform: "translateY(-5px)",
+                  }
             }
           >
             {skills}
-            <span className="routeNames">Skills</span>
+            <span className="routeNames">{es ? "Habilidades" : "Skills"}</span>
           </i>
         </div>
       </Link>
@@ -86,7 +93,7 @@ function Mobile() {
             }
           >
             {work}
-            <span className="routeNames">Work</span>
+            <span className="routeNames">{es ? "Experiencia" : "Work"}</span>
           </i>
         </div>
       </Link>

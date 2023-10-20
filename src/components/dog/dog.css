@@ -59,6 +59,21 @@
 }
 #animations{
     margin: 0;
+    margin-top: 0.2rem;
+}
+.animations{
+    border: solid white 1px;
+    border-radius: 10px;
+    background-color: #090f1b;
+    color: white;
+    outline-color: #1e51b7;
+}
+.animationsLight{
+    border: solid black 1px;
+    border-radius: 10px;
+    background-color: #ebebeb;
+    color: black;
+    outline-color: #959595;
 }
 @media only screen and (max-width: 720px) {
     @keyframes intro {

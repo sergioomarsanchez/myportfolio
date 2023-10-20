@@ -1,10 +1,11 @@
 import React, { useRef, useState, useEffect, useContext } from "react";
-import { ThemeContext } from "../../contexts/theme";
+import { ThemeContext, LangContext } from "../../contexts/theme";
 import dog from "../../assets/dog_left_right_white.png";
 import "./dog.css";
 
 function Dog() {
   const [isDark] = useContext(ThemeContext);
+  const [es] = useContext(LangContext);
   const [playerState, setPlayerState] = useState("run");
   const canvas = useRef(null);
 
@@ -31,62 +32,62 @@ function Dog() {
     {
       name: "idle",
       frames: 7,
-      label: "Idle",
+      label: es ? "Quieto" : "Idle",
     },
     {
       name: "idleLeft",
       frames: 7,
-      label: "Idle Left",
+      label: es ? "Quieto Izquierda" : "Idle Left",
     },
     {
       name: "jump",
       frames: 7,
-      label: "Jump",
+      label: es ? "Salto" : "Jump",
     },
     {
       name: "jumpLeft",
       frames: 7,
-      label: "Jump Left",
+      label: es ? "Salto Izquierda" : "Jump Left",
     },
     {
       name: "fall",
       frames: 7,
-      label: "Fall",
+      label: es ? "Caída" : "Fall",
     },
     {
       name: "fallLeft",
       frames: 7,
-      label: "Fall Left",
+      label: es ? "Caída Izquierda" : "Fall Left",
     },
     {
       name: "run",
       frames: 9,
-      label: "Run",
+      label: es ? "Correr" : "Run",
     },
     {
       name: "runLeft",
       frames: 9,
-      label: "Run Left",
+      label: es ? "Correr Izquierda" : "Run Left",
     },
     {
       name: "sit",
       frames: 5,
-      label: "Sit",
+      label: es ? "Sentado" : "Sit",
     },
     {
       name: "sitLeft",
       frames: 5,
-      label: "Sit Left",
+      label: es ? "Sentado Izquierda" : "Sit Left",
     },
     {
       name: "roll",
       frames: 7,
-      label: "Roll",
+      label: es ? "Rodar" : "Roll",
     },
     {
       name: "rollLeft",
       frames: 7,
-      label: "Roll Left",
+      label: es ? "Rodar Izquierda" : "Roll Left",
     },
   ];
 
@@ -164,13 +165,14 @@ function Dog() {
         }}
       >
         {" "}
-        <canvas ref={canvas} id={isDark ? "canvas1" : "canvas1Light"}/>
+        <canvas ref={canvas} id={isDark ? "canvas1" : "canvas1Light"} />
       </div>
       <div className="controls">
-        <label htmlFor="animations">He is Tom, tell him what to do</label>
+        <label htmlFor="animations">{es?"Él es Tom, díle qué hacer":"He is Tom, tell him what to do"}</label>
         <select
           name="animations"
           id="animations"
+          className={isDark ? "animations": "animationsLight"}
           onChange={(e) => handleOnChange(e)}
           value={playerState}
         >
