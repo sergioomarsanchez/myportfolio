@@ -4,13 +4,14 @@ import Separator from "../../common/separator";
 import { WorkData } from "../../data/work";
 import WorkCard from "./work-card";
 import cv from "../../data/Sergio Sanchez CV A.pdf";
-import { ThemeContext } from "../../../contexts/theme";
+import { ThemeContext, LangContext } from "../../../contexts/theme";
 import img from "../../../assets/img/Amigos - Working from Home.png";
 import imgCat from "../../../assets/img/The Little Things - Cat.png";
 
 function Work() {
   const data = WorkData;
   const [isDark] = useContext(ThemeContext);
+  const [es] = useContext(LangContext);
   useEffect(() => {
     window.scrollTo(0, 0);
     const script = document.createElement("script");
@@ -41,7 +42,7 @@ function Work() {
       <Separator />
       <div className="title-img">
         <label className={isDark ? "section-title" : "section-titleLight"}>
-          Experiences
+          {es ? "Experiencia" : "Experiences"}
         </label>
       </div>
       <div className="work-imgContainer">
@@ -67,17 +68,19 @@ function Work() {
       <div className="cv-download">
         <a href={cv} download>
           <button className={isDark ? "button-85" : "button-85Light"}>
-            For more info, download my cv here
+            {es
+              ? "Por más info, descarga mi cv aquí"
+              : "For more info, download my cv here"}
           </button>
         </a>
-        <span> Or </span>
+        <span>{es ? " o " : " or "}</span>
         <a
           href="https://calendly.com/sanchez-omar-sergio/experiment1et"
           target="_blank"
           rel="noreferrer"
         >
           <button className={isDark ? "calendly" : "calendlyLight"}>
-            Schedule a meeting
+            {es ? "Agenda una reunión" : "Schedule a meeting"}
           </button>
         </a>
       </div>
