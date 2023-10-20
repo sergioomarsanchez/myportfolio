@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react";
-import { ThemeContext } from "../../../contexts/theme";
+import { ThemeContext, LangContext } from "../../../contexts/theme";
 import { ProjectData } from "../../data/projects";
 import Separator from "../../common/separator";
 import ProjectCard from "./project-card";
@@ -10,6 +10,7 @@ import "./projects.css";
 function Projects() {
   const data = ProjectData;
   const [isDark] = useContext(ThemeContext);
+  const [es] = useContext(LangContext);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -31,7 +32,7 @@ function Projects() {
       <Separator />
       <div className="title-img">
         <label className={isDark ? "section-title" : "section-titleLight"}>
-          Projects
+          {es ? "Proyectos" : "Projects"}
         </label>
         <div className="projects-imgContainer">
           <img

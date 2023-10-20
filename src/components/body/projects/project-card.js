@@ -1,9 +1,10 @@
 import React, { useContext } from "react";
 import "./project-card.css";
-import { ThemeContext } from "../../../contexts/theme";
+import { ThemeContext, LangContext } from "../../../contexts/theme";
 
 function ProjectCard({ project }) {
   const [isDark] = useContext(ThemeContext);
+  const [es] = useContext(LangContext);
 
   return (
     <div key={project.title} className="project-card">
@@ -18,8 +19,8 @@ function ProjectCard({ project }) {
               rel="noreferrer"
             >
               <div className={isDark ? "link-button" : "link-buttonLight"}>
-                <i className="fi-rr-globe"> 
-                {project.title === "Trabajo en Digital" ? " Web" :" Demo"}
+                <i className="fi-rr-globe">
+                  {project.title === "Trabajo en Digital" ? " Web" : " Demo"}
                 </i>
               </div>
             </a>
@@ -37,7 +38,7 @@ function ProjectCard({ project }) {
             </a>
           )}
         </div>
-        <p>{project.about}</p>
+        <p>{es ? project.aboutEs : project.about}</p>
         <div className="project-tags">
           {project.tags.map((tag, index) => {
             return (

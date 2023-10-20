@@ -1,12 +1,13 @@
 import React, { useContext, useState } from "react";
 import { ReferencesData } from "../../data/references";
-import { ThemeContext } from "../../../contexts/theme";
+import { ThemeContext, LangContext } from "../../../contexts/theme";
 import "./references.css";
 import ReferenceCard from "../referenceCard";
 
 
 function References() {
   const [isDark] = useContext(ThemeContext);
+  const [es] = useContext(LangContext);
   const [open, setOpen] = useState(false);
   const [closing, setClosing] = useState(false);
   const [cardsState, setCardsState] = useState({
@@ -47,7 +48,7 @@ function References() {
           cursor: Object.values(cardsState).includes(true) ? "auto" : "pointer",
         }}
       >
-        <span>My References</span>
+        <span>{es?"Mis Referencias":"My References"}</span>
         {ReferencesData?.map((r) => {
           return (
             <div

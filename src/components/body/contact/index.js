@@ -2,9 +2,10 @@ import React, { useContext, useEffect, useState } from "react";
 import "./contact.css";
 import Separator from "../../common/separator";
 import SocialContact from "../../common/social-contact";
-import { ThemeContext } from "../../../contexts/theme";
+import { ThemeContext, LangContext } from "../../../contexts/theme";
 function Contact() {
   const [isDark] = useContext(ThemeContext);
+  const [es] = useContext(LangContext);
   const [isVisible, setIsVisible] = useState(0);
 
   const toggleVisibility = () => {
@@ -38,7 +39,7 @@ function Contact() {
         style={{ opacity: isVisible }}
         className={isDark ? "noselect" : "noselectLight"}
       >
-        Top
+        {es ? "Ir arriba" : "Top"}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -50,7 +51,11 @@ function Contact() {
       </button>
       <div className="contact-container">
         <div className="contact-left">
-          <p>Want to get in touch? Contact me on any of these platforms</p>
+          <p>
+            {es
+              ? "Quieres hablar conmigo? Contáctame en cualquiera de estas plataformas"
+              : "Want to get in touch? Contact me on any of these platforms"}
+          </p>
           <SocialContact />
         </div>
       </div>

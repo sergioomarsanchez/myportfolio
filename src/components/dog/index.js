@@ -168,7 +168,7 @@ function Dog() {
         <canvas ref={canvas} id={isDark ? "canvas1" : "canvas1Light"} />
       </div>
       <div className="controls">
-        <label htmlFor="animations">{es?"Él es Tom, díle qué hacer":"He is Tom, tell him what to do"}</label>
+        <label htmlFor="animations">{es?"Él es Tom, dile qué hacer":"He is Tom, tell him what to do"}</label>
         <select
           name="animations"
           id="animations"
