@@ -1,11 +1,12 @@
 import React, { useContext } from "react";
 import { useLocation, Link } from "react-router-dom";
-import { ThemeContext } from "../../../contexts/theme";
+import { ThemeContext, LangContext } from "../../../contexts/theme";
 import "./web.css";
 
 function Web() {
   const { pathname } = useLocation();
   const [isDark] = useContext(ThemeContext);
+  const [es] = useContext(LangContext);
   return (
     <div className="web">
       <Link to={"/"} style={{ textDecoration: "none" }}>
@@ -23,7 +24,7 @@ function Web() {
                 : null
             }
           >
-            About me
+            {es ? "Sobre mí" : "About me"}
           </i>
         </div>
       </Link>
@@ -42,7 +43,7 @@ function Web() {
                 : null
             }
           >
-            Projects
+            {es ? "Proyectos" : "Projects"}
           </i>
         </div>
       </Link>
@@ -61,7 +62,7 @@ function Web() {
                 : null
             }
           >
-            Skills
+            {es ? "Habilidades" : "Skills"}
           </i>
         </div>
       </Link>
@@ -80,7 +81,7 @@ function Web() {
                 : null
             }
           >
-            Work
+            {es ? "Experiencia" : "Work"}
           </i>
         </div>
       </Link>
