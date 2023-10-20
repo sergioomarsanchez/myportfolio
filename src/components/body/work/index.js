@@ -4,6 +4,7 @@ import Separator from "../../common/separator";
 import { WorkData } from "../../data/work";
 import WorkCard from "./work-card";
 import cv from "../../data/Sergio Sanchez CV A.pdf";
+import cvEs from "../../data/CV-Sergio Sanchez-Español.pdf";
 import { ThemeContext, LangContext } from "../../../contexts/theme";
 import img from "../../../assets/img/Amigos - Working from Home.png";
 import imgCat from "../../../assets/img/The Little Things - Cat.png";
@@ -66,7 +67,7 @@ function Work() {
         })}
       </div>
       <div className="cv-download">
-        <a href={cv} download>
+        <a href={es ? cvEs : cv} download>
           <button className={isDark ? "button-85" : "button-85Light"}>
             {es
               ? "Por más info, descarga mi cv aquí"
