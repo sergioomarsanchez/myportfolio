@@ -4,6 +4,7 @@ import Dog from "../../dog";
 import img from "../../../assets/img/Olá - Relaxing.png";
 import { ThemeContext, LangContext } from "../../../contexts/theme";
 import References from "../../common/references";
+import Blob from "../../common/blob/index";
 
 function About() {
   const [isDark] = useContext(ThemeContext);
@@ -37,6 +38,7 @@ function About() {
             {es ? "Desarrollador Front-End..." : "Front-End Developer..."}
           </h2>
           <div className="about-imgDiv">
+            <Blob />
             <img
               className={isDark ? "about-img" : "about-imgLight"}
               src={img}

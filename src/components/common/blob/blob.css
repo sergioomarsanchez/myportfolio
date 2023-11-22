@@ -1,0 +1,25 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: -10;
+  width: fit-content;
+  height: fit-content;
+  top: 10px;
+  left: -150px;
+}
+
+.blob{
+  width: 700px;
+}
+
+@media only screen and (max-width: 720px) {
+  .wrapper {
+    top: 10px;
+    left: -50px;
+  }
+  .blob {
+    width: 400px;
+  }
+}

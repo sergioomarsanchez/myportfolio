@@ -89,6 +89,7 @@
   width: 90%;
   margin: 1rem 1rem 1rem 0;
   filter: drop-shadow(0 0 2px rgba(253, 254, 255, 0.813));
+  position: relative;
 }
 .fullDiv,
 .fullDivLight {
