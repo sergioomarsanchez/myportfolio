@@ -85,6 +85,25 @@ function Web() {
           </i>
         </div>
       </Link>
+      <Link to={"/blog"} style={{ textDecoration: "none" }}>
+        <div className={isDark ? "web-option" : "web-optionLight"}>
+          <i
+            className="option-icon"
+            style={
+              pathname === "/blog"
+                ? {
+                    border: "solid",
+                    borderWidth: "2px",
+                    borderRadius: "15px",
+                    borderColor: isDark ? "#89d1d4" : "#790404",
+                  }
+                : null
+            }
+          >
+            Blog
+          </i>
+        </div>
+      </Link>
     </div>
   );
 }

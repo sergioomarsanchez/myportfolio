@@ -2,7 +2,13 @@ import React, { useContext } from "react";
 import "./mobile.css";
 import { useLocation, Link } from "react-router-dom";
 import { ThemeContext, LangContext } from "../../../contexts/theme";
-import { home, work, projects, skills } from "../../../assets/icons/home.js";
+import {
+  home,
+  work,
+  projects,
+  skills,
+  blogIcon,
+} from "../../../assets/icons/home.js";
 
 function Mobile() {
   const { pathname } = useLocation();
@@ -88,12 +94,35 @@ function Mobile() {
                     filter: isDark
                       ? "drop-shadow(0 0 7px #82bfc2"
                       : "drop-shadow(0 0 7px #3f0a0a)",
+                    transform: "translateY(-5px)",
                   }
-                : null
+                : {
+                    transform: "translateY(-5px)",
+                  }
             }
           >
             {work}
             <span className="routeNames">{es ? "Experiencia" : "Work"}</span>
+          </i>
+        </div>
+      </Link>
+      <Link to={"/blog"} style={{ textDecoration: "none" }}>
+        <div className={isDark ? "mobile-option" : "mobile-optionLight"}>
+          <i
+            className="fi-rr-briefcase option-icon"
+            style={
+              pathname === "/blog"
+                ? {
+                    color: isDark ? "#82bfc2" : "#3f0a0a",
+                    filter: isDark
+                      ? "drop-shadow(0 0 7px #82bfc2"
+                      : "drop-shadow(0 0 7px #3f0a0a)",
+                  }
+                : null
+            }
+          >
+            {blogIcon}
+            <span className="routeNames">Blog</span>
           </i>
         </div>
       </Link>
