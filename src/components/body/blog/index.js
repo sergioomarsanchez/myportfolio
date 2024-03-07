@@ -1,7 +1,8 @@
 import React, { useContext, useEffect } from "react";
 import "./blog.css";
 import { ThemeContext, LangContext } from "../../../contexts/theme";
-
+import { BlogPostsData } from "../../data/blogPosts";
+import BlogpostCard from "./blogpost-card";
 
 function Blog() {
   const [isDark] = useContext(ThemeContext);
@@ -11,10 +12,13 @@ function Blog() {
   }, []);
 
   return (
-    <div className="blog">
-      <h1>Blog</h1>
+    <div className={isDark ? "blog" : "blog-light"}>
+      <h1 className={isDark ? "blogTitle" : "blogTitle-light"}>Blog</h1>
+      {BlogPostsData?.map((blogPost) => {
+        return <BlogpostCard blogpostData={blogPost} />;
+      })}
     </div>
   );
 }
 
-export default About;
+export default Blog;

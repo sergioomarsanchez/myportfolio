@@ -1,0 +1,85 @@
+.blogPostCard,
+.blogPostCard-light {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  color: #ddd;
+  background-color: #191919;
+  border: 1px solid #3c3c3c;
+  border-radius: 10px;
+}
+
+.blogPostCard-light {
+  color: #222;
+  background-color: #ddd;
+  border: 1px solid #bfbfbf;
+}
+
+.text,
+.text-light {
+  max-width: 55%;
+}
+.title,
+.title-light {
+  font-weight: bolder;
+}
+.description,
+.description-light {
+  font-weight: lighter;
+  font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+.imgContainer,
+.imgContainer-light {
+  display: flex;
+  flex-direction: column;
+  max-width: 35%;
+  padding: 2rem;
+  position: relative;
+}
+.blogPostImg,
+.blogPostImg-light {
+  max-width: 95%;
+  border-radius: 10px;
+  border: 1px solid #3c3c3c;
+}
+.blogPostImg-light {
+  border: 1px solid #bfbfbf;
+}
+.link,
+.link-light {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  color: #ddd;
+}
+
+.link-light,
+.blogPostCard-light,
+.description-light,
+.title-light {
+  color: #222;
+}
+
+@media only screen and (max-width: 920px) {
+  .blogPostCard,
+  .blogPostCard-light {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .title,
+  .title-light {
+    font-size: medium;
+  }
+  .description,
+  .description-light {
+    font-size: small;
+  }
+  .text,
+  .text-light,
+  .imgContainer,
+  .imgContainer-light {
+    max-width: 95%;
+  }
+}
