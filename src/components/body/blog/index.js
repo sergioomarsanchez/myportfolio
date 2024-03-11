@@ -14,8 +14,8 @@ function Blog() {
   return (
     <div className={isDark ? "blog" : "blog-light"}>
       <h1 className={isDark ? "blogTitle" : "blogTitle-light"}>Blog</h1>
-      {BlogPostsData?.map((blogPost) => {
-        return <BlogpostCard blogpostData={blogPost} />;
+      {BlogPostsData?.map((blogPost, idx) => {
+        return <BlogpostCard key={idx} blogpostData={blogPost} />;
       })}
     </div>
   );

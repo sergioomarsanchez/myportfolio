@@ -8,6 +8,7 @@ import Footer from "./components/footer";
 import Header from "./components/header";
 import Home from "./components/home/index";
 import Blog from "./components/body/blog/index"
+import BlogPost from "./components/body/blog/blogPost";
 import { ThemeContext } from "./contexts/theme";
 import './App.css'
 
@@ -25,6 +26,7 @@ function App() {
       <Route path='/work' element={<Work/>}/>
       <Route path='/projects' element={<Projects/>}/>
       <Route path='/blog' element={<Blog/>}/>
+      <Route path='/blog/:slug' element={<BlogPost/>}/>
       </Routes>
       <Contact/>
       <Footer/>

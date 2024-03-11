@@ -5,14 +5,24 @@
   align-items: center;
   padding: 2rem;
   color: #ddd;
-  background-color: #191919;
+  background: rgb(25, 25, 25);
+  background: linear-gradient(
+    337deg,
+    rgb(13, 13, 13) 0%,
+    rgb(20, 23, 40) 85%
+  );
   border: 1px solid #3c3c3c;
   border-radius: 10px;
 }
 
 .blogPostCard-light {
   color: #222;
-  background-color: #ddd;
+  background: rgb(102, 102, 102);
+  background: linear-gradient(
+    333deg,
+    rgb(129, 129, 129) 0%,
+    rgba(221, 221, 221, 1) 55%
+  );
   border: 1px solid #bfbfbf;
 }
 
@@ -26,6 +36,7 @@
 }
 .description,
 .description-light {
+  font-size: small;
   font-weight: lighter;
   font-family: Georgia, Times, "Times New Roman", serif;
 }
@@ -50,11 +61,14 @@
 .link,
 .link-light {
   position: absolute;
-  bottom: 5px;
+  bottom: -10px;
   right: 5px;
   color: #ddd;
 }
-
+.link:hover,
+.link-light:hover {
+text-decoration: underline;
+}
 .link-light,
 .blogPostCard-light,
 .description-light,
@@ -66,7 +80,7 @@
   .blogPostCard,
   .blogPostCard-light {
     flex-direction: column;
-    padding: 1rem;
+    padding: 0.5rem;
   }
   .title,
   .title-light {
@@ -74,12 +88,21 @@
   }
   .description,
   .description-light {
-    font-size: small;
+    font-size: x-small;
   }
   .text,
   .text-light,
   .imgContainer,
   .imgContainer-light {
     max-width: 95%;
+  }
+  .imgContainer,
+  .imgContainer-light {
+    padding-top: 0.5rem;
+  }
+  .link,
+  .link-light {
+    bottom: -2px;
+    font-size: small;
   }
 }

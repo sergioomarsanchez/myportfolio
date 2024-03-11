@@ -31,9 +31,7 @@ export const BlogPostsData = [
     date: "2024-03-05",
     slug: "react-query-explained",
     html: {
-      en: `
-            <img src="https://placeholdit.co/600x300?text=React+Query" alt="React Query Logo" />
-            <h1>React Query Explained: A Comprehensive Guide for Simplified Data Fetching</h1>
+      en: `<img src="https://imgs.search.brave.com/exOuYCfHnSGhV9pXXAEIpsAd11So6pEmvxnkAvxbsRg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9naXRo/dWIuY29tL3Rhbm5l/cmxpbnNsZXkvcmVh/Y3QtcXVlcnkvcmF3/L21haW4vbWVkaWEv/cmVwby1kYXJrLnBu/Zw" alt="React Query Logo" />
             <p>In the world of React development, managing data fetching and state can be a complex and time-consuming task. This is where React Query comes in, a powerful library designed to streamline and simplify these processes.</p>
       
             <h2>What is React Query?</h2>
@@ -48,9 +46,7 @@ export const BlogPostsData = [
             </ul>
       
             <h2>Basic Usage Example</h2>
-            <p>Here's a simplified example of using React Query to fetch data:</p>
-            <pre>
-      import { useQuery } from 'react-query';
+            <p>Here's a simplified example of using React Query to fetch data:</p><pre>import { useQuery } from 'react-query';
       
       function MyComponent() {
         const { data, isLoading, error } = useQuery('data', () => fetch('https://api.example.com/data'));
@@ -64,10 +60,7 @@ export const BlogPostsData = [
             <p>{data.content}</p>
           </div>
         );
-      }
-            </pre>
-      
-            <h2>Key Features of React Query</h2>
+      }</pre><h2>Key Features of React Query</h2>
             <ul>
               <li>Automatic caching and data invalidation.</li>
               <li>Declarative API focusing on data needs.</li>
@@ -77,11 +70,8 @@ export const BlogPostsData = [
             </ul>
       
             <h2>Conclusion</h2>
-            <p>React Query empowers developers to manage data fetching in React applications with ease. It simplifies data management, improves performance, and enhances testability, making it a valuable tool for any React developer's toolkit.</p>
-          `,
-      es: `
-  <img src="https://placeholdit.co/600x300?text=React+Query" alt="Logo de React Query" />
-  <h1>React Query: Guía Completa para la Obtención Simplificada de Datos</h1>
+            <p>React Query empowers developers to manage data fetching in React applications with ease. It simplifies data management, improves performance, and enhances testability, making it a valuable tool for any React developer's toolkit.</p>`,
+      es: `<img src="https://imgs.search.brave.com/exOuYCfHnSGhV9pXXAEIpsAd11So6pEmvxnkAvxbsRg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9naXRo/dWIuY29tL3Rhbm5l/cmxpbnNsZXkvcmVh/Y3QtcXVlcnkvcmF3/L21haW4vbWVkaWEv/cmVwby1kYXJrLnBu/Zw" alt="Logo de React Query" />
   <p>En el mundo del desarrollo de React, administrar la obtención de datos y el estado puede ser una tarea compleja y demandante de tiempo. Aquí es donde entra React Query, una biblioteca poderosa diseñada para optimizar y simplificar estos procesos.</p>
 
   <h2>¿Qué es React Query?</h2>
@@ -96,9 +86,7 @@ export const BlogPostsData = [
   </ul>
 
   <h2>Ejemplo básico de uso</h2>
-  <p>Aquí hay un ejemplo simplificado del uso de React Query para obtener datos:</p>
-  <pre>
-import { useQuery } from 'react-query';
+  <p>Aquí hay un ejemplo simplificado del uso de React Query para obtener datos:</p><pre>import { useQuery } from 'react-query';
 
 function MiComponente() {
   const { data, isLoading, error } = useQuery('datos', () => fetch('https://api.example.com/datos'));
@@ -112,10 +100,7 @@ function MiComponente() {
       <p>{data.content}</p>
     </div>
   );
-}
-  </pre>
-
-  <h2>Características clave de React Query</h2>
+}</pre><h2>Características clave de React Query</h2>
   <ul>
     <li>Almacenamiento en caché automático e invalidación de datos.</li>
     <li>API declarativa centrada en las necesidades de datos.</li>
@@ -125,8 +110,7 @@ function MiComponente() {
   </ul>
 
   <h2>Conclusión</h2>
-  <p>React Query empodera a los desarrolladores a gestionar la obtención de datos en aplicaciones React con facilidad. Simplifica la gestión de datos, mejora el rendimiento y optimiza la capacidad de prueba, convirtiéndose en una herramienta valiosa para el conjunto de herramientas de cualquier desarrollador React.</p>
-`,
+  <p>React Query empodera a los desarrolladores a gestionar la obtención de datos en aplicaciones React con facilidad. Simplifica la gestión de datos, mejora el rendimiento y optimiza la capacidad de prueba, convirtiéndose en una herramienta valiosa para el conjunto de herramientas de cualquier desarrollador React.</p>`,
     },
   },
 ];
