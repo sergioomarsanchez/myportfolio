@@ -1,6 +1,6 @@
 .web-option,
 .web-optionLight {
-  font-size: 18px;
+  font-size: small;
   font-weight: 700;
 }
 .web-option i,
@@ -27,7 +27,6 @@
 }
 .web-option i {
   color: #fbf8f8;
-  font-size: small;
 }
 .option-icon,
 .web-optionLight {
