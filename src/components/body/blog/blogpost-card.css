@@ -45,15 +45,16 @@
 .imgContainer-light {
   display: flex;
   flex-direction: column;
-  max-width: 35%;
+  width: 35%;
   padding: 2rem;
   position: relative;
 }
 .blogPostImg,
 .blogPostImg-light {
-  max-width: 95%;
   border-radius: 10px;
   border: 1px solid #3c3c3c;
+  width: 95%;
+  height: 95%;
 }
 .blogPostImg-light {
   border: 1px solid #bfbfbf;
@@ -99,10 +100,12 @@ text-decoration: underline;
   .imgContainer,
   .imgContainer-light {
     padding-top: 0.5rem;
+    width: 95%;
   }
   .link,
   .link-light {
     bottom: -2px;
+    right: 25px;
     font-size: small;
   }
 }

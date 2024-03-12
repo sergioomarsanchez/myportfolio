@@ -21,6 +21,8 @@ function BlogpostCard({ blogpostData }) {
           alt={`image of ${blogpostData.title}`}
           src={blogpostData.img}
           style={{ aspectRatio: blogpostData.imgAR }}
+          width={blogpostData.imgWidth}
+          height={blogpostData.imgHeight}
           lazy
           className={isDark ? "blogPostImg" : "blogPostImg-light"}
         />
