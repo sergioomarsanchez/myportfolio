@@ -14,7 +14,7 @@ function SocialContact() {
     <div className="social-contact">
       {data.map((item) => {
         return (
-          <a key={item.platform} href={item.link} className="anchor">
+          <a key={item.platform} href={item.link} target="_blank" blanc className="anchor">
             {item.icon === "youtube" && (
               <i className="social-icon">{youtube}</i>
             )}

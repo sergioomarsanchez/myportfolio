@@ -12,7 +12,7 @@ export const SocialData = [
   {
     platform: "Youtube",
     icon: "youtube",
-    link: "https://www.youtube.com/channel/UChIMb1J6ILBRcq-b6PQ7SIQ",
+    link: "https://www.youtube.com/channel/UChUh9vc9sCKwjRV7_-P8YnA",
   },
   {
     platform: "LinkedIn",
