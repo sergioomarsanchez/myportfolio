@@ -73,7 +73,7 @@ export const BlogPostsData = [
       
             <h2>Conclusion</h2>
             <p>React Query empowers developers to manage data fetching in React applications with ease. It simplifies data management, improves performance, and enhances testability, making it a valuable tool for any React developer's toolkit.</p>`,
-      es: `<img src="https://imgs.search.brave.com/exOuYCfHnSGhV9pXXAEIpsAd11So6pEmvxnkAvxbsRg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9naXRo/dWIuY29tL3Rhbm5l/cmxpbnNsZXkvcmVh/Y3QtcXVlcnkvcmF3/L21haW4vbWVkaWEv/cmVwby1kYXJrLnBu/Zw" alt="Logo de React Query" style={{ aspectRatio: blogpostData.imgAR }} width="860" height="289"/>
+      es: `<img src="https://imgs.search.brave.com/exOuYCfHnSGhV9pXXAEIpsAd11So6pEmvxnkAvxbsRg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9naXRo/dWIuY29tL3Rhbm5l/cmxpbnNsZXkvcmVh/Y3QtcXVlcnkvcmF3/L21haW4vbWVkaWEv/cmVwby1kYXJrLnBu/Zw" alt="Logo de React Query" style={{ aspectRatio: blogpostData.imgAR }}/>
   <p>En el mundo del desarrollo de React, administrar la obtención de datos y el estado puede ser una tarea compleja y demandante de tiempo. Aquí es donde entra React Query, una biblioteca poderosa diseñada para optimizar y simplificar estos procesos.</p>
 
   <h2>¿Qué es React Query?</h2>
