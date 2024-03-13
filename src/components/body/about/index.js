@@ -42,7 +42,10 @@ function About() {
             <img
               className={isDark ? "about-img" : "about-imgLight"}
               src={img}
-              alt=""
+              width={350}
+              height={280}
+              alt="img of a man holding a notebook, representing myself"
+
             />
           </div>
         </div>

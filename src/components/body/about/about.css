@@ -13,6 +13,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  min-height: 58vh;
 }
 .triangle,
 .triangleLight {
@@ -87,6 +88,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 90%;
+  height: 90%;
   margin: 1rem 1rem 1rem 0;
   filter: drop-shadow(0 0 2px rgba(253, 254, 255, 0.813));
   position: relative;

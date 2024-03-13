@@ -18,7 +18,7 @@ function BlogpostCard({ blogpostData }) {
       </section>
       <section className={isDark ? "imgContainer" : "imgContainer-light"}>
         <img
-          alt={`image of ${blogpostData.title}`}
+          alt={`logo of${blogpostData.title}`}
           src={blogpostData.img}
           style={{ aspectRatio: blogpostData.imgAR }}
           width={blogpostData.imgWidth}

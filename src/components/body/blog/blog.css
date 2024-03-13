@@ -1,23 +1,24 @@
-.blog, .blog-light {
-  margin-bottom: 3rem;
+.blog,
+.blog-light {
   padding-bottom: 48px;
   max-width: 75%;
+  min-height: 68vh;
+  align-self: center;
+  display: flex;
+}
+.blogContainer{
   display: flex;
   justify-content: center;
   align-items: center;
-  align-self: center;
-  position: relative;
   flex-direction: column;
-}
-
-.blogTitle, .blogTitle-light {
-  place-self: start;
+  height: fit-content;
 }
 
 @media only screen and (max-width: 920px) {
-  /* .blog {
-    max-width: 100%;
-    padding-bottom: 0;
-    padding: 1rem;
-  } */
+  .blog,
+  .blog-light {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    min-height: 55vh;
+  }
 }

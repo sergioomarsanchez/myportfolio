@@ -18,9 +18,9 @@ function Header() {
       {pathname === "/" ? (
         <div className="logo">
           {isDark ? (
-            <img src={logo} alt="logo" className="logo" />
+            <img src={logo} alt="logo" className="logo" width={130} height={70}/>
           ) : (
-            <img src={logoLight} alt="logo" className="logo" />
+            <img src={logoLight} alt="logo" className="logo" width={130} height={70} />
           )}
         </div>
       ) : (

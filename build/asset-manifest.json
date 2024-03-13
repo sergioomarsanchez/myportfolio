@@ -1,22 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.77c71fb5.css",
-    "main.js": "/static/js/main.b8431b88.js",
-    "static/js/787.749b4a44.chunk.js": "/static/js/787.749b4a44.chunk.js",
-    "static/media/Moviefy.png": "/static/media/Moviefy.6d54682d8677c3749b6f.png",
-    "static/media/thefoodapp.png": "/static/media/thefoodapp.8256b126262289149719.png",
-    "static/media/dog_left_right_white.png": "/static/media/dog_left_right_white.d39dd1daf9711b8464a7.png",
-    "static/media/Sergio Sanchez CV FSD.pdf": "/static/media/Sergio Sanchez CV FSD.4f6b06e3511e123e8ff1.pdf",
+    "main.css": "/static/css/main.a2beda7c.css",
+    "main.js": "/static/js/main.c8da274a.js",
+    "static/js/453.aac68abc.chunk.js": "/static/js/453.aac68abc.chunk.js",
+    "static/media/dog_left_right_white.png": "/static/media/dog_left_right_white.0fa7872e5d681ffb3bfe.png",
+    "static/media/Moviefy.png": "/static/media/Moviefy.4bc6b8fd0b92e75446a7.png",
+    "static/media/pizzaApp.png": "/static/media/pizzaApp.38fcb25cdef02e1081d3.png",
+    "static/media/thefoodapp.png": "/static/media/thefoodapp.f3bd50391f7199182c31.png",
+    "static/media/CV-Sergio Sanchez-Español.pdf": "/static/media/CV-Sergio Sanchez-Español.f4b87e75106f3b83ab18.pdf",
+    "static/media/Sergio Sanchez CV A.pdf": "/static/media/Sergio Sanchez CV A.3fe405b504bb45ba2e61.pdf",
     "static/media/logo-homify-2.png": "/static/media/logo-homify-2.8f9719a0678b07569fab.png",
     "static/media/logo_white_large.png": "/static/media/logo_white_large.cbd78c4fe8b40fbbf479.png",
-    "static/media/linkedin.png": "/static/media/linkedin.8b89ce01929a419c5625.png",
+    "static/media/tend.png": "/static/media/tend.bfbdbc547c0059553da0.png",
+    "static/media/The Little Things - Cat.png": "/static/media/The Little Things - Cat.695048ae3de5b7139a40.png",
+    "static/media/Olá - Relaxing.png": "/static/media/Olá - Relaxing.984d8cc56a8e9a4da3f0.png",
+    "static/media/myFin.png": "/static/media/myFin.e0a1dd29d07a98f14156.png",
+    "static/media/Amigos - Working from Home.png": "/static/media/Amigos - Working from Home.13bcf7227f1c7cdea6a6.png",
+    "static/media/logo_small.png": "/static/media/logo_small.3a3a7af3372b6eb75833.png",
+    "static/media/logo_small_icon_only.png": "/static/media/logo_small_icon_only.69c0d62c712c0ac73dba.png",
+    "static/media/The Little Things - Working Windows.png": "/static/media/The Little Things - Working Windows.7e6ef3114ea74ab89be2.png",
     "index.html": "/index.html",
-    "main.77c71fb5.css.map": "/static/css/main.77c71fb5.css.map",
-    "main.b8431b88.js.map": "/static/js/main.b8431b88.js.map",
-    "787.749b4a44.chunk.js.map": "/static/js/787.749b4a44.chunk.js.map"
+    "main.a2beda7c.css.map": "/static/css/main.a2beda7c.css.map",
+    "main.c8da274a.js.map": "/static/js/main.c8da274a.js.map",
+    "453.aac68abc.chunk.js.map": "/static/js/453.aac68abc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.77c71fb5.css",
-    "static/js/main.b8431b88.js"
+    "static/css/main.a2beda7c.css",
+    "static/js/main.c8da274a.js"
   ]
 }
