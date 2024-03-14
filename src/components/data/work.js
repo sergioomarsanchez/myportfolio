@@ -35,38 +35,6 @@ export const WorkData = [
     },
   },
   {
-    company: "Full-Stack Teaching Assistant at Soy Henry",
-    designation: "Full-Stack Teaching Assistant",
-    dateJoining: "06-2022",
-    dateEnd: "10-2022",
-    companyLogo:
-      "https://s3.amazonaws.com/tracxn-data-image/logo/company/X3jhC-Yp_400x400_a2f3eadb-d8f7-4fb5-af86-2cb6967202ef.jpg",
-    work: "- Coordinate a group of students to achieve integration into the study group. Guide students in the first steps of the course. Assist to solve exercises and promote group collaboration (Pair Programming). Propose ideas to improve the Bootcamp processes.",
-    location: "Córdoba-Argentina",
-    es: {
-      company: "Asistente de Enseñanza Full-Stack en Soy Henry",
-      designation: "Asistente de Enseñanza Full-Stack",
-      work: "- Coordino a un grupo de estudiantes para lograr su integración en el grupo de estudio. Guío a los estudiantes en los primeros pasos del curso. Ayudo a resolver ejercicios y fomento la colaboración grupal (Programación en Parejas). Propongo ideas para mejorar los procesos del Bootcamp.",
-      location: "Córdoba-Argentina",
-    },
-  },
-  {
-    company: "Full Stack Developer Bootcamp at Henry",
-    designation: "Student",
-    dateJoining: "06.2022",
-    dateEnd: "10.2022",
-    companyLogo:
-      "https://s3.amazonaws.com/tracxn-data-image/logo/company/X3jhC-Yp_400x400_a2f3eadb-d8f7-4fb5-af86-2cb6967202ef.jpg",
-    work: "- Skills: Nodejs, Sequelize, Postgres, Express, Javascript, HTML ,CSS, Less, React, Redux, Git, Github, Jest and Supertest",
-    location: "Córdoba-Argentina",
-    es: {
-      company: "Estudiante de Desarrollo Full Stack en Henry",
-      designation: "Estudiante",
-      work: "- Habilidades: Nodejs, Sequelize, Postgres, Express, Javascript, HTML, CSS, Less, React, Redux, Git, Github, Jest y Supertest",
-      location: "Córdoba-Argentina",
-    },
-  },
-  {
     company: "Sales Executive at Homify",
     designation: "Sales Executive",
     dateJoining: "10.2021",
