@@ -98,7 +98,7 @@ function Dog() {
     setTimeout(() => {
       setPlayerState("sit");
     }, 15000);
-  }, []);
+  });
   function handleOnClick() {
     setPlayerState("run");
     setTimeout(() => {
