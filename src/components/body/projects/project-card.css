@@ -9,7 +9,6 @@
   position: relative;
   z-index: 1;
 }
-
 .projects-container {
   display: flex;
   z-index: 1;
@@ -36,7 +35,6 @@
   margin-right: 24px;
   z-index: 1;
 }
-
 .project-title {
   font-size: 20px;
   font-weight: 600;
@@ -50,7 +48,6 @@
   flex-wrap: wrap;
   z-index: 1;
 }
-
 .tag,
 .tagLight {
   padding: 2px 8px;
@@ -59,17 +56,14 @@
   font-style: oblique;
   font-weight: 500;
 }
-
 .project-links a {
   text-decoration: none;
   color: black;
 }
-
 .project-links {
   margin-top: 6px;
   display: flex;
 }
-
 .tiltBottom,
 .tiltBottomLight {
   position: absolute;
@@ -81,7 +75,6 @@
   transform: rotate(180deg);
   z-index: 0;
 }
-
 .tiltBottom svg,
 .tiltBottomLight svg {
   position: relative;
@@ -90,27 +83,27 @@
   height: 50px;
   z-index: 0;
 }
-
 .tiltBottom .shape-fill {
   fill: #6b5b9f23;
 }
 .tiltBottomLight .shape-fillLight {
   fill: #6d2c2c23;
 }
-
 @media (min-width: 768px) {
   .button-64 {
     font-size: 24px;
     min-width: 196px;
   }
 }
-
 .link-button {
   appearance: none;
   background-color: transparent;
   color: #d9ebff;
   cursor: pointer;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
   font-size: 16px;
   font-weight: 500;
   line-height: 1em;
@@ -129,7 +122,6 @@
   border: 1px #d9ebff solid;
   border-radius: 5px;
 }
-
 .link-button:before {
   animation: opacityFallbackOut 0.5s step-end forwards;
   backface-visibility: hidden;
@@ -153,27 +145,29 @@
   width: 100%;
   border-radius: 5px;
 }
-
 .link-button:hover:before {
   animation: opacityFallbackIn 0s step-start forwards;
   clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
 }
-
 .link-button:after {
   background-color: #d9ebff;
 }
-
-.link-button i {
+.link-button i,
+.link-button span,
+.link-buttonLight i,
+.link-buttonLight span {
   z-index: 1;
   position: relative;
 }
-
 .link-buttonLight {
   appearance: none;
   background-color: transparent;
   color: #002f65;
   cursor: pointer;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
   font-size: 16px;
   font-weight: 500;
   line-height: 1em;
@@ -192,7 +186,6 @@
   border-radius: 5px;
   border: 1px #003a7c solid;
 }
-
 .link-buttonLight:before {
   animation: opacityFallbackOut 0.5s step-end forwards;
   backface-visibility: hidden;
@@ -216,21 +209,13 @@
   width: 100%;
   border-radius: 5px;
 }
-
 .link-buttonLight:hover:before {
   animation: opacityFallbackIn 0s step-start forwards;
   clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
 }
-
 .link-buttonLight:after {
   background-color: #004697;
 }
-
-.link-buttonLight i {
-  z-index: 1;
-  position: relative;
-}
-
 @media only screen and (max-width: 920px) {
   .project-ytlink {
     width: 90%;
@@ -253,7 +238,6 @@
   .project-tags {
     max-width: 90%;
   }
-
   .tiltBottom,
   .tiltBottomLight {
     width: 100%;

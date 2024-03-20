@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import "./project-card.css";
+import { globe } from "../../../assets/icons/home";
 import { ThemeContext, LangContext } from "../../../contexts/theme";
 
 function ProjectCard({ project }) {
@@ -19,9 +20,10 @@ function ProjectCard({ project }) {
               rel="noreferrer"
             >
               <div className={isDark ? "link-button" : "link-buttonLight"}>
-                <i className="fi-rr-globe">
+                <i>{globe}</i>
+                <span>
                   {project.title === "Trabajo en Digital" ? " Web" : " Demo"}
-                </i>
+                </span>
               </div>
             </a>
           )}
@@ -33,7 +35,8 @@ function ProjectCard({ project }) {
               rel="noreferrer"
             >
               <div className={isDark ? "link-button" : "link-buttonLight"}>
-                <i className="devicon-github-original"> GitHub</i>
+                <i className="devicon-github-original"></i>
+                <span>GitHub</span>
               </div>
             </a>
           )}
