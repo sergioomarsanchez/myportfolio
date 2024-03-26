@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { ThemeContext, LangContext } from "../../../contexts/theme";
 import "./blogpost-card.css";
+import CheckMoreButton from "../../common/checkMoreButton/check-more-button.js";
 
 function BlogpostCard({ blogpostData }) {
   const [isDark] = useContext(ThemeContext);
@@ -31,7 +32,7 @@ function BlogpostCard({ blogpostData }) {
           style={{ textDecoration: "none" }}
         >
           <span className={isDark ? "link" : "link-light"}>
-            {es ? "Leer más ->" : "Read more ->"}
+            <CheckMoreButton nameButton={es ? "Leer más" : "Read more"} />
           </span>
         </Link>
       </section>

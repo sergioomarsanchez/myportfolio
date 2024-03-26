@@ -13,6 +13,7 @@
   );
   border: 1px solid #3c3c3c;
   border-radius: 10px;
+  margin-bottom: 2rem;
 }
 
 .blogPostCard-light {
@@ -104,8 +105,8 @@ text-decoration: underline;
   }
   .link,
   .link-light {
-    bottom: -2px;
-    right: 25px;
-    font-size: small;
+    bottom: 5px;
+    right: 50px;
+    font-size: xx-small;
   }
 }
