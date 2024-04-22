@@ -90,6 +90,16 @@ export const SkillsData = [
     type: "Back-end",
     list: [
       {
+        name: "Java",
+        icon: (
+          <i
+            className="devicon-java-plain colored"
+            widht="45px"
+            height="45px"
+          />
+        ),
+      },
+      {
         name: "Mongodb",
         icon: (
           <i
