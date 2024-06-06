@@ -3,8 +3,30 @@ import thefoodapp from "../../assets/thefoodapp.png";
 import pizzaapp from "../../assets/pizzaApp.png";
 import myfin from "../../assets/myFin.png";
 import tend from "../../assets/tend.png";
+import dlc from "../../assets/DLC.png";
 
 export const ProjectData = [
+  {
+    id: 6,
+    title: "Transportes DLC",
+    about:
+      "Transporte DLC is a comprehensive web platform designed to showcase a company's culture and streamline customer interactions. The website features a contact and quote form, a WhatsApp logo for direct messaging, and a call button to connect with the owner. The platform is developed using modern technologies and is deployed on Vercel, ensuring high performance and reliability. To see a short demo video, please click on the project image.",
+    aboutEs:
+      "Transporte DLC es una plataforma web integral diseñada para mostrar la cultura de una empresa y optimizar las interacciones con los clientes. El sitio web cuenta con un formulario de contacto y cotización, un logotipo de WhatsApp para mensajes directos y un botón de llamada para conectar con el propietario. La plataforma está desarrollada utilizando tecnologías modernas y está desplegada en Vercel, garantizando un alto rendimiento y fiabilidad. Para ver un breve video de demostración, haga clic en la imagen del proyecto.",
+    tags: [
+      "Nextjs",
+      "Tailwind",
+      "HeadlessUI",
+      "React hook form",
+      "Zod",
+      "Nodemailer",
+      "Nodejs",
+      "Typescript",
+    ],
+    demo: "https://transporte-dlc.vercel.app/",
+    github: "https://github.com/sergioomarsanchez/Transporte-DLC",
+    image: dlc,
+  },
   {
     id: 5,
     title: "Trabajo en Digital",
@@ -96,25 +118,25 @@ export const ProjectData = [
     image: moviefy,
     videoLink: "https://youtu.be/1F4NPhPwK_Q",
   },
-  {
-    id: 2,
-    title: "The Food App",
-    about:
-      "This is an individual project for my Bootcamp at Soy Henry. Is an App to check Recipes, search, order by name and heath rating and filter by recipe type, and you can also create your own recipes. Please, click on the project image to check a short demo video",
-    aboutEs:
-      "Este es un proyecto individual para mi Bootcamp en Soy Henry. Es una aplicación para consultar recetas, buscar, ordenar por nombre y calificación de salud y filtrar por tipo de receta, y también puedes crear tus propias recetas. Por favor, haz clic en la imagen del proyecto para ver un breve video de demostración.",
-    tags: [
-      "ReactJS",
-      "Javascript",
-      "PostgreSQL",
-      "Html/Css",
-      "Redux",
-      "Express",
-      "external API",
-    ],
-    github: "https://github.com/sergioomarsanchez/PI-Foods",
-    image: thefoodapp,
-    demo: "https://pi-thefoodap-sergioosanchez.netlify.app/",
-    videoLink: "https://youtu.be/uqTnidI7LRc",
-  },
+  // {
+  //   id: 2,
+  //   title: "The Food App",
+  //   about:
+  //     "This is an individual project for my Bootcamp at Soy Henry. Is an App to check Recipes, search, order by name and heath rating and filter by recipe type, and you can also create your own recipes. Please, click on the project image to check a short demo video",
+  //   aboutEs:
+  //     "Este es un proyecto individual para mi Bootcamp en Soy Henry. Es una aplicación para consultar recetas, buscar, ordenar por nombre y calificación de salud y filtrar por tipo de receta, y también puedes crear tus propias recetas. Por favor, haz clic en la imagen del proyecto para ver un breve video de demostración.",
+  //   tags: [
+  //     "ReactJS",
+  //     "Javascript",
+  //     "PostgreSQL",
+  //     "Html/Css",
+  //     "Redux",
+  //     "Express",
+  //     "external API",
+  //   ],
+  //   github: "https://github.com/sergioomarsanchez/PI-Foods",
+  //   image: thefoodapp,
+  //   demo: "https://pi-thefoodap-sergioosanchez.netlify.app/",
+  //   videoLink: "https://youtu.be/uqTnidI7LRc",
+  // },
 ];
