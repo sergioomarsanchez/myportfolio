@@ -1,11 +1,34 @@
 import moviefy from "../../assets/Moviefy.png";
-import thefoodapp from "../../assets/thefoodapp.png";
 import pizzaapp from "../../assets/pizzaApp.png";
 import myfin from "../../assets/myFin.png";
+import myWallet from "../../assets/mywallet.png";
 import tend from "../../assets/tend.png";
 import dlc from "../../assets/DLC.png";
+// import thefoodapp from "../../assets/thefoodapp.png";
 
 export const ProjectData = [
+  {
+  "id": 7,
+  "title": "My Wallet",
+  "about": "My Wallet is an enhanced personal finance app built with Next.js 14, Tailwind CSS, server actions, shadcn/ui, headlessui, Prisma, React Hook Form with Zod, and nodemailer. It improves on My Fin by incorporating more modern tools and libraries, providing a better user experience for managing income and expenses, visualizing financial data with advanced charts, and offering robust authentication and form handling capabilities.",
+  "aboutEs": "My Wallet es una aplicación de finanzas personales mejorada construida con Next.js 14, Tailwind CSS, server actions, shadcn/ui, headlessui, Prisma, React Hook Form con Zod y nodemailer. Mejora a My Fin al incorporar herramientas y bibliotecas más modernas, proporcionando una mejor experiencia de usuario para gestionar ingresos y gastos, visualizar datos financieros con gráficos avanzados y ofrecer capacidades robustas de autenticación y manejo de formularios.",
+  "tags": [
+    "Next.js 14",
+    "Tailwind CSS",
+    "Server Actions",
+    "Shadcn/ui",
+    "Headlessui",
+    "Prisma",
+    "React Hook Form",
+    "Zod",
+    "Nodemailer",
+    "Chart.js",
+    "PostgresSQL"
+  ],
+  "github": "https://github.com/sergioomarsanchez/mywallet",
+  "image": myWallet,
+  "demo": "https://mywallet-sos.vercel.app/"
+},
   {
     id: 6,
     title: "Transportes DLC",

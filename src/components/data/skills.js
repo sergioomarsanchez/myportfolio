@@ -129,6 +129,36 @@ export const SkillsData = [
           />
         ),
       },
+      {
+        name: "Prisma",
+        icon: (
+          <i
+            className="devicon-prisma-original"
+            widht="45px"
+            height="45px"
+          />
+        ),
+      },
+      {
+        name: "Express",
+        icon: (
+          <i
+            className="devicon-express-original"
+            widht="45px"
+            height="45px"
+          />
+        ),
+      },
+      {
+        name: "Sequelize",
+        icon: (
+          <i
+            className="devicon-sequelize-plain"
+            widht="45px"
+            height="45px"
+          />
+        ),
+      },
     ],
   },
   {
